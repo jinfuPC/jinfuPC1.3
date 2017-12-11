@@ -1,0 +1,82 @@
+/*.....wan_style_start.....*/
+/*资产总览样式*/
+.wan_box{
+	width: 1200px;
+	margin: 0 auto;
+}
+.wan_box .wan_box_z{
+	width: 998px;
+    height: 252px;
+    background-color: #fff;
+}
+.wan_box .wan_box_z .wan_con{
+	width: 100%;
+	padding: 30px;
+	height: auto;
+	position: relative;
+}
+.wan_box_z .wan_con .sp1{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #555555;
+	display: block;
+}
+.wan_box_z .wan_con #main2{
+	width: 198px;
+	height: 196px;	
+	float: left;
+	margin-top: 30px;
+}
+.wan_box_z .wan_con .wan_tab{
+	float: right;
+	width: 680px;
+	height: 160px;
+	margin-top: 30px;
+}
+.wan_box_z .wan_con .wan_tab th{
+	padding: 14px;
+	color: #898989;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.wan_box_z .wan_con .wan_tab td{
+	width: 150px;
+    padding: 14px;
+    color: #3E3E3E;
+    font-size: 14px;
+}
+
+.wan_tab .sp4{
+	color: #D2A36B;
+	border-bottom: 1px solid #d2a36c;
+	
+}
+ .sp2{
+	position: absolute;
+    top: 160px;
+    left: 285px;
+    width: 7px;
+    height: 7px;
+    background: #5c89d9;
+    border-radius: 50%;
+}
+.sp3{
+	position: absolute;
+    top: 210px;
+    left: 285px;
+    width: 7px;
+    height: 7px;
+    background: #f5814c;
+    border-radius: 50%;
+}
+.wan_tab .sp5{
+	color: #3e3e3e;
+	border-bottom: 1px solid #a5a5a5;
+}
+
+
+
+
+
+
+/*.....wan_style-end.....*/
