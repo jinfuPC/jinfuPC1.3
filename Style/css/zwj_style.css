@@ -8,6 +8,27 @@
 html,body{
 	background: #f3f3f3;
 }
+/*@media screen and (min-width: 1150px) {  
+   body {  
+       margin-left: calc(100vw - 100%);  
+   }  
+}*/
+html {
+  overflow-y: scroll;
+}
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/*:root body {
+  position: absolute;
+}*/
+body {
+  width: 100vw;
+  overflow: hidden;
+}
+
+
 .zwj_bre_nav{
 	margin: 0 auto;
 	width: 1200px;
