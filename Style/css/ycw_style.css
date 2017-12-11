@@ -1,0 +1,91 @@
+/*.....ycw_style_start.....*/
+body{
+  background-color: #f3f3f3;
+}
+.ycw_clearFix:after{
+  display: block;
+  content: ",";
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.ycw_clearFix{
+  zoom: 1;
+}
+.ycw_ov_wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+.ycw_ov_index{
+  width: 998px;
+  height: 588px;
+  float: right;
+  background-color: #fff;
+}
+.ycw_ov_index .ov_index_head{
+  width: 100%;
+  padding: 30px;
+  height: auto;
+}
+.ov_index_head .index_portrait{
+  padding: 4px;
+  display: inline-block;
+  float: left;
+}
+.index_portrait img{
+  width: 56px;
+  height: 56px;
+}
+.ov_index_head .index_username{
+  float:right;
+  width: 860px;
+}
+.username_wrapper .username{
+  line-height: 36px;
+  font-size: 16px;
+  color: #3e3e3e;
+  float: left;
+  padding-right: 8px;
+}
+.username_wrapper .username_icon{
+  width: 56px;
+  height: 36px;
+  float: left;
+  line-height: 36px;
+  background: url(../images/overview/grade_icon.png) center center no-repeat;
+  background-size: contain;
+  text-align: right;
+  font-size: 12px;
+  color: #fff;
+  padding-right: 6px;
+}
+.index_username .un_time{
+  font-size: 12px;
+  color: #898989;
+}
+/*资产配置*/
+.ycw_ov_index .index_asset{
+  width: 938px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fbfbfb;
+  padding: 30px 0;
+}
+.index_asset .asset_wrapper{
+  width: 312px;
+  float: left;
+  text-align: center;
+}
+.asset_wrapper .asset_style{
+  font-size: 14px;
+  color: #898989;
+}
+.asset_wrapper .asset_amount{
+  font-size: 34px;
+  padding-top: 20px;
+  color: #3e3e3e;
+}
+.asset_wrapper .total_amount{
+  color: #d2a36b;
+}
+/*.....ycw_style-end.....*/
