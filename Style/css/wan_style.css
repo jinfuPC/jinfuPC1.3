@@ -51,6 +51,9 @@
 	border-bottom: 1px solid #d2a36c;
 	
 }
+.wan_tab a{
+	text-decoration: none;
+}
  .sp2{
 	position: absolute;
     top: 160px;
