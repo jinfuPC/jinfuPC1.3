@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="../../../../../Style/css/reset.css">
   <link rel="stylesheet" href="../../../../../Style/css/ycw_style.css">
   <link rel="stylesheet" href="../../../../../Style/css/wan_style.css" />
+  <link rel="stylesheet" href="../../../../../Style/css/new_laydate.css" />
   <script type="text/javascript" src="../../../../../Style/js/jquery-1.8.0.min.js"></script>
   <script type="text/javascript" src="../../../../../Style/js/jquery.SuperSlide.2.1.1.js"></script>
+  <script src="../../../../../Style/js/laydate.js"></script>
 </head>
 <body>
   <div class="ycw_ov_wrapper ycw_clearFix">
@@ -23,7 +25,91 @@
         <div class="bd">
           <!--财行优选-->
           <div>
-            财行优选内容区
+          	<!--账户余额-->
+          	<div class="wan_balance">
+          			<p>
+          				<span>8888.00</span><br />
+          				账户余额
+          			</p>
+          	</div>
+          	<!--日历-->
+          	<div class="wan_zjgl_time">
+								<select id="type">
+									<option value="">请选择事件类型</option>
+										<option value="3">充值</option>
+										<option value="6">出借冻结</option>
+										<option value="7">管理员操作</option>
+										<option value="9">回款</option>
+										<option value="11">还款</option>																	
+								</select>
+								<span class="inline" id="demo">
+									<input id="start" class="laydate-icon" value="起始时间" placeholder="">
+									至 <input id="end" class="laydate-icon" value="结束时间" placeholder="">
+								</span>
+	              <a class="colink" href="">查看</a>
+	              <a href="#" class="download">下载</a>
+						</div>
+          	<!--表格-->
+          	<div class="wan_content">
+								<table class="ssh_customers">
+									<tbody>
+										<tr>
+											<th>发生日期</th>
+											<th>类型</th>
+											<th>影响金额</th>
+											<th>可用余额</th>
+											<th>冻结金额</th>
+											<th>待收金额</th>
+											<th>说明</th>
+										</tr>
+										<tr>
+											<td>2017-12-02</td>
+											<td>56563</td>
+											<td>8888888.00</td>
+											<td>888880.0</td>
+											<td>1545233.29</td>
+											<td>1547400.29</td>
+											<td>8392标地复审通过，目标利息转为待收利息</td>
+										</tr>
+										<tr>
+											<td>2017-12-02</td>
+											<td>56563</td>
+											<td>8888888.00</td>
+											<td>888880.0</td>
+											<td>1545233.29</td>
+											<td>1547400.29</td>
+											<td>8392标地复审通过，目标利息转为待收利息</td>
+										</tr>
+										<tr>
+											<td>2017-12-02</td>
+											<td>56563</td>
+											<td>8888888.00</td>
+											<td>888880.0</td>
+											<td>1545233.29</td>
+											<td>1547400.29</td>
+											<td>8392标地复审通过，目标利息转为待收利息</td>
+										</tr>
+										<tr>
+											<td>2017-12-02</td>
+											<td>56563</td>
+											<td>8888888.00</td>
+											<td>888880.0</td>
+											<td>1545233.29</td>
+											<td>1547400.29</td>
+											<td>8392标地复审通过，目标利息转为待收利息</td>
+										</tr>
+										<tr>
+											<td>2017-12-02</td>
+											<td>56563</td>
+											<td>8888888.00</td>
+											<td>888880.0</td>
+											<td>1545233.29</td>
+											<td>1547400.29</td>
+											<td>8392标地复审通过，目标利息转为待收利息</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
           </div>
           <!--网贷产品-->
           <div>
@@ -41,5 +127,37 @@
       delayTime: 500
     });
   </script>
+  <script type="text/javascript">
+		!function(){
+			laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+				laydate({elem: '#demo'});//绑定元素
+			}();								
+			//日期范围限制
+				var start = {
+					elem: '#start',
+					format: 'YYYY-MM-DD',
+					//min: laydate.now(), //设定最小日期为当前日期
+					//max: laydate.now(), //最大日期
+					istime: true,
+					istoday: false,
+					choose: function(datas){
+					//end.min = datas; //开始日选好后，重置结束日的最小日期
+					end.start = datas //将结束日的初始值设定为开始日
+					}
+				};
+				var end = {
+					elem: '#end',
+					format: 'YYYY-MM-DD',
+					min: laydate.now(),
+					//max: laydate.now(),
+					istime: true,
+					istoday: false,
+					choose: function(datas){
+					start.max = datas; //结束日选好后，充值开始日的最大日期
+					}
+				};
+					laydate(start);
+					laydate(end);												
+	</script>
 </body>
 </html>
