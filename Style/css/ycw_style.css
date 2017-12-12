@@ -1,4 +1,5 @@
 /*.....ycw_style_start.....*/
+/*----账户总览----*/
 body{
   background-color: #f3f3f3;
 }
@@ -18,7 +19,7 @@ body{
 }
 .ycw_ov_index{
   width: 998px;
-  height: 588px;
+  height: auto;
   float: right;
   background-color: #fff;
 }
@@ -88,4 +89,70 @@ body{
 .asset_wrapper .total_amount{
   color: #d2a36b;
 }
+/*----账户总览----*/
+/*----投资管理----*/
+.ycw_ov_index .invest_tab{
+  margin: 30px 0 0 30px;
+  background-color: #f9f9f9;
+}
+.invest_tab .tab_item{
+  width: 180px;
+  height: 48px;
+  float: left;
+  font-size: 18px;
+  color: #555;
+  line-height: 48px;
+  text-align: center;
+}
+.invest_tab .tab_item.on{
+  color: #d2a36b;
+  background-color: #fff;
+  border-top: 2px solid #d2a36b;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ycw_ov_index .bd{
+  background-color: #fff;
+}
+.ycw_ov_index .item_status{
+  padding-top: 30px;
+}
+.ycw_ov_index .status_title{
+  width: 130px;
+  height: 50px;
+  font-size: 14px;
+  color: #555;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+}
+.ycw_ov_index .cls_item{
+  width: 85px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+  font-size: 14px;
+  color: #898989;
+  text-align: center;
+}
+.ycw_ov_index .cls_item.on{
+  color: #d2a36b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----投资管理----*/
 /*.....ycw_style-end.....*/
