@@ -1,14 +1,216 @@
+<link rel="stylesheet" type="text/css" href="../../../../../Style/css/reset.css"/>
 <link rel="stylesheet" type="text/css" href="../../../../../Style/css/zwj_style.css"/>
+<script src="../../../../../Style/js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
 </head>
-<div class="zwj_bre_nav">
-	<p>当前位置：账户首页</p>
-</div>
-<div class="zwj_c_wrap">
+<style type="text/css">
+	*{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	.nav_lists li{
+		font-size: 14px;
+	}
+	.nav_lists .p_nav{
+		display: block;
+	    height: 52px;
+	    line-height: 52px;
+	    width: 100%;
+	    cursor: pointer;
+	    padding: 7px 0;
+	}
+	.nav_lists .p_nav a{
+		display: block;
+		margin-left: 10px;
+	    padding-left: 34px;
+		width: 183px;
+		height: 38px;
+		line-height: 38px;
+		color: #484848;
+	}
+	.nav_lists .p_nav i{
+		display: inline-block;
+	    width: 16px;
+	    height: 20px;
+	    background: url(../../../../../Style/images/nav_icon.png) no-repeat center;
+	    position: relative;
+	    top: 5px;
+	}
+	.p_nav:hover a{
+		color: #D2A36C;
+	}
+	.nav_lists .p_nav .ie1{
+		left: -10px;
+		background-position-y: -80px;
+	}
+	.nav_lists .p_nav .ir1{
+		left: 35px;
+
+	    height: 10px;
+	    top: 0px;
+	}	
+	.p_nav:hover .ie1{
+		background-position-y: -160px;
+	}
+	/*.p_nav:hover .ir1{
+		background-position-y: -290px;
+	}*/
+	.nav_lists .p_nav .ie2{
+		left: -10px;
+		background-position-y: -100px;
+	}	
+	.p_nav:hover .ie2{
+		background-position-y: -180px;
+	}
+	.nav_lists .p_nav .ie3{
+		left: -10px;
+		background-position-y: -120px;
+	}	
+	.p_nav:hover .ie3{
+		background-position-y: -200px;
+	}
+	.nav_lists .p_nav .ie4{
+		left: -10px;
+		background-position-y: -140px;
+	}	
+	.p_nav:hover .ie4{
+		background-position-y: -220px;
+	}
+	.nav_lists .p_nav .ir2{
+		left: 35px;
+
+	    height: 10px;
+	    top: 0px;
+	}	
+	/*.p_nav:hover .ir2{
+		background-position-y: -290px;
+	}*/
+	
+	
+	.nav_lists .s_nav{		
+		background: #fafafa;
+	}
+	.nav_lists .s_nav a{
+		padding-left: 60px;
+		display: block;
+		height: 52px;
+		width: 100%;
+		color: #898989;
+		line-height: 52px;
+	}
+	.nav_lists .s_nav a:hover{
+		color: #d2a36c;
+	}
+	.nav_lists .p_active a{
+		position: relative;
+		background: #dfb890;    		
+	    color: #fff;
+	}
+	.nav_lists .p_active a:after{
+		position: absolute;
+	    content: "";
+	    background: url(../../../../../Style/images/rig_tri.png) no-repeat 0;
+	    width: 8px;
+	    height: 12px;
+	    right: -8px;
+	    top: 13px;
+	}
+	.nav_lists .p_active .ie1{
+		background-position-y:0;
+	}
+	/*.nav_lists .p_active .ir1{
+		background-position-y: -250px;
+	}*/
+	.nav_lists .p_active .ie2{
+		background-position-y:-20px;
+	}
+	.nav_lists .p_active .ie3{
+		background-position-y:-40px;
+	}
+	.nav_lists .p_active .ie4{
+		background-position-y:-60px;
+	}
+	/*.nav_lists .p_active .ir2{
+		background-position-y: -250px;
+	}*/
+	.nav_lists .p_active+.s_nav .a_active{
+		color: #d2a36c;
+	}
+	
+	
+	.nav_lists .p_nav a .iri{
+		   background-position-y: -260px;
+	}
+	.nav_lists .p_active a .iri{
+		    background-position-y: -240px;
+	}
+	
+</style>
 	<div class="zwj_c_left">
-	
+		<ul class="nav_lists">
+			<li>
+				<span class="p_active p_nav p_tle" slide="down">
+					<a class="nav_icon" href="javascript:;"><i class="ile ie1"></i>个人中心<i class="iri ir1"></i></a>
+				</span>
+				<div class="s_nav">
+					<a class="a_active" href="javascript:;">账户总览</a>
+					<a href="javascript:;">财行优选</a>
+					<a href="javascript:;">网贷产品</a>
+				</div>
+			</li>
+			<li>
+				<span class="p_nav p_tle">
+					<a class="nav_icon" href="javascript:;"><i class="ile ie2"></i>投资管理</a>
+				</span>
+			</li>
+			<li>
+				<span class="p_nav p_tle">
+					<a class="nav_icon" href="javascript:;"><i class="ile ie3"></i>资金管理</a>					
+				</span>
+			</li>
+			<li>
+				<span class="p_nav p_tle" slide="down">
+					<a class="nav_icon" href="javascript:;"><i class="ile ie4"></i>我的奖励<i class="iri ir2"></i></a>					
+				</span>
+				<div class="s_nav">
+					<a href="javascript:;">奖励</a>
+					<a href="javascript:;">积分</a>
+					<a href="javascript:;">VIP专区</a>
+				</div>
+			</li>
+		</ul>
 	</div>
-	
-</div>
+<script type="text/javascript">
+	$('body').bind("selectstart", function () { return false; });
+	$(".p_tle").click(function(){
+		$(".p_tle").removeClass("p_active");
+		$(this).addClass("p_active");
+		var slide = $(this).attr("slide");
+		if(slide == 'down'){
+			if($(this).hasClass("p_active")){
+				$(this).find(".iri").css({"transform":"rotate(180deg)"});
+			}else if(!($(this).hasClass("p_active"))){
+				$(this).find(".iri").css({"transform":"rotate(0deg)"});
+			}
+			$(this).siblings(".s_nav").slideUp();
+			$(this).addClass("p_active").attr("slide","up");
+			
+		}else if(slide == 'up'){
+			if($(this).hasClass("p_active")){
+				$(this).find(".iri").css({"transform":"rotate(0deg)"});
+			}else if(!($(this).hasClass("p_active"))){
+				$(this).find(".iri").css({"transform":"rotate(0deg)"});
+			}
+			$(this).siblings(".s_nav").slideDown();
+			$(this).attr("slide","down");
+		}
+	})
+	$(".s_nav a").click(function(){
+		$(".p_tle").removeClass("p_active");
+		$(".s_nav a").removeClass("a_active");
+		$(this).addClass("a_active").parents(".s_nav").siblings(".p_tle").addClass("p_active");
+	})
+</script>
