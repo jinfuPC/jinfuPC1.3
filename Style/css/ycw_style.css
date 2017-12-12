@@ -92,7 +92,10 @@ body{
 /*----账户总览----*/
 /*----投资管理----*/
 .ycw_ov_index .invest_tab{
-  margin: 30px 0 0 30px;
+  margin: 30px 0 0;
+}
+.invest_tab .hd{
+	margin-left: 30px;
   background-color: #f9f9f9;
 }
 .invest_tab .tab_item{
@@ -119,7 +122,7 @@ body{
   padding-top: 30px;
 }
 .ycw_ov_index .status_title{
-  width: 130px;
+  width: 190px;
   height: 50px;
   font-size: 14px;
   color: #555;
@@ -134,7 +137,7 @@ body{
   line-height: 50px;
   font-size: 14px;
   color: #898989;
-  text-align: center;
+  text-align: left;
 }
 .ycw_ov_index .cls_item.on{
   color: #d2a36b;

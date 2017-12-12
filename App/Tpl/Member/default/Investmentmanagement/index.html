@@ -1,91 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
-  <title>我的账户--投资管理</title>
-  <link rel="stylesheet" href="../../../../../Style/css/reset.css">
-  <link rel="stylesheet" href="../../../../../Style/css/ycw_style.css">
-  <script type="text/javascript" src="../../../../../Style/js/jquery-1.8.0.min.js"></script>
-  <script type="text/javascript" src="../../../../../Style/js/jquery.SuperSlide.2.1.1.js"></script>
-</head>
-<body>
-  <div class="ycw_ov_wrapper ycw_clearFix">
-    <div class="ycw_ov_index">
-      <div class="invest_tab">
-        <div class="hd">
-          <ul class="ycw_clearFix">
-            <li class="tab_item tab_item_1 on">财行优选</li>
-            <li class="tab_item tli_item_2">网贷产品</li>
-          </ul>
-        </div>
-        <div class="bd">
-          <!--财行优选-->
-          <div>
-            <!--项目状态-->
-            <div class="item_status ycw_clearFix">
-              <h4 class="status_title">项目状态:</h4>
-              <ul class="status_cls ycw_clearFix">
-                <li class="cls_item on">全部</li>
-                <li class="cls_item">撮合中</li>
-                <li class="cls_item">复审中</li>
-                <li class="cls_item">还款中</li>
-                <li class="cls_item">已完成</li>
-              </ul>
-            </div>
-            <!--项目类型-->
-            <div class="item_type ycw_clearFix">
-              <h4 class="status_title">项目类型:</h4>
-              <ul class="status_cls ycw_clearFix">
-                <li class="cls_item on">全部</li>
-                <li class="cls_item">一月标</li>
-                <li class="cls_item">季度标</li>
-                <li class="cls_item">半年标</li>
-                <li class="cls_item">年度标</li>
-              </ul>
-            </div>
-          </div>
-          <!--网贷产品-->
-          <div>
-            <!--项目状态-->
-            <div class="item_status ycw_clearFix">
-              <h4 class="status_title">项目状态:</h4>
-              <ul class="status_cls ycw_clearFix">
-                <li class="cls_item on">全部</li>
-                <li class="cls_item">撮合中</li>
-                <li class="cls_item">复审中</li>
-                <li class="cls_item">还款中</li>
-                <li class="cls_item">已完成</li>
-              </ul>
-            </div>
-            <!--项目类型-->
-            <div class="item_type ycw_clearFix">
-              <h4 class="status_title">项目类型:</h4>
-              <ul class="status_cls ycw_clearFix">
-                <li class="cls_item on">全部</li>
-                <li class="cls_item">一月标</li>
-                <li class="cls_item">季度标</li>
-                <li class="cls_item">半年标</li>
-                <li class="cls_item">年度标</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        </div>
-    </div>
-  </div>
-  <script type="text/javascript">
-    $(function(){
-      $('.invest_tab').slide({
-        effect:'fade',
-        autoPlay:false,
-        trigger:'click',
-        delayTime:700
-      });
-      $('.cls_item').on('click', function(){
-        $(this).addClass('on').siblings().removeClass('on');
-      })
-    })
-  </script>
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+		<title>我的账户--投资管理</title>
+		<link rel="stylesheet" href="../../../../../Style/css/reset.css">
+		<link rel="stylesheet" href="../../../../../Style/css/ycw_style.css">
+		<link rel="stylesheet" href="../../../../../Style/css/wan_style.css" />
+		<script type="text/javascript" src="../../../../../Style/js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="../../../../../Style/js/jquery.SuperSlide.2.1.1.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="ycw_ov_wrapper ycw_clearFix">
+			<div class="ycw_ov_index">
+				<div class="invest_tab">
+					<div class="hd">
+						<ul class="ycw_clearFix">
+							<li class="tab_item tab_item_1 on">财行优选</li>
+							<li class="tab_item tli_item_2">网贷产品</li>
+						</ul>
+					</div>
+					<div class="bd">
+						<!--财行优选-->
+						<div>
+							<!--项目状态-->
+							<div class="item_status ycw_clearFix">
+								<h4 class="status_title">项目状态:</h4>
+								<ul class="status_cls ycw_clearFix">
+									<li class="cls_item on">全部</li>
+									<li class="cls_item">撮合中</li>
+									<li class="cls_item">复审中</li>
+									<li class="cls_item">还款中</li>
+									<li class="cls_item">已完成</li>
+								</ul>
+							</div>
+							<!--项目类型-->
+							<div class="item_type ycw_clearFix">
+								<h4 class="status_title">项目类型:</h4>
+								<ul class="status_cls ycw_clearFix">
+									<li class="cls_item on">全部</li>
+									<li class="cls_item">一月标</li>
+									<li class="cls_item">季度标</li>
+									<li class="cls_item">半年标</li>
+									<li class="cls_item">年度标</li>
+								</ul>
+							</div>
+							<!--财行优选表格-->
+							<div class="wan_content">
+								<table class="ssh_customers">
+									<tbody>
+										<tr>
+											<th>创建时间</th>
+											<th>标号</th>
+											<th>认购金额</th>
+											<th>预期年化利率</th>
+											<th>预期利息</th>
+											<th>已还金额</th>
+											<th>已还/总期数</th>
+											<th>状态</th>
+										</tr>
+										<tr>
+											<td>2017-12-02</td>
+											<td>56563</td>
+											<td>8888888.00</td>
+											<td>12%</td>
+											<td>0.29</td>
+											<td>5000.29</td>
+											<td>1/1</td>
+											<td>已完成</td>
+										</tr>
+										<tr>
+											<td>2017-12-02</td>
+											<td>56563</td>
+											<td>8888888.00</td>
+											<td>12%</td>
+											<td>0.29</td>
+											<td>5000.29</td>
+											<td>1/1</td>
+											<td>已完成</td>
+										</tr>
+										<tr>
+											<td>2016-06-07</td>
+											<td>提现</td>
+											<td>677.45</td>
+											<td>2000.00</td>
+											<td>20018.11</td>
+											<td>借款编号656845利息第1期</td>
+											<td>1/1</td>
+											<td>已完成</td>
+										</tr>
+										<tr>
+											<td>2016-06-07</td>
+											<td>提现</td>
+											<td>677.45</td>
+											<td>2000.00</td>
+											<td>20018.11</td>
+											<td>借款编号656845利息第1期</td>
+											<td>1/1</td>
+											<td>已完成</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--网贷产品-->
+						<div>
+							<!--项目状态-->
+							<div class="item_status ycw_clearFix">
+								<h4 class="status_title">项目状态:</h4>
+								<ul class="status_cls ycw_clearFix">
+									<li class="cls_item on">全部</li>
+									<li class="cls_item">撮合中</li>
+									<li class="cls_item">复审中</li>
+									<li class="cls_item">还款中</li>
+									<li class="cls_item">已完成</li>
+								</ul>
+							</div>
+							<!--项目类型-->
+							<div class="item_type ycw_clearFix">
+								<h4 class="status_title">项目类型:</h4>
+								<ul class="status_cls ycw_clearFix">
+									<li class="cls_item on">全部</li>
+									<li class="cls_item">一月标</li>
+									<li class="cls_item">季度标</li>
+									<li class="cls_item">半年标</li>
+									<li class="cls_item">年度标</li>
+								</ul>
+							</div>
+							<!--表格-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$('.invest_tab').slide({
+					effect: 'fade',
+					autoPlay: false,
+					trigger: 'click',
+					delayTime: 700
+				});
+				$('.cls_item').on('click', function() {
+					$(this).addClass('on').siblings().removeClass('on');
+				})
+			})
+		</script>
+	</body>
+
 </html>
