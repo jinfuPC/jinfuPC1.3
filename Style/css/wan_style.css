@@ -110,7 +110,6 @@
 	color: #555555;
 	font-size: 14px;
 }
-
 .wan_content .ssh_customers th {
 	text-align: center;
 	background-color: #f8f8f8;
@@ -119,9 +118,91 @@
 	padding: 18px 7px;
 	font-weight: normal;
 }
-
-
-
+/*网贷产品*/
+.wan_r{
+	width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+.wan_r1{
+	text-align: center;
+	padding: 100px 30px 260px;
+	background: white;
+	color: #666666;
+	font-size: 14px;
+}
+.wan_r1 span{
+	color: #D2A36B;
+}
+/*资金管理——财行优选*/
+.wan_balance {
+	width: 100%;
+	text-align: center;
+	height: auto;
+	padding: 30px 0px 0px 0px;
+}
+.wan_balance p{
+	font-size: 18px;
+	color: #3E3E3E;
+}
+.wan_balance p span{
+	color: #D2A36B;
+	font-size: 34px;
+	padding-bottom: 10px;
+    display: inline-block;
+}
+.wan_zjgl_time{
+	width: 100%;
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	
+}
+.wan_zjgl_time a{
+	text-decoration: none;
+}
+.wan_zjgl_time #type {
+    width: 275px;
+    height: 34px;
+    line-height: 34px;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    color: #999;
+    padding-left: 10px;
+   
+}
+.wan_zjgl_time .laydate-icon{
+    line-height: 34px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    color: #999;
+    width: 130px;
+    height: 34px;
+    padding-left: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.laydate-icon{border:1px solid #C6C6C6;background:url(/Style/images/icon.png) no-repeat right center;}
+.wan_zjgl_time .colink{
+	display: inline-block;
+    width: 206;
+    width: 106px;
+    height: 40px;
+    background: pink;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    background: #d3ab6a;
+    font-size: 14px;
+    color: white;
+}
+.wan_zjgl_time .download{
+	display: inline-block;
+    color: #d2a36b;
+    margin-left: 38px;
+    font-size: 14px;
+}
 
 
 
