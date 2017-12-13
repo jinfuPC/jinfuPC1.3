@@ -12,8 +12,8 @@ html,body{
    body {  
        margin-left: calc(100vw - 100%);  
    }  
-}*/
-html {
+}*
+/*html {
   overflow-y: scroll;
 }
 :root {
@@ -22,11 +22,11 @@ html {
 }
 /*:root body {
   position: absolute;
-}*/
+}
 body {
   width: 100vw;
   overflow: hidden;
-}
+}*/
 
 
 /*左侧公共导航:zwj-start-*/
