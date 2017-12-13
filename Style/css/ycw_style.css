@@ -20,6 +20,7 @@ body{
 .ycw_ov_index{
   width: 998px;
   height: auto;
+  min-height: 587px;
   float: right;
   background-color: #fff;
 }
