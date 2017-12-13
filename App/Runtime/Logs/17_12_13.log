@@ -1,0 +1,465 @@
+[ 2017-12-13T10:04:55+08:00 ] /t/ | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:04:55+08:00 ] /t/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000678s ]
+[ 2017-12-13T10:04:55+08:00 ] /t/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000754s ]
+[ 2017-12-13T10:13:08+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:13:08+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000684s ]
+[ 2017-12-13T10:13:08+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000744s ]
+[ 2017-12-13T10:13:34+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:13:34+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000771s ]
+[ 2017-12-13T10:13:34+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000881s ]
+[ 2017-12-13T10:21:45+08:00 ] / | ERR: (ThinkException) Access denied for user 'root'@'localhost' (using password: NO)
+[ 2017-12-13T10:21:45+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:21:45+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000962s ]
+[ 2017-12-13T10:21:45+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001050s ]
+[ 2017-12-13T10:21:45+08:00 ] / | NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) DbMysql.class.php 第 67 行.
+[ 2017-12-13T10:21:45+08:00 ] / | NOTIC: [8] Undefined index:  class ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:21:45+08:00 ] / | NOTIC: [8] Undefined index:  type ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:21:45+08:00 ] / | NOTIC: [8] Undefined index:  args ThinkException.class.php 第 80 行.
+[ 2017-12-13T10:21:45+08:00 ] / | NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed ThinkException.class.php 第 80 行.
+[ 2017-12-13T10:21:45+08:00 ] / | NOTIC: [8] Array to string conversion ThinkException.class.php 第 80 行.
+[ 2017-12-13T10:21:45+08:00 ] / | NOTIC: [8] Undefined index:  class ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:21:45+08:00 ] / | NOTIC: [8] Undefined index:  type ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:21:45+08:00 ] / | NOTIC: [8] Undefined index:  class ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:21:45+08:00 ] / | NOTIC: [8] Undefined index:  type ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:22:34+08:00 ] / | ERR: (ThinkException) 模板不存在[D:\phpStudy\WWW\jinfuPC1.3/App/Tpl/Home/default/Index/indexqx.html]
+[ 2017-12-13T10:22:23+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:22:23+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000351s ]
+[ 2017-12-13T10:22:23+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000402s ]
+[ 2017-12-13T10:22:23+08:00 ] / | SQL: SHOW COLUMNS FROM `lzh_redlog` [ RunTime:0.010939s ]
+[ 2017-12-13T10:22:23+08:00 ] / | NOTIC: [8] Undefined variable: uid IndexAction.class.php 第 354 行.
+[ 2017-12-13T10:22:23+08:00 ] / | SQL: SELECT * FROM `lzh_redlog` WHERE uid= and red_type=9 LIMIT 1   [ RunTime:0.010538s ]
+[ 2017-12-13T10:22:23+08:00 ] / | NOTIC: [8] Undefined variable: uid IndexAction.class.php 第 357 行.
+[ 2017-12-13T10:22:23+08:00 ] / | SQL: SHOW COLUMNS FROM `lzh_advertisement` [ RunTime:0.010766s ]
+[ 2017-12-13T10:22:23+08:00 ] / | SQL: SELECT `image`,`href`,`order_sx`,`id` FROM `lzh_advertisement` WHERE is_show=1 and flog=2 ORDER BY order_sx asc  [ RunTime:0.007791s ]
+[ 2017-12-13T10:22:34+08:00 ] / | SQL: SHOW COLUMNS FROM `lzh_article` [ RunTime:0.009012s ]
+[ 2017-12-13T10:22:34+08:00 ] / | SQL: SELECT * FROM `lzh_article` WHERE type_id=9 and art_indexradio=1 ORDER BY id desc LIMIT 3   [ RunTime:0.018328s ]
+[ 2017-12-13T10:22:34+08:00 ] / | SQL: SELECT * FROM `lzh_article` WHERE type_id=30 and art_indexradio=1 ORDER BY id desc LIMIT 3   [ RunTime:0.017294s ]
+[ 2017-12-13T10:22:34+08:00 ] / | SQL: SELECT * FROM `lzh_article` WHERE type_id=34 and art_indexradio=1 ORDER BY id desc LIMIT 3   [ RunTime:0.018535s ]
+[ 2017-12-13T10:22:34+08:00 ] / | SQL: SELECT * FROM `lzh_article` WHERE type_id=9 ORDER BY id desc LIMIT 1   [ RunTime:0.009506s ]
+[ 2017-12-13T10:22:34+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:22:34+08:00 ] / | NOTIC: [8] Undefined index:  class ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:22:34+08:00 ] / | NOTIC: [8] Undefined index:  type ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:22:34+08:00 ] / | NOTIC: [8] Undefined index:  class ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:22:34+08:00 ] / | NOTIC: [8] Undefined index:  type ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:22:34+08:00 ] / | NOTIC: [8] Undefined index:  args ThinkException.class.php 第 80 行.
+[ 2017-12-13T10:22:34+08:00 ] / | NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed ThinkException.class.php 第 80 行.
+[ 2017-12-13T10:22:34+08:00 ] / | NOTIC: [8] Array to string conversion ThinkException.class.php 第 80 行.
+[ 2017-12-13T10:22:34+08:00 ] / | NOTIC: [8] Undefined index:  class ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:22:34+08:00 ] / | NOTIC: [8] Undefined index:  type ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:22:34+08:00 ] / | NOTIC: [8] Undefined index:  class ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:22:34+08:00 ] / | NOTIC: [8] Undefined index:  type ThinkException.class.php 第 79 行.
+[ 2017-12-13T10:23:38+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:23:38+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000411s ]
+[ 2017-12-13T10:23:38+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000472s ]
+[ 2017-12-13T10:23:38+08:00 ] / | SQL: SHOW COLUMNS FROM `lzh_redlog` [ RunTime:0.008065s ]
+[ 2017-12-13T10:23:38+08:00 ] / | NOTIC: [8] Undefined variable: uid IndexAction.class.php 第 354 行.
+[ 2017-12-13T10:23:38+08:00 ] / | SQL: SELECT * FROM `lzh_redlog` WHERE uid= and red_type=9 LIMIT 1   [ RunTime:0.011885s ]
+[ 2017-12-13T10:23:38+08:00 ] / | NOTIC: [8] Undefined variable: uid IndexAction.class.php 第 357 行.
+[ 2017-12-13T10:23:38+08:00 ] / | SQL: SHOW COLUMNS FROM `lzh_advertisement` [ RunTime:0.008674s ]
+[ 2017-12-13T10:23:38+08:00 ] / | SQL: SELECT `image`,`href`,`order_sx`,`id` FROM `lzh_advertisement` WHERE is_show=1 and flog=2 ORDER BY order_sx asc  [ RunTime:0.011219s ]
+[ 2017-12-13T10:23:48+08:00 ] / | SQL: SHOW COLUMNS FROM `lzh_article` [ RunTime:0.009275s ]
+[ 2017-12-13T10:23:48+08:00 ] / | SQL: SELECT * FROM `lzh_article` WHERE type_id=9 and art_indexradio=1 ORDER BY id desc LIMIT 3   [ RunTime:0.239808s ]
+[ 2017-12-13T10:23:48+08:00 ] / | SQL: SELECT * FROM `lzh_article` WHERE type_id=30 and art_indexradio=1 ORDER BY id desc LIMIT 3   [ RunTime:0.057247s ]
+[ 2017-12-13T10:23:49+08:00 ] / | SQL: SELECT * FROM `lzh_article` WHERE type_id=34 and art_indexradio=1 ORDER BY id desc LIMIT 3   [ RunTime:0.727946s ]
+[ 2017-12-13T10:23:49+08:00 ] / | SQL: SELECT * FROM `lzh_article` WHERE type_id=9 ORDER BY id desc LIMIT 1   [ RunTime:0.048595s ]
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.003950s ]
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.004123s ]
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.041722s ]
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.041886s ]
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.001844s ]
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.002063s ]
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000592s ]
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000876s ]
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.005604s ]
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.001034s ]
+[ 2017-12-13T10:23:49+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.001092s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000585s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000636s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.001039s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.001106s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.008783s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008817s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000433s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000480s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000487s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000614s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002115s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000639s ]
+[ 2017-12-13T10:25:39+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000669s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001280s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001456s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000998s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.001095s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.007574s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007632s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000348s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000376s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000238s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000468s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001563s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000490s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000538s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001031s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001170s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000788s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000876s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.010698s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010754s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000229s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000248s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000157s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000310s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001030s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000322s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000352s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000382s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000432s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000292s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000326s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.004588s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004627s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000203s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000217s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000134s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000323s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000954s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000279s ]
+[ 2017-12-13T10:25:40+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000305s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001059s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001210s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000919s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.001055s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.005424s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.005474s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000263s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000272s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000170s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000332s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001131s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000347s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000379s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000349s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000398s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000311s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000347s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.004479s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004517s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000239s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000220s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000138s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000271s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000946s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000311s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000337s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000755s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000862s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000641s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000718s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.009156s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009225s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000428s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000463s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000296s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000584s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001933s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000608s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000665s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000363s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000417s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000291s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000325s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.004442s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004486s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000196s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000212s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000165s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000265s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000912s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000277s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000303s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000857s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000978s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000725s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000807s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.010805s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010901s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000516s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000542s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000341s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000665s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002253s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000690s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000756s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000371s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000439s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000395s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000447s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.004531s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004564s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000199s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000246s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000135s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000268s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000920s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000279s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000322s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000916s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001047s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000778s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000873s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.011146s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011236s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000527s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000571s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000356s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000706s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002358s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000733s ]
+[ 2017-12-13T10:25:41+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000802s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000871s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000952s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.001180s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.001236s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.013506s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013565s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000653s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000772s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000536s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000745s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002835s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000767s ]
+[ 2017-12-13T10:29:53+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000813s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000619s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000676s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000847s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000896s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.009646s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009690s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000464s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000561s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000378s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000530s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002026s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000547s ]
+[ 2017-12-13T10:30:07+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000581s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001425s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001559s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.002006s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.002099s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.010497s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010561s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000553s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000795s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000447s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000864s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002766s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000887s ]
+[ 2017-12-13T10:35:50+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000923s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000616s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000701s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000520s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000576s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.007415s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007471s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000346s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.001047s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000476s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.001180s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003192s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.001151s ]
+[ 2017-12-13T10:37:12+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.001200s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001170s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001276s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.001782s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.001908s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.011395s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011451s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000494s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000505s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000407s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000569s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002070s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.000588s ]
+[ 2017-12-13T10:39:00+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.000622s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ route_check ] --START--
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.001414s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.001508s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001346s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001404s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.001592s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001658s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.008046s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008093s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000419s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000576s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000329s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000627s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002029s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000674s ]
+[ 2017-12-13T10:39:10+08:00 ] /Member/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000701s ]
+[ 2017-12-13T10:39:37+08:00 ] /Member/Fundmanagement | ERR: (ThinkException) 无法加载模块Fundmanagement
+[ 2017-12-13T10:41:04+08:00 ] /Member/Fundmanagement | ERR: (ThinkException) 无法加载模块Fundmanagement
+[ 2017-12-13T10:41:05+08:00 ] /Member/Fundmanagement | ERR: (ThinkException) 无法加载模块Fundmanagement
+[ 2017-12-13T10:41:22+08:00 ] /Member/Fundmanagement | ERR: (ThinkException) 无法加载模块Fundmanagement
+[ 2017-12-13T10:41:22+08:00 ] /favicon.ico | ERR: (ThinkException) 无法加载模块Favicon.ico
+[ 2017-12-13T10:41:22+08:00 ] /Member/Fundmanagement | ERR: (ThinkException) 无法加载模块Fundmanagement
+[ 2017-12-13T10:41:22+08:00 ] /favicon.ico | ERR: (ThinkException) 无法加载模块Favicon.ico
+[ 2017-12-13T10:41:22+08:00 ] /Member/Fundmanagement | ERR: (ThinkException) 无法加载模块Fundmanagement
+[ 2017-12-13T10:41:22+08:00 ] /favicon.ico | ERR: (ThinkException) 无法加载模块Favicon.ico
+[ 2017-12-13T10:41:48+08:00 ] /Member/Overview | ERR: (ThinkException) 无法加载模块Overview
+[ 2017-12-13T10:41:48+08:00 ] /favicon.ico | ERR: (ThinkException) 无法加载模块Favicon.ico
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ route_check ] --START--
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Run CheckRoute Behavior [ RunTime:0.001292s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ route_check ] --END-- [ RunTime:0.001380s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000925s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000977s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Run LocationTemplate Behavior [ RunTime:0.001265s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ view_template ] --END-- [ RunTime:0.001326s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Run ParseTemplate Behavior [ RunTime:0.009249s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009308s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Run ContentReplace Behavior [ RunTime:0.000700s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Run TokenBuild Behavior [ RunTime:0.000763s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000639s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Run ShowRuntime Behavior [ RunTime:0.000862s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003110s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Run ShowPageTrace Behavior [ RunTime:0.000904s ]
+[ 2017-12-13T10:42:32+08:00 ] /Member/index/Overview | INFO: Tag[ view_end ] --END-- [ RunTime:0.000957s ]
+[ 2017-12-13T10:42:32+08:00 ] /favicon.ico | ERR: (ThinkException) 无法加载模块Favicon.ico
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ route_check ] --START--
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Run CheckRoute Behavior [ RunTime:0.000970s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ route_check ] --END-- [ RunTime:0.001053s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000599s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000649s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Run LocationTemplate Behavior [ RunTime:0.001480s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ view_template ] --END-- [ RunTime:0.001540s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Run ParseTemplate Behavior [ RunTime:0.010354s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010419s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Run ContentReplace Behavior [ RunTime:0.000739s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Run TokenBuild Behavior [ RunTime:0.001034s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000590s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Run ShowRuntime Behavior [ RunTime:0.001147s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003656s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Run ShowPageTrace Behavior [ RunTime:0.001066s ]
+[ 2017-12-13T10:42:55+08:00 ] /Member/index/Overview | INFO: Tag[ view_end ] --END-- [ RunTime:0.001105s ]
+[ 2017-12-13T10:42:55+08:00 ] /favicon.ico | ERR: (ThinkException) 无法加载模块Favicon.ico
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ route_check ] --START--
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Run CheckRoute Behavior [ RunTime:0.000762s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ route_check ] --END-- [ RunTime:0.000816s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ app_begin ] --START--
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000558s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000588s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ view_template ] --START--
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Run LocationTemplate Behavior [ RunTime:0.000454s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ view_template ] --END-- [ RunTime:0.000491s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ view_parse ] --START--
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Run ParseTemplate Behavior [ RunTime:0.009877s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009921s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ view_filter ] --START--
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Run ContentReplace Behavior [ RunTime:0.000451s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Run TokenBuild Behavior [ RunTime:0.000584s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000333s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Run ShowRuntime Behavior [ RunTime:0.000533s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001982s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ view_end ] --START--
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Run ShowPageTrace Behavior [ RunTime:0.000481s ]
+[ 2017-12-13T10:45:21+08:00 ] /Member/Overview | INFO: Tag[ view_end ] --END-- [ RunTime:0.000508s ]
+[ 2017-12-13T10:45:21+08:00 ] /favicon.ico | ERR: (ThinkException) 无法加载模块Favicon.ico
