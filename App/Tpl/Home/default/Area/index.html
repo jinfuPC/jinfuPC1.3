@@ -1,3 +1,4 @@
+<include file="./App/Tpl/Member/default/Public/header.html" />
 <link rel="stylesheet" type="text/css" href="/Style/css/reset.css"/>
 <link rel="stylesheet" type="text/css" href="/Style/css/vip.css"/>
 <div class="area_con ycw_style">
@@ -9,10 +10,7 @@
                 <a href="/member/common/login.html">登录</a>
                 <p>登录后查看您的会员权限</p>
             </div>
-          <!--<a class="left_lj">立诚贷VIP会员特权说明  >> </a> -->
-               <a class="left_lj" href='/Aboutus/biao.html'>信广金服VIP会员特权说明  >></a>
-
-          
+            <a class="left_lj" href='/Aboutus/biao.html'>信广金服VIP会员特权说明  >></a>          
         </div>
         <else/>
             <div class="dj_left2">
@@ -104,7 +102,6 @@
                 <else/>
                  <span style="left:{$left}px"></span>
                 </if>
-                <!--108/243/377/511/644/780-->
                
             </ul>
             <div class="dj_right_dl">
@@ -118,20 +115,20 @@
                 </dl>
                
                 <dl>
-                    <dt class="dt4"></dt>
+                    <dt class="dt3"></dt>
                     <dd>升级奖励</dd>
                 </dl>
                 <dl>
-                    <dt class="dt5"></dt>
+                    <dt class="dt4"></dt>
                     <dd>专属福利</dd>
                 </dl>
                 <dl>
-                    <dt class="dt6"></dt>
+                    <dt class="dt5"></dt>
                     <dd>专属权益</dd>
                 </dl>
                
                 <dl>
-                    <dt class="dt8"></dt>
+                    <dt class="dt6"></dt>
                     <dd>大额预约</dd>
                 </dl>
                  <dl>
@@ -141,23 +138,7 @@
             </div>
         </div>
     </div>
-    <h2 class="con_h2" style="color:#5d5d5d;border-bottom: 2px solid #d2a36b">VIP 专属项目<span>尊享稀缺优质资源 利息丰厚自由掌控</span></h2>
-    <!--<div class="con_dj2"><img src="/Style/images/arer/jqqd.jpg" ></div>-->
-    <!--<div class="con_dj2_2">
-       <a class="con_dj2_a">立即投资</a>
-        <div class="con_dj2_left"><p class="con_dj2_p"><span>7</span>%</p><p>预期年化收益</p></div>
-        <div class="con_dj2_right">
-
-            <h2>立诚170505字号005期</h2>
-            <p class="con_dj2_p2">
-                <span>期限：1个月</span>
-                <span>规模：20.00万元</span>
-                <span>剩余：<i>170000.00元</i></span>
-                <a><span><i style="width:70%"></i></span>70%</a>
-            </p>
-        </div>
-    </div>-->
-        <!--<div class="con_dj2"><img src="/Style/images/arer/jqqd.jpg" ></div>-->
+    <h2 class="con_h2" style="color:#5d5d5d;border-bottom: 1px solid #d2a36b">VIP 专属项目<span>尊享稀缺优质资源 利息丰厚自由掌控</span></h2>
         <volist name="borrow['list']" id = "borrow">
         <div class="con_dj2_2 ycw_conDj2">
             <!--<a class="con_dj2_a" style=" color: #999;border-color:#999" href="/invest/{$borrow.id}.html">还款中</a>
@@ -196,7 +177,7 @@
     </volist>
     </if>
     
-    <h2 class="con_h2" style="color:#5d5d5d;border-bottom: 2px solid #d2a36b">VIP 升级奖励<span>卓越高端定制 体验品质生活</span></h2>
+    <h2 class="con_h2" style="color:#5d5d5d;border-bottom: 1px solid #d2a36b">VIP 升级奖励<span>卓越高端定制 体验品质生活</span></h2>
     <ul class="con_dj3">
        
         <li style="cursor:auto">
@@ -228,20 +209,5 @@
         </li>
         
     </ul>
-    
-
-   <!-- <h2 class="con_h2" style="color:#2f7fbc;border-bottom: 2px solid #2f7fbc">活动专区<span style="border-left: 1px solid #2f7fbc">多元领域全面覆盖 私享全程贴心服务</span></h2>
-    <div class="con_dj4"></div>-->
-    <!--<h3 class="con_h3">合作伙伴</h3>
-    <div class="partner clearfix ">
-            
-            <img src="/Style/images/xinsy/partner/huishang1.jpg">
-         &lt;!&ndash;   <img src="/Style/images/xinsy/partner/cfca.jpg">&ndash;&gt;
-            <img src="/Style/img/l_img/l_ceca.png">
-            <img src="/Style/images/xinsy/partner/huacheng.jpg">
-            <img src="/Style/images/xinsy/partner/mifeng.jpg">
-            <img src="/Style/images/xinsy/partner/chunxue.jpg">
-            <img src="/Style/images/xinsy/partner/ancun.jpg">
-    </div>-->
-    
 </div>
+<include file="./App/Tpl/Member/default/Public/footer.html" />
