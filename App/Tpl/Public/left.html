@@ -1,216 +1,205 @@
-<link rel="stylesheet" type="text/css" href="../../../../../Style/css/reset.css"/>
-<link rel="stylesheet" type="text/css" href="../../../../../Style/css/zwj_style.css"/>
-<script src="../../../../../Style/js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
-<head>
-    <meta charset="UTF-8">
-</head>
-<style type="text/css">
-	*{
-		list-style: none;
-	}
-	a{
-		text-decoration: none;
-	}
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../../Style/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="../../../Style/css/zwj_style.css"/>
+<script src="../../../Style/js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+<style>
 	.nav_lists li{
 		font-size: 14px;
+		position: relative;
 	}
-	.nav_lists .p_nav{
+	.nav_lists li>.p_nav{
 		display: block;
-	    height: 52px;
-	    line-height: 52px;
-	    width: 100%;
-	    cursor: pointer;
-	    padding: 7px 0;
-	}
-	.nav_lists .p_nav a{
-		display: block;
-		margin-left: 10px;
-	    padding-left: 34px;
+		margin: 7px 0 7px 10px;
+	    padding-left: 22px;
 		width: 183px;
 		height: 38px;
 		line-height: 38px;
 		color: #484848;
+		cursor: pointer;
 	}
-	.nav_lists .p_nav i{
-		display: inline-block;
+	.nav_lists li>.p_nav:hover{
+		color: #d2a36c;
+	}
+	.nav_lists li>.p_nav i{
+		float:left;
+		background: url(../../../Style/images/nav_icon.png) no-repeat center;
+		position: relative;
+	}
+	.nav_lists li>.p_nav i:first-child{
+	    display: inline-block;
 	    width: 16px;
 	    height: 20px;
-	    background: url(../../../../../Style/images/nav_icon.png) no-repeat center;
-	    position: relative;
-	    top: 5px;
+	    top: 9px;
+	    margin-right: 10px;
 	}
-	.p_nav:hover a{
-		color: #D2A36C;
+	.nav_lists li>.p_nav i.iri{
+		float: right;
+		display: inline-block;
+	    width: 16px;
+	    height: 10px;
+	    top: 15px;
+	    right: 20px;
 	}
-	.nav_lists .p_nav .ie1{
-		left: -10px;
+	.nav_lists li>.p_nav p{
+		float: left;
+	}
+	
+	.nav_lists li>.s_nav{
+		overflow: hidden;
+	}
+	.nav_lists li>.s_nav a{
+	    padding-left: 58px;
+	    display: block;
+	    height: 52px;
+	    width: 100%;
+	    color: #898989;
+	    line-height: 52px;
+        text-decoration: none;
+	}
+	
+	.nav_lists li>.s_nav a:hover,.nav_lists li>.s_nav a.active{
+		color: #d2a36c;
+	}
+	
+	.nav_lists li>div.active,.nav_lists li:hover>div.active{
+		background: #dfb890;
+		color: #fff;
+	}
+	/*默认图标*/
+	.nav_lists li .p_nav .ie1{
 		background-position-y: -80px;
 	}
-	.nav_lists .p_nav .ir1{
-		left: 35px;
-
-	    height: 10px;
-	    top: 0px;
-	}	
-	.p_nav:hover .ie1{
+	.nav_lists li .p_nav .ie2{
+		background-position-y: -100px;
+	}
+	.nav_lists li .p_nav .ie3{
+		background-position-y: -120px;
+	}
+	.nav_lists li .p_nav .ie4{
+		background-position-y: -140px;
+	}
+	.nav_lists li>div i.iri{
+		background-position-y: -270px;
+	}
+	.nav_lists li>div.act i.iri{/*打开*/
+		background-position-y: -260px;
+	}
+	/*鼠标划入图标*/
+	.nav_lists li div.p_tle:hover .ie1{
 		background-position-y: -160px;
 	}
-	/*.p_nav:hover .ir1{
-		background-position-y: -290px;
-	}*/
-	.nav_lists .p_nav .ie2{
-		left: -10px;
-		background-position-y: -100px;
-	}	
-	.p_nav:hover .ie2{
+	.nav_lists li div.p_tle:hover .ie2{
 		background-position-y: -180px;
 	}
-	.nav_lists .p_nav .ie3{
-		left: -10px;
-		background-position-y: -120px;
-	}	
-	.p_nav:hover .ie3{
+	.nav_lists li div.p_tle:hover .ie3{
 		background-position-y: -200px;
 	}
-	.nav_lists .p_nav .ie4{
-		left: -10px;
-		background-position-y: -140px;
-	}	
-	.p_nav:hover .ie4{
+	.nav_lists li div.p_tle:hover .ie4{
 		background-position-y: -220px;
 	}
-	.nav_lists .p_nav .ir2{
-		left: 35px;
-
-	    height: 10px;
-	    top: 0px;
-	}	
-	/*.p_nav:hover .ir2{
+	.nav_lists li>div:hover i.iri{
 		background-position-y: -290px;
-	}*/
-	
-	
-	.nav_lists .s_nav{		
-		background: #fafafa;
 	}
-	.nav_lists .s_nav a{
-		padding-left: 60px;
-		display: block;
-		height: 52px;
-		width: 100%;
-		color: #898989;
-		line-height: 52px;
+	.nav_lists li>div.act:hover i.iri{/*打开*/
+		background-position-y: -280px;
 	}
-	.nav_lists .s_nav a:hover{
-		color: #d2a36c;
+	/*选中图标*/
+	.nav_lists li>div.active .ie1,.nav_lists li:hover>div.active .ie1{
+		background-position-y: 0px;
+		color:#fff
 	}
-	.nav_lists .p_active a{
-		position: relative;
-		background: #dfb890;    		
-	    color: #fff;
+	.nav_lists li>div.active .ie2,.nav_lists li:hover>div.active .ie2{
+		background-position-y: -20px;
+		color:#fff
 	}
-	.nav_lists .p_active a:after{
+	.nav_lists li>div.active .ie3,.nav_lists li:hover>div.active .ie3{
+		background-position-y: -40px;
+		color:#fff
+	}
+	.nav_lists li>div.active .ie4,.nav_lists li:hover>div.active .ie4{
+		background-position-y: -60px;
+		color:#fff
+	}
+	.nav_lists li>div.active i.iri{
+		background-position-y: -250px;
+	}
+	.nav_lists li>div.active.act i.iri{/*打开*/
+		background-position-y: -240px;
+	}
+	/*右侧三角，只在有active属性的时候出现*/
+	.nav_lists li>div.active:after{    
 		position: absolute;
 	    content: "";
-	    background: url(../../../../../Style/images/rig_tri.png) no-repeat 0;
+	    background: url(../../../Style/images/rig_tri.png) no-repeat 0;
 	    width: 8px;
 	    height: 12px;
-	    right: -8px;
+	    right: -11px;
 	    top: 13px;
 	}
-	.nav_lists .p_active .ie1{
-		background-position-y:0;
-	}
-	/*.nav_lists .p_active .ir1{
-		background-position-y: -250px;
-	}*/
-	.nav_lists .p_active .ie2{
-		background-position-y:-20px;
-	}
-	.nav_lists .p_active .ie3{
-		background-position-y:-40px;
-	}
-	.nav_lists .p_active .ie4{
-		background-position-y:-60px;
-	}
-	/*.nav_lists .p_active .ir2{
-		background-position-y: -250px;
-	}*/
-	.nav_lists .p_active+.s_nav .a_active{
-		color: #d2a36c;
-	}
-	
-	
-	.nav_lists .p_nav a .iri{
-		   background-position-y: -260px;
-	}
-	.nav_lists .p_active a .iri{
-		    background-position-y: -240px;
-	}
-	
 </style>
-	<div class="zwj_c_left">
-		<ul class="nav_lists">
-			<li>
-				<span class="p_active p_nav p_tle" slide="down">
-					<a class="nav_icon" href="javascript:;"><i class="ile ie1"></i>个人中心<i class="iri ir1"></i></a>
-				</span>
-				<div class="s_nav">
-					<a class="a_active" href="javascript:;">账户总览</a>
-					<a href="javascript:;">财行优选</a>
-					<a href="javascript:;">网贷产品</a>
-				</div>
-			</li>
-			<li>
-				<span class="p_nav p_tle">
-					<a class="nav_icon" href="javascript:;"><i class="ile ie2"></i>投资管理</a>
-				</span>
-			</li>
-			<li>
-				<span class="p_nav p_tle">
-					<a class="nav_icon" href="javascript:;"><i class="ile ie3"></i>资金管理</a>					
-				</span>
-			</li>
-			<li>
-				<span class="p_nav p_tle" slide="down">
-					<a class="nav_icon" href="javascript:;"><i class="ile ie4"></i>我的奖励<i class="iri ir2"></i></a>					
-				</span>
-				<div class="s_nav">
-					<a href="javascript:;">奖励</a>
-					<a href="javascript:;">积分</a>
-					<a href="javascript:;">VIP专区</a>
-				</div>
-			</li>
-		</ul>
-	</div>
-<script type="text/javascript">
-	$('body').bind("selectstart", function () { return false; });
-	$(".p_tle").click(function(){
-		$(".p_tle").removeClass("p_active");
-		$(this).addClass("p_active");
-		var slide = $(this).attr("slide");
-		if(slide == 'down'){
-			if($(this).hasClass("p_active")){
-				$(this).find(".iri").css({"transform":"rotate(180deg)"});
-			}else if(!($(this).hasClass("p_active"))){
-				$(this).find(".iri").css({"transform":"rotate(0deg)"});
-			}
-			$(this).siblings(".s_nav").slideUp();
-			$(this).addClass("p_active").attr("slide","up");
-			
-		}else if(slide == 'up'){
-			if($(this).hasClass("p_active")){
-				$(this).find(".iri").css({"transform":"rotate(0deg)"});
-			}else if(!($(this).hasClass("p_active"))){
-				$(this).find(".iri").css({"transform":"rotate(0deg)"});
-			}
-			$(this).siblings(".s_nav").slideDown();
-			$(this).attr("slide","down");
-		}
-	})
-	$(".s_nav a").click(function(){
-		$(".p_tle").removeClass("p_active");
-		$(".s_nav a").removeClass("a_active");
-		$(this).addClass("a_active").parents(".s_nav").siblings(".p_tle").addClass("p_active");
+<div class="zwj_c_left">
+	<ul class="nav_lists">
+		<li>
+			<div class="p_nav p_tle active act">
+				<i class="ie1"></i>
+				<p>个人中心</p>
+				<i class="iri"></i>
+			</div>
+			<div class="s_nav">
+				<a href="javascript:;">账户总览</a>
+				<a href="javascript:;">财行优选</a>
+				<a href="javascript:;">网贷产品</a>
+			</div>
+		</li>
+		<li>
+			<div class="p_nav p_tle">
+				<i class="ie2"></i>
+				<p>投资管理</p>
+				<!--<i></i>-->
+			</div>
+		</li>
+		<li>
+			<div class="p_nav p_tle">
+				<i class="ie3"></i>
+				<p>资金管理</p>
+				<!--<i></i>-->
+			</div>
+		</li>
+		<li>
+			<div class="p_nav p_tle act">
+				<i class="ie4"></i>
+				<p>我的奖励</p>
+				<i class="iri"></i>
+			</div>
+			<div class="s_nav">
+				<a href="javascript:;">账户总览</a>
+				<a href="javascript:;">财行优选</a>
+				<a href="javascript:;">网贷产品</a>
+			</div>
+		</li>
+	</ul>
+</div>
+<script>
+	$(function(){
+		$(".nav_lists>li>.p_tle").click(function(){
+			$(".nav_lists>li>div.s_nav a").removeClass('active');
+        	$(".nav_lists>li>.p_tle").removeClass('active');
+			$(this).addClass('active');
+			if($(this).next('div.s_nav').is(':visible')){
+                $(this).next('div.s_nav').slideUp();
+                $(this).removeClass('act');
+            }else{
+                $(this).next('div.s_nav').slideDown();
+                $(this).addClass('act');
+                $(this).parents('li').find('.s_nav a').eq(0).click();
+            }
+		})
+		
+		$(".nav_lists>li>div.s_nav a").click(function(){
+			$(".nav_lists>li>div.s_nav a").removeClass('active');
+			$(this).addClass('active');
+			$(".nav_lists>li>.p_tle").removeClass('active');
+			$(this).parents('li').find('.p_tle').addClass('active');
+		})
 	})
 </script>
