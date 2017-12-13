@@ -96,7 +96,7 @@ body{
   margin: 30px 0 0;
 }
 .invest_tab .hd{
-	margin-left: 30px;
+	margin: 0 20px;
   background-color: #f9f9f9;
 }
 .invest_tab .tab_item{
@@ -121,10 +121,10 @@ body{
   background-color: #fff;
 }
 .ycw_ov_index .item_status{
-  padding: 30px 0 0 30px;
+  padding: 20px 0 0 20px;
 }
 .ycw_ov_index .item_type{
-  padding-left: 30px;
+  padding-left: 20px;
 }
 .ycw_ov_index .status_title{
   width: 132px;
