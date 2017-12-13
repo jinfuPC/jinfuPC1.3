@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.c_top_qq {
+	position: fixed;
+	right: 0;
+	top: 42%;
+	z-index: 888;
+}
+.c_top_qq li {
+	margin-bottom: 2px;
+	width: 72px;
+	height: 72px;
+}
+.c_top_qq .c_inline_cf:hover {
+	background: #d2a36b;
+}
+.c_top_qq .c_kik_cf:hover {
+	background: #d2a36b;
+}
+.c_top_qq .c_counter_cf:hover {
+	background: #d2a36b;
+}
+.c_top_qq .c_to_top:hover {
+	background: #d2a36b;
+}
+.c_top_qq span {
+	margin-left: 20px;
+	display: block;
+	width: 36px;
+	height: 45px;
+	background: url(../images/top_contact.png) no-repeat 0 14px;
+}
+.c_top_qq i {
+	font-style: normal;
+	color: #fff;
+	display: block;
+	width: 72px;
+	text-align: center;
+}
+.c_inline_cf {
+	background: #cbcbcb;
+}
+.c_kik_cf {
+	background: #cbcbcb;
+}
+.c_counter_cf {
+	background: #cbcbcb;
+}
+.c_to_top {
+	background: #cbcbcb;
+	display: none;
+}
+.c_kik_cf span {
+	background-position: 0 -60px;
+}
+.c_counter_cf span {
+	background: url(../images/jf_right_weixin.png) no-repeat center!important;
+}
+.c_to_top span {
+	background-position: 0 -207px;
+}
+.c_kik_icon {
+	position: absolute;
+	box-shadow: 2px 2px 3px #aaaaaa;
+	width: 120px;
+	height: 120px;
+	padding: 10px;
+	background: #fff;
+	top: 40px;
+	right: 72px;
+	display: none;
+}
+.c_kik_icon img {
+	width: 120px;
+	height: 120px;
+}
+/*ycw_add*/
+.ycw_jf_download{
+	position: relative;
+}
+.ycw_jf_download .jf_down_con{
+	padding: 6px 14px 14px;
+	position: absolute;
+	background-color: #fff;
+	bottom: 0px;
+	left: -150px;
+	border: 1px solid #a5a5a5;
+	display: none;
+	z-index: 999;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ycw_jf_download .jf_code{
+	width: 102px;
+	height: 102px;
+	margin: 0 auto;
+}
+.ycw_jf_download .jf_accounts{
+	background: url(../images/jf_weixin.png) center top no-repeat;
+	background-size: 102px 102px;
+}
+.ycw_jf_download .jf_down_code{
+	background: url(../images/jf_appFooter_code.png) center top no-repeat;
+	background-size: 102px 102px;
+}
+.ycw_jf_download img{
+	width: 12px;
+	height: 15px;
+	position: absolute;
+	bottom: 20px;
+	right: -12px;
+}
+.jf_down_text{
+	font-size: 12px;
+	text-align: center;
+}

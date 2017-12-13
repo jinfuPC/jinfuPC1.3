@@ -55,7 +55,7 @@ body {
 }
 .nav_lists li>.p_nav i{
 	float:left;
-	background: url(../../../Style/images/nav_icon.png) no-repeat center;
+	background: url(/Style/images/nav_icon.png) no-repeat center;
 	position: relative;
 }
 .nav_lists li>.p_nav i.iel{
@@ -163,10 +163,11 @@ body {
 .nav_lists li>div.active:after{    
 	position: absolute;
     content: "";
-    background: url(../../../Style/images/rig_tri.png) no-repeat 0;
+    background: url(/Style/images/rig_tri.png) no-repeat 0;
     width: 8px;
     height: 12px;
     right: -11px;
     top: 13px;
 }
 /*左侧公共导航:zwj-end-*/
+

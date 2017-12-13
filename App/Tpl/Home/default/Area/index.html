@@ -1,0 +1,247 @@
+<link rel="stylesheet" type="text/css" href="/Style/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/Style/css/vip.css"/>
+<div class="area_con ycw_style">
+    <p class="crumb">您所在的位置：首页 > VIP专区</p>
+    <div class="con_dj">
+        <if condition="$uid eq 0">
+        <div class="dj_left">
+            <div class="dj_left_wei">
+                <a href="/member/common/login.html">登录</a>
+                <p>登录后查看您的会员权限</p>
+            </div>
+          <!--<a class="left_lj">立诚贷VIP会员特权说明  >> </a> -->
+               <a class="left_lj" href='/Aboutus/biao.html'>信广金服VIP会员特权说明  >></a>
+
+          
+        </div>
+        <else/>
+            <div class="dj_left2">
+                <div class="left_tx">
+                    <img src="/Style/images/arer/tx.png">
+                </div>
+                <p class="left_id" style="line-height: 25px;color:#fff">您好，<?php echo $_SESSION['u_user_name']?></p>
+                <p class="left_id" style="line-height: 25px;color:#fff">用户等级：<if condition="$grade eq 0">普通<else/>VIP{$grade}</if></p>
+                <if condition="$grade eq 5">
+                    <p class="left_id" style="line-height: 25px;font-size:14px">恭喜您"荣登顶级VIP,请保持乐享收益"</p>
+                    <else/>
+                    <p class="left_id" style="line-height: 25px;font-size:14px;margin-top:30px">还差{$cha}元可升级到VIP{$nextGrade}</p>
+                </if>
+                <div class="left_jdt">
+                    <span>
+                        <i style="width:{$progress}%"></i>
+                    </span>
+                    <a id="gkkk" class="mininn">
+                        <img src="/Style/images/arer/wenhao.png ">
+                        <p class="xsyc">会员等级每日零点更新，实际情况以页面显示为准</p>
+                    </a>
+
+                    <div class="ycw_FiveStar" style="left: {$progress}%;">
+                    <if condition="$grade eq 5">
+                        <p class="imgCon">
+                            <i class="vip_grade">LV5</i>
+                        </p>
+                        <p class="daiShou daiShou5" style="width: 148px;left: -118px;">待收{$uid_start}万(包含)以上</p>
+                        <elseif condition="$grade eq 4"/>
+                        <p class="imgCon">
+                            <i class="vip_grade">LV4</i>
+                        </p>
+                        <p class="daiShou daiShou4" style="width: 194px;left: -144px;">待收{$uid_start}(包含)-{$uid_dai}万之间</p>
+                        <elseif condition="$grade eq 3"/>
+                        <p class="imgCon">
+                            <i class="vip_grade">LV3</i>
+                        </p>
+                        <p class="daiShou daiShou3" style="width: 188px;left: -60px;">待收{$uid_start}(包含)-{$uid_dai}万之间</p>
+                        <elseif condition="$grade eq 2"/>
+                        <p class="imgCon">
+                            <i class="vip_grade">LV2</i>
+                        </p>
+                        <p class="daiShou daiShou2" style="width: 180px;left: -36px;">待收{$uid_start}(包含)-{$uid_dai}万之间</p>
+                        <elseif condition="$grade eq 1"/>
+                        <p class="imgCon">
+                            <i class="vip_grade">LV1</i>
+                        </p>
+                        <p class="daiShou daiShou1" style="width: 180px;left: -36px;">待收{$uid_start}(包含)-{$uid_dai}万之间</p>
+                        <else />
+                        <p class="imgCon">
+                            <i class="vip_grade">LV0</i>
+                        </p>
+                        <p class="daiShou daishou0" style="width: 96px;left: -36px;">待收{$uid_dai}万以下</p>
+                    </if>
+                    </div>
+                </div>
+
+
+                <a class="left_lj" href='/Aboutus/biao.html'>信广金服VIP会员特权说明  >></a>
+            </div>
+            </if>
+        <div class="dj_right" id="ycw_liList">
+            <ul>
+                <li class="li1" style="height:282px;right:0px;background:#c9a364">
+                    <a>VIP5</a>
+                    <div class="top_line"></div>
+                </li>
+                <li class="li2" style="height:200px;right:133px;background:#d4b583">
+                    <a>VIP4</a>
+                    <div class="top_line"></div>
+                </li>
+                <li class="li3" style="height:148px;right:266px;background:#dfc8a2">
+                    <a>VIP3</a>
+                    <div class="top_line"></div>
+                </li>
+                <li class="li4" style="height:98px;right:399px;background:#e9dac1">
+                    <a>VIP2</a>
+                    <div class="top_line"></div>
+                </li>
+                <li class="li5" style="height:50px;right:532px;background:#f4ede0">
+                    <a>VIP1</a>
+                    <div class="top_line"></div>
+                </li>
+                <li class="li6" style="height:1px;right:665px;background:#fff;">
+                    <a>普通会员</a>
+                </li>
+                <if condition="$uid eq 0">
+                <span style="display:none"></span>
+                <else/>
+                 <span style="left:{$left}px"></span>
+                </if>
+                <!--108/243/377/511/644/780-->
+               
+            </ul>
+            <div class="dj_right_dl">
+                <dl>
+                    <dt class="dt1"></dt>
+                    <dd>消息提醒</dd>
+                </dl>
+                <dl>
+                    <dt class="dt2"></dt>
+                    <dd>生日豪礼</dd>
+                </dl>
+               
+              <!--  <dl>
+                    <dt class="dt4"></dt>
+                    <dd>债权转让</dd>
+                </dl>-->
+                <dl>
+                    <dt class="dt5"></dt>
+                    <dd>专属服务顾问</dd>
+                </dl>
+                <dl>
+                    <dt class="dt6"></dt>
+                    <dd>VIP专属项目</dd>
+                </dl>
+               
+                <dl>
+                    <dt class="dt8"></dt>
+                    <dd>升级奖励</dd>
+                </dl>
+                 <dl>
+                    <dt class="dt7"></dt>
+                    <dd>大额预约</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <h2 class="con_h2" style="color:#5d5d5d;border-bottom: 2px solid #d2a36b">VIP 专属项目<span>尊享稀缺优质资源 利息丰厚自由掌控</span></h2>
+    <!--<div class="con_dj2"><img src="/Style/images/arer/jqqd.jpg" ></div>-->
+    <!--<div class="con_dj2_2">
+       <a class="con_dj2_a">立即投资</a>
+        <div class="con_dj2_left"><p class="con_dj2_p"><span>7</span>%</p><p>预期年化收益</p></div>
+        <div class="con_dj2_right">
+
+            <h2>立诚170505字号005期</h2>
+            <p class="con_dj2_p2">
+                <span>期限：1个月</span>
+                <span>规模：20.00万元</span>
+                <span>剩余：<i>170000.00元</i></span>
+                <a><span><i style="width:70%"></i></span>70%</a>
+            </p>
+        </div>
+    </div>-->
+        <!--<div class="con_dj2"><img src="/Style/images/arer/jqqd.jpg" ></div>-->
+        <volist name="borrow['list']" id = "borrow">
+        <div class="con_dj2_2 ycw_conDj2">
+            <!--<a class="con_dj2_a" style=" color: #999;border-color:#999" href="/invest/{$borrow.id}.html">还款中</a>
+            <a class="con_dj2_a" style=" color: #66ceb8;border-color:#66ceb8" href="/invest/{$borrow.id}.html">复审中</a>-->
+            <if condition="$borrow.can_auto_time gt $time">
+                <a id="time_show_{$borrow.id}" class="time_val" for="{$borrow.id}" value="{$borrow['can_auto_time'] - $time}"></a>
+                <elseif condition="$borrow.borrow_status eq 3"/>
+                <a class="con_dj2_a" style=" color: #999;border-color:#999" href="javascript:void(0);">已流标</a>
+                <elseif condition="$borrow.borrow_status eq 7"/>
+                <a class="con_dj2_a" style=" color: #999;border-color:#999" href="javascript:void(0);">已完成</a>
+                <elseif condition="$borrow.borrow_status eq 6"/>
+                <a class="con_dj2_a" style=" color: #999;border-color:#999" href="javascript:void(0);">还款中</a>
+                <elseif condition="$borrow.borrow_status eq 4"/>
+                <a class="con_dj2_a" style=" color: #66ceb8;border-color:#66ceb8" href="javascript:void(0);">复审中</a>
+            <else/>
+                <a class="con_dj2_a" href="/Investnum/index/inum/{$borrow.id}.html" target="_blank">立即加入</a>
+            </if>
+
+            <div class="con_dj2_left"><p class="con_dj2_p"><span>{$borrow['borrow_interest_rate']}</span>%</p><p>目标年化利率</p></div>
+            <div class="con_dj2_right">
+
+                <h2 style="cursor: pointer;" onclick="tiaozhuan({$borrow.id})">{$borrow.borrow_name}</h2>
+                <p class="con_dj2_p2">
+                    <span>期限：{$borrow.borrow_duration}个月</span>
+                    <span>规模：{$borrow.borrow_money}元</span>
+                    <span>剩余：<i><php>if(strpos($borrow['balance'],".")>0){</php>
+                                 {$borrow.balance}
+                                 <php>}else{</php>
+                                 {$borrow.balance}.00
+                                 <php>}</php>元</i></span>
+
+                    <a><span><i style="width:{$borrow.progress}%"></i></span>{:floor($borrow['progress'])}%</a>
+                </p>
+            </div>
+        </div>
+    </volist>
+    </if>
+    
+    <h2 class="con_h2" style="color:#5d5d5d;border-bottom: 2px solid #d2a36b">VIP 升级奖励<span>卓越高端定制 体验品质生活</span></h2>
+    <ul class="con_dj3">
+       
+        <li style="cursor:auto">
+            <img src="/Style/images/arer/img5.jpg" >
+            <p style="line-height: 40px;">出借1000元可用</p>
+            <span>VIP1<br>升级奖励</span>
+        </li>
+        
+        <li onclick="javascript:location.href='/Aboutus/guokang.html'" class="con_dj3_hover">
+        <img src="/Style/images/arer/img1.jpg" >
+        <p>非用户指定专家就医协助服务<br>市场价：1300元/人/次</p>
+        <span>VIP2<br>升级奖励</span>
+        </li>
+        <li onclick="javascript:location.href='/Aboutus/guokang.html'" class="con_dj3_hover">
+        <img src="/Style/images/arer/img2.jpg" >
+        <p>用户指定专家就医协助服务<br>市场价：1800元/人/次</p>
+        <span>VIP3<br>升级奖励</span>
+        </li>
+        <li onclick="javascript:location.href='/Aboutus/guokang.html'" class="con_dj3_hover">
+        <img src="/Style/images/arer/img3.jpg" >
+        <p> 会诊服务<br>市场价：12000元/人/次</p>
+        <span>VIP4<br>升级奖励</span>
+        </li>
+        <li onclick="javascript:location.href='/Aboutus/guokang.html'" style="margin-right: 0px;" class="con_dj3_hover">
+        <img src="/Style/images/arer/img4.jpg" >
+        <p>大病专案 <br>市价格：22000元/人/次
+</p>
+        <span>VIP5<br>升级奖励</span>
+        </li>
+        
+    </ul>
+    
+
+   <!-- <h2 class="con_h2" style="color:#2f7fbc;border-bottom: 2px solid #2f7fbc">活动专区<span style="border-left: 1px solid #2f7fbc">多元领域全面覆盖 私享全程贴心服务</span></h2>
+    <div class="con_dj4"></div>-->
+    <!--<h3 class="con_h3">合作伙伴</h3>
+    <div class="partner clearfix ">
+            
+            <img src="/Style/images/xinsy/partner/huishang1.jpg">
+         &lt;!&ndash;   <img src="/Style/images/xinsy/partner/cfca.jpg">&ndash;&gt;
+            <img src="/Style/img/l_img/l_ceca.png">
+            <img src="/Style/images/xinsy/partner/huacheng.jpg">
+            <img src="/Style/images/xinsy/partner/mifeng.jpg">
+            <img src="/Style/images/xinsy/partner/chunxue.jpg">
+            <img src="/Style/images/xinsy/partner/ancun.jpg">
+    </div>-->
+    
+</div>
