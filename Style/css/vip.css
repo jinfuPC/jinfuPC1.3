@@ -1,3 +1,6 @@
+body{
+	background: #f2f2f2;
+}
 .area_con {
     width: 1200px;
     margin: 0 auto;
@@ -48,6 +51,7 @@
     background: #d4b583;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .area_con .con_dj .dj_left .dj_left_wei p {
@@ -196,26 +200,29 @@
 }
 
 .area_con .con_dj .dj_right .dj_right_dl {
-    width: 880px;
+	float: right;
+    width: 825px;
     clear: both;
     padding-top: 50px;
+    overflow: hidden;
 }
 
 .area_con .con_dj .dj_right .dj_right_dl dl {
-    width: 143px;
+    width: 70px;
     float: left;
+    margin-left: 40px;
 }
 
 .area_con .con_dj .dj_right .dj_right_dl dl dt {
-    width: 67px;
-    height: 67px;
+    width: 66px;
+    height: 66px;
     margin: 0 auto;
     border-radius: 50%;
 }
 
 .area_con .con_dj .dj_right .dj_right_dl dl dd {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     color: #666;
     line-height: 32px;
 }
@@ -500,6 +507,8 @@
 }
 .ycw_style .left_lj{
     color: #b4884b;
+    text-decoration: none;
+    font-size: 14px;
 }
 .ycw_style .con_dj .dj_right ul li{
     background-image: url(/Style/images/arer/crown.png)!important;
