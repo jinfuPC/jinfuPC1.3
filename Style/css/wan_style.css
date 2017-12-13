@@ -95,6 +95,7 @@
     height: auto;
     margin: 0 auto;
     background: white;
+    padding: 20px
 }
 .wan_content .ssh_customers {
 	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
@@ -104,11 +105,10 @@
 }
 .wan_content .ssh_customers td,
 .wan_content .ssh_customers th {
-	font-size: 12px;
-	padding: 20px 7px;
-	text-align: center;
+	padding: 20px;
 	color: #555555;
 	font-size: 14px;
+	text-align: center;
 }
 .wan_content .ssh_customers th {
 	text-align: center;
