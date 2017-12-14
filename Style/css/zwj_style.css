@@ -442,5 +442,243 @@ body {
 }
 /*登录：zwj-end*/
 /*注册：zwj-start*/
-
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+#shiming .shi_in {
+    width: 1200px;
+    margin: 50px auto 0;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.headnav {
+    width: 1160px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 20px;
+    padding-top: 30px;
+}
+.headnav h4 {
+    font-size: 20px;
+    color: #666;
+    line-height: 46px;
+    font-weight: normal;
+}
+.w_left {
+    width: 700px;
+    height: 40px;
+    text-align: center;
+}
+.yydl {
+    width: 80%;
+    color: #333;
+    font-size: 16px;
+    text-align: right;
+    line-height: 46px;
+    padding-right: 30px;
+}
+#reg {
+    width: 530px;
+    float: left;
+    background: #fff;
+    margin-top: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 50px;
+}
+#reg .main_in {
+    width: 530px;
+}
+.mc_bd {
+    width: 530px;
+    margin: auto;
+}
+#reg .main_in .main_content form .mc_bd div {
+    width: 528px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 48px;
+    position: relative;
+}
+#reg .main_in .main_content form .mc_bd div .inp_p {
+    width: 93px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    line-height: 45px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(/Style/images/reg/bian.png) right center no-repeat;
+    display: none;
+}
+#reg .main_in .main_content form .mc_bd div input {
+    width: 528px;
+    border: 1px solid #ccc;
+    height: 48px!important;
+    line-height: 48px;
+    font-size: 14px;
+    text-indent: 16px;
+    color: #999;
+    outline: none;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+#spphone, #sppw_one, #verifyTop, #idcardErr, #realnameErr {
+    width: 528px;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+.test_yzm {
+    float: left;
+    width: 153px\9;
+}
+.yz_ia img {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.auto_login {
+    padding-bottom: 25px;
+    display: block;
+}
+.auto_login span {
+    font-size: 16px;
+}
+.auto_login span a {
+    color: #d2a36b;
+    font-size: 16px;
+}
+.denglureg {
+    height: 43px!important;
+    line-height: 45px;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: #d2a36b;
+    margin: 0 auto;
+    border: 1px solid #d2a36b;
+    width: 100%;
+    border-radius: 5px;
+}
+.reg_right {
+    width: 313px;
+    height: 330px;
+    position: absolute;
+    top: 201px;
+    right: 150px;
+    z-index: 11;
+}
+.posi {
+    width: 313px;
+    height: 296px;
+}
+.reg_tip {
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    color: #666;
+    line-height: 34px;
+    text-align: center;
+}
+.l_box {
+    width: 240px;
+    height: 340px;
+    padding: 30px;
+    position: fixed;
+    border: 1px solid #ccc;
+    left: 50%;
+    top: 50%;
+    margin-left: -151px;
+    margin-top: -201px;
+    background: #fff;
+    display: none;
+}
+#spphone font {
+    height: 19px;
+    width: 100%;
+    display: block;
+    line-height: 19px;
+    text-align: center;
+    border: none;
+}
+#xieyi {
+    width: 100%;
+    height: 100%;
+    background: url(/Style/images/sm_bg.png) repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    behavior: url(../js/PIE.htc);
+    z-index: 999;
+}
+#xieyi .xieyi_in {
+    width: 630px;
+    height: 520px;
+    background-color: #fff;
+    position: absolute;
+    margin-left: -315px;
+    left: 50%;
+    top: 200px;
+    padding-bottom: 30px;
+    z-index: 9901;
+}
+#xieyi .xieyi_in em.close {
+    width: 38px;
+    height: 40px;
+    background: url(/Style/images/public/cha.png) no-repeat right top;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+#xieyi .xieyi_in h3 {
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    color: #424242;
+}
+#xieyi .xieyi_in .xieyi_con {
+    height: 400px;
+    padding: 0 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+#xieyi .xieyi_in .xieyi_con p {
+    text-indent: 2em;
+    color: #838383;
+    font-size: 12px;
+}
+#xieyi .xieyi_in a.queding {
+    background-color: #ff7804;
+    border-radius: 5px;
+    bottom: 15px;
+    color: #fff;
+    line-height: 36px;
+    padding: 0 30px;
+    position: absolute;
+    right: 20px;
+}
+.clearfix{
+	display: block;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+}
 /*注册：zwj-end*/

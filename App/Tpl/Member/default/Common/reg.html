@@ -1,4 +1,5 @@
 <include file="Public:header" />
+<script src="/Style/js/reg.js" type="text/javascript" charset="utf-8"></script>
 <div id="shiming" class="clearfix">
 	<div class="shi_in clearfix">
 		<div class="headnav fl">
@@ -9,7 +10,7 @@
 				</p>
 			</div>
 		</div>
-		<div id="main">
+		<div id="reg">
 			<div class="main_in">
 				<div class="main_content">
 					<form name="form1">
@@ -20,15 +21,6 @@
 									<input placeholder="请输入手机号" class="sjj" type="text" name="mobile" id="login" onblur="P_phone()" onkeyup="P_phoneon()" />
 									<p id="spphone"></p>
 								</div>
-								<!-- <script>
-                                $("#login").keyup(function(e){
-                                var theEvent = e || window.event;  
-                                var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
-                                if(code == 13){
-                                P_phone();
-                                }
-                                });
-                                  </script> !-->
 								<div for="reg" id="input02" style="clear: both">
 									<div class="pos">
 										<div id="box">
@@ -49,34 +41,6 @@
 										}
 									});
 								</script>
-								<!--确认密码删了20170313liqiqi-->
-								<!-- <div for="reg" id="input02" style="clear: both">
-
-                                <div class="pos">
-
-                                <div id="box">
-                                <p class="inp_p" >确认密码</p>
-                                <input placeholder="请再次输入密码"  class="mima" onblur="pwtwo()" id="pw_two" type="password" name="opwd" disabled="disabled"   >
-                                <p id="sppw_two"></p>
-                                </div>
-                                </div>
-
-                                </div>-->
-								<!-- <script>
-                                $("#pw_two").keyup(function(e){
-                                var theEvent = e || window.event;  
-                                var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
-                                if(code == 13){
-
-                                pwtwo()
-
-                                }
-                                if(code == 9){
-                                pwtwo()
-
-                                }
-                                });
-                                </script>-->
 								<!--验证码 图文-->
 								<div id="twyz">
 									<p class="inp_p">图形验证码</p>
@@ -151,14 +115,13 @@
 			</div>
 		</div>
 		<div class="reg_right">
-			<img src="/Style/img/jifuimg/posi.png" alt="" class="posi" />
+			<img src="/Style/images/posi.png" alt="" class="posi" />
 			<p class="reg_tip">[广告]市场有风险，出借需谨慎！</p>
 		</div>
 	</div>
 </div>
 <include file="Public:footer" />
 <!--  短信验证码未输入弹窗  -->
-<!--div class="l_none"-->
 <div class="l_box">
 	<h4 class="hong">特别提示</h4>
 	<p>1、请确认您填写的手机号码是否正确；</p>
@@ -168,8 +131,7 @@
 	<p>5、如以上方案仍未能解决您的问题，请联系信广金服客服。客服电话：400-151-3456.</p>
 	<span class="l_yes">确定</span>
 </div>
-<!--/div-->
-<script>
+<!--<script>
 	$(function() {
 		$('.l_yes').click(function() {
 			$('.l_box').hide();
@@ -183,7 +145,7 @@
 		});
 		// $('#shiming').height($(window).height()-140);
 	});
-</script>
+</script>-->
 <div id="xieyi">
 	<div class="xieyi_in"> <em class="close"></em>
 		<font style="display:none">
