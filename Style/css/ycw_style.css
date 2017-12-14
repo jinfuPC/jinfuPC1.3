@@ -1,5 +1,5 @@
 /*.....ycw_style_start.....*/
-/*----账户总览----*/
+/*----账户总览_start----*/
 body{
   background-color: #f3f3f3;
 }
@@ -90,8 +90,8 @@ body{
 .asset_wrapper .total_amount{
   color: #d2a36b;
 }
-/*----账户总览----*/
-/*----投资管理----*/
+/*----账户总览_end----*/
+/*----投资管理_start----*/
 .ycw_ov_index .invest_tab{
   margin: 30px 0 0;
 }
@@ -154,5 +154,43 @@ body{
 .ycw_ov_index .cls_item.on a{
   color: #d2a36b;
 }
-/*----投资管理----*/
+/*----投资管理_end----*/
+/*----错误页面_start----*/
+.ycw_jfError{
+  background-color: #fff;
+  padding: 100px 0 100px;
+  margin-top: -90px;
+  position: relative;
+  z-index: 996;
+}
+.ycw_jfError .jferror_img{
+  display: block;
+  margin: 0 auto ;
+}.ycw_jfError .jferror_img_2{
+   display: block;
+   margin: 100px auto 0;
+ }
+.ycw_jfError .jferr_text{
+  margin: 60px 0 50px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #484848;
+}
+.ycw_jfError .jferr_btn{
+  display: block;
+  margin: 0 auto;
+  width: 139px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  background: #d3a36a;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+}
+.ycw_jfError .jferr_btn:hover{
+  background: #b3874a;
+}
+/*----错误页面_end----*/
+
 /*.....ycw_style-end.....*/
