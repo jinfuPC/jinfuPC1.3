@@ -65,5 +65,80 @@
 		</div>		
 	</div>
 </div>
+<div class="c_top_qq">
+	<ul style="width:72px;float:right">
+		<li class="c_inline_cf" id="qyqq" style="cursor: pointer">
+			<a title="点击访问立诚贷客服QQ">
+				<span></span><i>在线客服</i>
+			</a>
+		</li>
+		<li class="c_counter_cf ycw_jf_download">
+			<a href="javascript:;" target="_blank">
+				<span></span><i>信广金服</i>
+			</a>
+			<div class="jf_down_con">
+				<img src="/Style/images/jf_down_conver.png">
+				<p class="jf_down_text">信广金服公众号</p>
+				<div class="jf_code jf_accounts"></div>
+			</div>
+		</li>
+		<li class="c_kik_cf ycw_jf_download">
+			<a href="javascript:void(0);">
+				<span></span><i>App下载</i>
+			</a>
+			<div class="jf_down_con">
+				<img src="/Style/images/jf_down_conver.png">
+				<p class="jf_down_text">信广金服APP</p>
+				<div class="jf_code jf_down_code"></div>
+			</div>
+		</li>
+		<li style="display: list-item;" class="c_to_top">
+			<a href="javascript:void(0);">
+				<span></span><i>返回顶部</i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!--回到顶部-->
+<script type="text/javascript">
+	$(function() {
+		//置顶按钮显示/隐藏实现
+		$(window).scroll(function() {
+			var w_height = $(window).height(); //浏览器高度
+			var scroll_top = $(document).scrollTop();
+			//滚动条到顶部的垂直高度
+			if(scroll_top > 0) {
+				$(".c_to_top").fadeIn(500);
+			} else {
+				$(".c_to_top").fadeOut(500);
+			}
+		});
+		//置顶
+		$(".c_to_top").click(function(e) {
+			e.preventDefault();
+			$(document.documentElement).animate({
+				scrollTop: 0
+			}, 200);
+			//支持chrome
+			$(document.body).animate({
+				scrollTop: 0
+			}, 200);
+		});
+		$(".c_kik_cf").hover(function() {
+			$(".c_kik_icon").show();
+		}, function() {
+			$(".c_kik_icon").hide();
+		});
+
+		$('.ycw_jf_download').hover(function() {
+			$(this).children('.jf_down_con').show();
+		}, function() {
+			$(this).children('.jf_down_con').hide();
+		})
+	})
+</script>
+<!--在线客服  WPA start -->
+<script id="qd28521538169618c1ef96579400e1e481819a96716e" src="https://wp.qiye.qq.com/qidian/2852153816/9618c1ef96579400e1e481819a96716e" charset="utf-8" async defer></script>
+<!-- WPA end -->
 </body>
 </html>
