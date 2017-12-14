@@ -111,6 +111,7 @@ body{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .invest_tab .tab_item.on{
   color: #d2a36b;
