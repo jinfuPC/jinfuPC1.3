@@ -99,7 +99,6 @@ xmp {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family:Microsoft YaHei;
 }
 
 html,
@@ -127,7 +126,6 @@ section {
   http://ejohn.org/blog/html5-shiv
 */
   display: block;
-	text-decoration:none;
 }
 
 b,
@@ -139,9 +137,7 @@ strong {
 */
   font-weight: bold;
 }
-a, a:link ,a:visited ,a:hover ,a:active{
-	text-decoration:none;
-}
+
 img {
   color: transparent;
   font-size: 0;
@@ -226,6 +222,9 @@ strong,b{
   font-weight: normal;
 }
 /*右侧客服 返回顶部 公共样式 start*/
+.c_top_qq li a{
+	text-decoration: none;
+}
 .c_top_qq {
 	position: fixed;
 	right: 0;
