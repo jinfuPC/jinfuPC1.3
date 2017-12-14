@@ -67,18 +67,22 @@
 
 		/*---ycw_add_左侧导航高亮---*/
 		function leftActive(){
-			var $_index_1 = 0; //控制一级导航
-			var $_index_2 = null; //控制二级导航
+			var $_index_1 = 0; //控制一级导航，索引从0开始
+			var $_index_2 = null; //控制二级导航，索引从1开始
 			switch(window.location.pathname){
 				case '/Member/Overview': //账户总览
 					$_index_1 = 0; //个人中心
-					$_index_2 = 0; //账户总览
+					$_index_2 = 1; //账户总览
 					break;
 				case '/Member/Fundmanagement':
 					$_index_1 = 1;
 					break;
 				case '/Member/Investmentmanagement':
 					$_index_1 = 2;
+					break;
+				case '/Member/Redpackets':
+					$_index_1 = 3; //我的奖励
+					$_index_2 = 1; //奖励
 					break;
 			}
 			$('.nav_lists>li').eq($_index_1).children('.p_tle').addClass('active');
