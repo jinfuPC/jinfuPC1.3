@@ -1,0 +1,57 @@
+<include file="Public:header" />
+<div class="zcz_all">
+    <div class="zcz_all_title">
+        找回密码
+    </div>
+    <div class="zcz_all_center_title">
+        <ol class="step_all">
+            <li ><span>手机验证</span></li>
+            <li class="step"><span>重置密码</span></li>
+            <li class="step"><span>完 成</span></li>
+        </ol>
+    </div>
+    <div class="zcz_all_center">
+        <ul>
+            <li class="text"><em>*</em>手机号：</li>
+            <li  class="inputBox" >
+                <input type="text" class="input" id="tel"   onblur="user_phone()">
+                <em>请输入手机号码</em>
+                <span id="fal"></span>
+            </li>
+        </ul>
+        <ul>
+            <li class="text02"><em>*</em>图形验证码：</li>
+            <li class="inputBox">
+                <input type="text" class="sjyz_yzm"   onclick="txyzm()" name="verify" id="verify" onkeyup="ver()">
+                <em>请输入图形验证码</em>
+                <img onclick="this.src=this.src+'?t='+Math.random()" id="imVcode" alt="点击换一个校验码" style="width:100px;margin:-8px 0 0 15px; height:42px;float:left" src="/Member/common/verifyzh">
+                <span id="false"></span>
+            </li>
+        </ul>
+        <ul>
+            <li class="text02"><em>*</em>验证码：</li>
+            <li>
+                <input type="text" class="sjyz_yzm"  placeholder="请输入验证码"  onblur="setMobile()" id="emaiyzm">
+                <font id="yzma">
+                    <i id="yzmq">
+                        <a href="javascript:void(0);" style="background-color:#8E8E8E" class="hqyzm">获取验证码（60s）</a>
+                    </i>
+                    <i id="yzmw" style="display:none">
+                        <a href="javascript:void(0);" onclick="gaina(60,3)" class="hqyzm">获取验证码（60s）</a>
+                    </i>
+                </font>
+                <font id="yzmb">
+                    <a href="javascript:gainb();" class="hqyzm">获取验证码（<i id="min">60</i>s）</a>
+                </font>
+                <span id="false"></span>
+            </li>
+        </ul>
+        <div class="zcz_button_a"><a href="javascript:void(0);" onclick="csm()">重设密码</a></div>
+        <div class="zcz_annotation">请输入注册时填写的手机号码，我们会向您的手机号发送验证码，请您查看手机短信。</div>
+    </div>
+</div>
+
+
+
+
+<include file="Public:footer" />
