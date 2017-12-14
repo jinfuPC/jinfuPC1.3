@@ -101,6 +101,12 @@ xmp {
 	box-sizing: border-box;
 	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
 }
+a{
+	text-decoration: none;
+}
+input{
+	outline: 0;	
+}
 
 html,
 body {
