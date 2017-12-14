@@ -1,209 +1,78 @@
 /*----ycw_add_公共头_start----*/
-html,body{
-	height: 100%;
-  min-height: 100%;
-}
-.wrapper{
-	height: auto;
-  min-height: 100%;
-}
-.wrap_box{
-	padding-bottom: 332px;
-}
-.ycw_header_top{
-  width: 100%;
-  height: 36px;
-  background-color: #f3f3f3;
-}
-.ycw_ct_wrap{
-  width: 1200px;
-  margin: 0 auto;
-}
-.top_common .top_hotLine{
-  height: 36px;
-  line-height: 36px;
-  float: left;
-}
-.top_common div{
-  float: left;
-}
-.top_common span{
-  float: left;
-  height: 36px;
-  line-height: 36px;
-  font-size: 14px;
-  color: #a5a5a5;
-}
-.top_hotLine .ht_icon{
-  width: 14px;
-  background: url(../images/header/ht_icon.png) center no-repeat;
-  background-size: 14px 14px;
-}
-.top_hotLine .ht_phone{
-  padding-left: 4px;
-}
-.top_common .top_mobile{
-  padding-left: 10px;
-}
-.top_mobile .mob_icon{
-  width: 9px;
-  background: url(../images/header/mob_icon.png) center no-repeat;
-  background-size: 9px 14px;
-}
-.top_common .top_welcome{
-  padding-left: 438px;
-}
-.top_common a{
-  text-decoration: none;
-  color: #a5a5a5;
-}
-.top_common a:hover{
-  color: #d2a36b;
-}
-.top_problem .pro_icon{
-  width: 17px;
-  background: url(../images/header/pro_icon.png) center no-repeat;
-  background-size: 17px 16px;
-}
-.top_sign .sign_icon{
-  width: 14px;
-  background: url(../images/header/sign_icon.png) center no-repeat;
-  background-size: 14px 14px;
-}
-.top_reg .reg_cut{
-  margin: 0 8px;
-}
-.top_common .top_con{
-  padding-left: 24px;
-}
-.top_common .top_text{
-  padding-left: 3px;
-}
-.ycw_header{
-  width: 100%;
-  height: 90px;
-  background-color: #fff;
-}
-.header_logo{
-  width: 290px;
-  height: 90px;
-  float: left;
-}
-.header_logo a{
-  display: block;
-  padding: 23px 3px;
-}
-.header_logo img{
-  width: 284px;
-  height: 44px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.header_tab{
-  float: right;
-  height: 90px;
-}
-.tab_item li{
-  height: 90px;
-  float: left;
-  line-height: 90px;
-}
-.tab_item a{
-  display: block;
-  height: 90px;
-  text-decoration: none;
-  color: #3e3e3e;
-  font-size: 18px;
-  margin: 0 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border-bottom: 5px solid #fff;
-}
-.tab_item .on a{
-  color: #d2a36b;
-  border-bottom: 5px solid #d2a36b;
-}
+body,html{height:100%;min-height:100%}
+.wrapper{height:auto;min-height:100%}
+.wrap_box{padding-bottom:332px}
+.ycw_header_top{width:100%;height:36px;background-color:#f3f3f3}
+.ycw_ct_wrap{width:1200px;margin:0 auto}
+.top_common .top_hotLine{height:36px;line-height:36px;float:left}
+.top_common div{float:left}
+.top_common span{float:left;height:36px;line-height:36px;font-size:14px;color:#a5a5a5}
+.top_hotLine .ht_icon{width:14px;background:url(../images/header/ht_icon.png) center no-repeat;background-size:14px 14px}
+.top_hotLine .ht_phone{padding-left:4px}
+.top_common .top_mobile{padding-left:10px}
+.top_mobile .mob_icon{width:9px;background:url(../images/header/mob_icon.png) center no-repeat;background-size:9px 14px}
+.top_common .top_welcome{padding-left:438px}
+.top_common a{text-decoration:none;color:#a5a5a5}
+.top_common a:hover{color:#d2a36b}
+.top_problem .pro_icon{width:17px;background:url(../images/header/pro_icon.png) center no-repeat;background-size:17px 16px}
+.top_sign .sign_icon{width:14px;background:url(../images/header/sign_icon.png) center no-repeat;background-size:14px 14px}
+.top_reg .reg_cut{margin:0 8px}
+.top_common .top_con{padding-left:24px}
+.top_common .top_text{padding-left:3px}
+.ycw_header{width:100%;height:90px;background-color:#fff}
+.header_logo{width:290px;height:90px;float:left}
+.header_logo a{display:block;padding:23px 3px}
+.header_logo img{width:284px;height:44px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.header_tab{float:right;height:90px}
+.tab_item li{height:90px;float:left;line-height:90px}
+.tab_item a{display:block;height:90px;text-decoration:none;color:#3e3e3e;font-size:18px;margin:0 20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border-bottom:5px solid #fff}
+.tab_item .on a{color:#d2a36b;border-bottom:5px solid #d2a36b}
 /*----ycw_add_公共头_end----*/
-
-
 /*----zcz我的奖励红包----*/
-.zcz_postal_ol {
-  padding: 50px 75px 0;
-}
-.zcz_postal_ol li {
-  background: url(/Style/images/redpackets_bg.jpg) no-repeat center;
-  float: left;
-  margin-left: 70px;
-  margin-bottom: 40px;
-  padding: 0;
-  width: 302px;
-  height: 269px;
-  position: relative;
-  border: none;
-}
-.zcz_postal_ol li .postal_txt {
-  position: absolute;
-  width: 230px;
-  top: 30px;
-  left: 35px;
-}
-.zcz_postal_ol li p {
-  color: #fff;
-  font-size: 12px;
-  line-height: 22px;
-}
-.zcz_postal_ol li .postal_money {
-  position: absolute;
-  top: 145px;
-  left: 50%;
-  margin-left: -20px;
-  width: 40px;
-  font-size: 0;
-  text-align: center;
-  display: table;
-  height: 40px;
-}
-.zcz_postal_ol li .postal_money .num {
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 16px;
-  color: #e93a47;
-  font-weight: bold;
-  line-height: 18px;
-}
-.zcz_postal_ol li .postal_btn {
-  position: absolute;
-  left: 83px;
-  bottom: 23px;
-}
-.zcz_postal_ol li .postal_btn a {
-  display: inline-block;
-  width: 136px;
-  height: 31px;
-  border-radius: 3px;
-  background: #ff6666;
-  color: #efce99;
-  font-size: 16px;
-  text-align: center;
-  line-height: 30px;
-}
-.zcz_postal_ol li .postal_btn a:hover {
-  background: #ff5757;
-}
-
-
-.zcz_postal_ul  li {
-  background: url(/Style/images/redpackets_did.jpg) no-repeat center;
-}
-.zcz_postal_ul li .postal_money .num, .zcz_postal_ul li .postal_money .text {
-  color: #a5a5a5;
-}
-.zcz_postal_ul li .postal_btn a {
-  color: #fff;
-  background: #ccc;
-  cursor: default;
-}
+.zcz_postal_ol{padding:50px 75px 0}
+.zcz_postal_ol li{background:url(/Style/images/redpackets_bg.jpg) no-repeat center;float:left;margin-left:70px;margin-bottom:40px;padding:0;width:302px;height:269px;position:relative;border:none}
+.zcz_postal_ol li .postal_txt{position:absolute;width:230px;top:30px;left:35px}
+.zcz_postal_ol li p{color:#fff;font-size:12px;line-height:22px}
+.zcz_postal_ol li .postal_money{position:absolute;top:145px;left:50%;margin-left:-20px;width:40px;font-size:0;text-align:center;display:table;height:40px}
+.zcz_postal_ol li .postal_money .num{display:table-cell;vertical-align:middle;font-size:16px;color:#e93a47;font-weight:700;line-height:18px}
+.zcz_postal_ol li .postal_btn{position:absolute;left:83px;bottom:23px}
+.zcz_postal_ol li .postal_btn a{display:inline-block;width:136px;height:31px;border-radius:3px;background:#f66;color:#efce99;font-size:16px;text-align:center;line-height:30px}
+.zcz_postal_ol li .postal_btn a:hover{background:#ff5757}
+.zcz_postal_ul li{background:url(/Style/images/redpackets_did.jpg) no-repeat center}
+.zcz_postal_ul li .postal_money .num,.zcz_postal_ul li .postal_money .text{color:#a5a5a5}
+.zcz_postal_ul li .postal_btn a{color:#fff;background:#ccc;cursor:default}
 /*----zcz我的奖励红包 end----*/
+/*----zcz忘记密码----*/
+.zcz_all{background-color:#fff!important;width:1200px;height:593px;border:1px solid #d1d1d1;border-radius:5px;margin:30px auto}
+.zcz_all_title{height:60px;line-height:60px;color:#333;padding-left:20px;font-size:20px;font-weight:700;border-bottom:1px #cda06a solid}
+.zcz_all_center_title{width:755px;margin:auto;margin-top:15px;overflow:hidden}
+.zcz_all_center_title .step_all{width:100%;height:100px;background:url(/Style/images/qunbude.jpg) no-repeat center;list-style:none}
+.zcz_t_title .step_all{width:100%;height:100px;background:url(/Style/images/csmmtutu.jpg) no-repeat center;list-style:none}
+.zcz_w_title .step_all{width:100%;height:100px;background:url(/Style/images/wcmima.jpg) no-repeat center;list-style:none}
+.zcz_all_center_title ol li{width:251px;height:57px;line-height:59px;float:left}
+.zcz_all_center_title .step_all span{color:#cda06a;padding-top:60px;font-size:16px;text-align:center;display:block}
+.zcz_all_center_title .step_all .step span{color:#646464}
+.zcz_all_center{overflow:hidden;min-height:300px;width:715px;margin:0 auto;padding-top:50px;padding-left:100px}
+.zcz_all_center ul{height:75px}
+.zcz_all_center ul li{display:block;position:relative}
+.zcz_all_center li.text{width:120px;float:left;text-align:right;color:#1b1a1a;font-size:16px;padding-top:10px}
+.zcz_all_center ul li em{color:#ff0101;padding-right:3px}
+.zcz_all_center ul li .input{float:left;width:341px;height:45px;border:1px solid #aeaeae;padding-left:20px;color:#a1a1a1;line-height:45px}
+#fal{color:#ff0101;font-size:14px}
+.zcz_all_center ul li span{color:#575757;padding-left:20px;line-height:45px}
+.zcz_all_center li.text02{width:120px;float:left;text-align:right;color:#1b1a1a;font-size:16px;padding-top:10px}
+.zcz_all_center ul li .sjyz_yzm{line-height:45px;width:140px;height:45px;border:1px solid #aeaeae;padding-left:20px;float:left;color:#a1a1a1}
+.zcz_all_center ul li img{padding-top:10px;padding-left:15px}
+.zcz_all_center .hqyzm{width:180px;height:47px;border-radius:5px;background-color:#E5D1AF;display:inline-block;text-align:center;color:#FFF;line-height:47px;margin-left:20px}
+.zcz_button_a{margin-right:35px}
+.zcz_button_a a{font-weight:400;background-color:#d2a36b;color:#F3F3F3;font-size:20px;width:341px;height:45px;line-height:45px;text-align:center;display:block;margin:0 auto}
+.zcz_annotation{width: 369px;font-size: 14px;padding-right: 29px;color: #727272;text-align: center;margin: 0 auto;padding-top: 30px;}
+.inputBox input:focus{outline:0;border:1px solid #d3a56e}
+.code:focus{outline:0;border:1px solid #d3a56e}
+.zcz_all_center .inputBox em{width:59%;text-align:left;font-size:13px;color:#999;font-style:normal;position:absolute;left:143px;line-height:45px}
+.zcz_all_w{padding-top:74px;width:670px;padding-left:40px}
+.zcz_all_w dl{width:73%;display:block;height:135px;line-height:32px;margin:0 auto}
+.zcz_all_w dl dt{display:block;float:left}
+.zcz_all_w dl dd{display:block;float:left;font-size:20px;padding-left:41px;padding-top:10px}
+.zcz_all_w a{font-weight:400;background-color:#d2a36b;color:#F3F3F3;font-size:20px;width:341px;height:45px;line-height:45px;text-align:center;display:block;margin-left:123px}
+/*----zcz忘记密码 end----*/
