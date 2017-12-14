@@ -1,0 +1,38 @@
+<include file="Public:header" />
+<div class="ycw_ov_wrapper ycw_clearFix">
+    <include file="Public:left" />
+    <div class="ycw_ov_index">
+        <div class="invest_tab">
+            <div class="hd">
+                <ul class="ycw_clearFix">
+                    <li class="tab_item tab_item_1 on">未使用</li>
+                    <li class="tab_item tli_item_2">已使用</li>
+                </ul>
+            </div>
+            <div class="bd">
+                <!--财行优选-->
+                <div>
+                    safasfasf
+                </div>
+                <!--网贷产品-->
+                <div style="display: none;">
+                   sdasdasdasdsa
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function() {
+        $('.invest_tab').slide({
+            effect: 'fade',
+            autoPlay: false,
+            trigger: 'click',
+            delayTime: 200
+        });
+        $('.cls_item').on('click', function() {
+            $(this).addClass('on').siblings().removeClass('on');
+        })
+    })
+</script>
+<include file="Public:footer" />
