@@ -611,7 +611,22 @@ body {
     text-align: center;
     border: none;
 }
-#xieyi {
+.dxyfs {
+    width: 120px!important;
+    height: 48px!important;
+    width: 120px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #d2a36b;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+}
+/*#xieyi {
     width: 100%;
     height: 100%;
     background: url(/Style/images/sm_bg.png) repeat;
@@ -672,7 +687,7 @@ body {
     padding: 0 30px;
     position: absolute;
     right: 20px;
-}
+}*/
 .clearfix{
 	display: block;
 }
@@ -682,3 +697,16 @@ body {
     display: block;
 }
 /*注册：zwj-end*/
+
+/*注册协议：zwj-start*/
+.xyWrapper{margin:40px 0;padding-bottom: 0px;background: #f2f2f2;height: auto;}
+.logxyWrapper{margin: 0 auto;width: 1000px;background: #fff;}
+.logxyBox{padding: 30px 100px;width: 1000px;color: #666;}
+.logxyBox h3{font-size: 14px;}
+.logxyBox h2{font-size: 30px;}
+.logxyBox h2{font-size: 18px;}
+.logxyBox h2,.logxyBox h4{padding:20px 0;text-align: center;}
+.logxyBox p{font-size: 14px;line-height: 28px;}
+.logxyBox p span{font-weight: bold;}
+.logxyBox p a{color: #f00;text-decoration: none!important;}
+/*注册协议：zwj-end*/
