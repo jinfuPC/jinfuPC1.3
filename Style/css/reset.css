@@ -99,13 +99,13 @@ xmp {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: "microsoft yahei";
+	font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
 }
 a{
 	text-decoration: none;
 }
 input{
-	outline: 0;
+	outline: 0;	
 }
 
 html,
@@ -134,7 +134,9 @@ section {
 */
   display: block;
 }
-
+a,a:link,a:visited,a:hover,a:active{
+	text-decoration:none;
+}
 b,
 strong {
 /*
