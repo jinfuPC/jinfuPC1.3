@@ -99,6 +99,7 @@ xmp {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	font-family:Microsoft YaHei;
 }
 
 html,
@@ -126,6 +127,7 @@ section {
   http://ejohn.org/blog/html5-shiv
 */
   display: block;
+	text-decoration:none;
 }
 
 b,
@@ -137,7 +139,9 @@ strong {
 */
   font-weight: bold;
 }
-
+a, a:link ,a:visited ,a:hover ,a:active{
+	text-decoration:none;
+}
 img {
   color: transparent;
   font-size: 0;

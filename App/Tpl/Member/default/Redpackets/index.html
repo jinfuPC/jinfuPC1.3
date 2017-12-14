@@ -1,4 +1,82 @@
 <include file="Public:header" />
+<style>
+    .zcz_postal_ol {
+        padding: 50px 75px 0;
+    }
+   .zcz_postal_ol li {
+         background: url(/Style/images/redpackets_bg.jpg) no-repeat center;
+        float: left;
+        margin-left: 70px;
+        margin-bottom: 40px;
+        padding: 0;
+        width: 302px;
+        height: 269px;
+        position: relative;
+        border: none;
+    }
+    .zcz_postal_ol li .postal_txt {
+        position: absolute;
+        width: 230px;
+        top: 30px;
+        left: 35px;
+    }
+    .zcz_postal_ol li p {
+        color: #fff;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .zcz_postal_ol li .postal_money {
+        position: absolute;
+        top: 145px;
+        left: 50%;
+        margin-left: -20px;
+        width: 40px;
+        font-size: 0;
+        text-align: center;
+        display: table;
+        height: 40px;
+    }
+    .zcz_postal_ol li .postal_money .num {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 16px;
+        color: #e93a47;
+        font-weight: bold;
+        line-height: 18px;
+    }
+    .zcz_postal_ol li .postal_btn {
+        position: absolute;
+        left: 83px;
+        bottom: 23px;
+    }
+    .zcz_postal_ol li .postal_btn a {
+        display: inline-block;
+        width: 136px;
+        height: 31px;
+        border-radius: 3px;
+        background: #ff6666;
+        color: #efce99;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+    }
+   .zcz_postal_ol li .postal_btn a:hover {
+        background: #ff5757;
+    }
+
+
+    .zcz_postal_ul  li {
+        background: url(/Style/images/redpackets_did.jpg) no-repeat center;
+    }
+    .zcz_postal_ul li .postal_money .num, .zcz_postal_ul li .postal_money .text {
+        color: #a5a5a5;
+    }
+    .zcz_postal_ul li .postal_btn a {
+        color: #fff;
+        background: #ccc;
+        cursor: default;
+    }
+</style>
 <div class="ycw_ov_wrapper ycw_clearFix">
     <include file="Public:left" />
     <div class="ycw_ov_index">
@@ -12,11 +90,125 @@
             <div class="bd">
                 <!--财行优选-->
                 <div>
-                    safasfasf
+                   <ul class="zcz_postal_ol" style="display: block;">
+                    <li>
+                        <div class="postal_txt">
+                            <p>条件：投资100,限1月标及以上用 </p>
+                            <p>开始：2017-12-14 11:30:51</p>
+                            <p>到期：2017-12-15 11:30:51</p>
+                        </div>
+                        <div class="postal_money">
+                            <span class="num">0.5%加息</span>
+                            <!--<span class="text">元</span>-->
+                        </div>
+                        <div class="postal_btn">
+                            <a href="/investinfo">马上加入</a>
+                        </div>
+                    </li>
+                     <li>
+                    <div class="postal_txt">
+                        <p>条件：投资100,限1月标及以上用 </p>
+                        <p>开始：2017-12-14 11:30:37</p>
+                        <p>到期：2017-12-15 11:30:37</p>
+                    </div>
+                    <div class="postal_money">
+                        <span class="num">11元</span>
+                        <!--<span class="text">元</span>-->
+                    </div>
+                    <div class="postal_btn">
+                        <a href="/investinfo">马上加入</a>
+                    </div>
+                </li>
+                     <li>
+                           <div class="postal_txt">
+                               <p>条件：投资100,限1月标及以上用 </p>
+                               <p>开始：2017-12-14 11:30:51</p>
+                               <p>到期：2017-12-15 11:30:51</p>
+                           </div>
+                           <div class="postal_money">
+                               <span class="num">0.5%加息</span>
+                               <!--<span class="text">元</span>-->
+                           </div>
+                           <div class="postal_btn">
+                               <a href="/investinfo">马上加入</a>
+                           </div>
+                       </li>
+                     <li>
+                           <div class="postal_txt">
+                               <p>条件：投资100,限1月标及以上用 </p>
+                               <p>开始：2017-12-14 11:30:37</p>
+                               <p>到期：2017-12-15 11:30:37</p>
+                           </div>
+                           <div class="postal_money">
+                               <span class="num">11元</span>
+                               <!--<span class="text">元</span>-->
+                           </div>
+                           <div class="postal_btn">
+                               <a href="/investinfo">马上加入</a>
+                           </div>
+                       </li>
+                     </ul>
                 </div>
                 <!--网贷产品-->
                 <div style="display: none;">
-                   sdasdasdasdsa
+                    <ul class="zcz_postal_ul zcz_postal_ol" style="display: block;">
+                        <li>
+                            <div class="postal_txt">
+                                <p>条件：投资100,限1月标及以上用 </p>
+                                <p>开始：2017-12-14 11:30:51</p>
+                                <p>到期：2017-12-15 11:30:51</p>
+                            </div>
+                            <div class="postal_money">
+                                <span class="num">0.5%加息</span>
+                                <!--<span class="text">元</span>-->
+                            </div>
+                            <div class="postal_btn">
+                                <a href="/investinfo">马上加入</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="postal_txt">
+                                <p>条件：投资100,限1月标及以上用 </p>
+                                <p>开始：2017-12-14 11:30:37</p>
+                                <p>到期：2017-12-15 11:30:37</p>
+                            </div>
+                            <div class="postal_money">
+                                <span class="num">11元</span>
+                                <!--<span class="text">元</span>-->
+                            </div>
+                            <div class="postal_btn">
+                                <a href="/investinfo">马上加入</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="postal_txt">
+                                <p>条件：投资100,限1月标及以上用 </p>
+                                <p>开始：2017-12-14 11:30:51</p>
+                                <p>到期：2017-12-15 11:30:51</p>
+                            </div>
+                            <div class="postal_money">
+                                <span class="num">0.5%加息</span>
+                                <!--<span class="text">元</span>-->
+                            </div>
+                            <div class="postal_btn">
+                                <a href="/investinfo">马上加入</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="postal_txt">
+                                <p>条件：投资100,限1月标及以上用 </p>
+                                <p>开始：2017-12-14 11:30:37</p>
+                                <p>到期：2017-12-15 11:30:37</p>
+                            </div>
+                            <div class="postal_money">
+                                <span class="num">11元</span>
+                                <!--<span class="text">元</span>-->
+                            </div>
+                            <div class="postal_btn">
+                                <a href="/investinfo">马上加入</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
