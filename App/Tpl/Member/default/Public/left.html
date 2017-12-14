@@ -1,26 +1,26 @@
 <div class="zwj_c_left">
 	<ul class="nav_lists">
 		<li>
-			<div class="p_nav p_tle act" onclick="location.href='/Member/Overview'">
+			<div class="p_nav p_tle act">
 				<i class="iel ie1"></i>
 				<p>个人中心</p>
 				<i class="iri"></i>
 			</div>
 			<div class="s_nav">
-				<a href="javascript:;">账户总览</a>
+				<a href="/Member/Overview">账户总览</a>
 				<a href="javascript:;">财行优选</a>
 				<a href="javascript:;">网贷产品</a>
 			</div>
 		</li>
 		<li>
-			<div class="p_nav p_tle" onclick="location.href='/Member/Fundmanagement'">
+			<div class="p_nav p_tle p_link" onclick="location.href='/Member/Fundmanagement'">
 				<i class="iel ie2"></i>
 				<p>投资管理</p>
 				<!--<i></i>-->
 			</div>
 		</li>
 		<li>
-			<div class="p_nav p_tle" onclick="location.href='/Member/Investmentmanagement'">
+				<div class="p_nav p_tle p_link" onclick="location.href='/Member/Investmentmanagement'">
 				<i class="iel ie3"></i>
 				<p>资金管理</p>
 				<!--<i></i>-->
@@ -43,18 +43,20 @@
 <script>
 	$(function(){
 		$(".nav_lists>li>.p_tle").click(function(){
-			$(".nav_lists>li>div.s_nav a").removeClass('active');
-			$(".nav_lists>li>.p_tle").removeClass('active');
-			$(this).addClass('active');
-			if($(this).next('div.s_nav').is(':visible')){
-				$(this).next('div.s_nav').slideUp();
-				$(this).removeClass('act');
-			}else{
-				$(this).next('div.s_nav').slideDown();
-				$(this).addClass('act');
-				$(this).parents('li').find('.s_nav a').eq(0).click();
+			if($(this).hasClass('p_link')){
+				$(".nav_lists>li>div.s_nav a").removeClass('active');
+				$(".nav_lists>li>.p_tle").removeClass('active');
+				$(this).addClass('active');
+			}else {
+				if($(this).next('div.s_nav').is(':visible')){
+					$(this).next('div.s_nav').slideUp();
+					$(this).removeClass('act');
+				}else{
+					$(this).next('div.s_nav').slideDown();
+					$(this).addClass('act');
+				}
 			}
-		})
+		});
 
 		$(".nav_lists>li>div.s_nav a").click(function(){
 			$(".nav_lists>li>div.s_nav a").removeClass('active');
@@ -65,21 +67,23 @@
 
 		/*---ycw_add_左侧导航高亮---*/
 		function leftActive(){
-			var $_index = 0;
+			var $_index_1 = 0; //控制一级导航
+			var $_index_2 = null; //控制二级导航
 			switch(window.location.pathname){
-				case '/Member/Overview':
-					$_index = 0;
+				case '/Member/Overview': //账户总览
+					$_index_1 = 0; //个人中心
+					$_index_2 = 0; //账户总览
 					break;
 				case '/Member/Fundmanagement':
-					$_index = 1;
+					$_index_1 = 1;
 					break;
 				case '/Member/Investmentmanagement':
-					$_index = 2;
+					$_index_1 = 2;
 					break;
 			}
-			$('.nav_lists>li').eq($_index).children('.p_tle').addClass('active');
+			$('.nav_lists>li').eq($_index_1).children('.p_tle').addClass('active');
+			$_index_2?$('.nav_lists>li').eq($_index_1).children('.s_nav').children('a').eq($_index_2-1).addClass('active'):'';
 		}
 		leftActive();
 	})
-
 </script>
