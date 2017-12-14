@@ -1,3 +1,327 @@
 <include file="Public:header" />
-
+<div id="main" class="">
+	<!-- <p class="pos_p">
+            <volist name="total" id="v">
+                <span class="time_img">{$v}</span>
+            </volist>
+   </p> -->
+	<div class="main_in">
+		<div class="main_content login">
+			<img src="/Style/images/posi2.png" alt="" class="login_posi">
+			<p class="reg_tip_new">[广告]市场有风险，出借需谨慎！</p>
+			<form id="" name="form">
+				<h3>
+					<a href="javascript:;" class="login">登录</a>
+					<span class="float_r" style="padding-top:10px;">
+						<span class="myzh color_jiu">没有帐号？</span>
+						<a href="/member/common/reg" class="mfzc">免费注册</a>
+					</span>
+				</h3>
+				<div class="mc_bd">
+					<input type="hidden" id="nameaa" value="<php>echo cookie('nameaa')</php>" name="">
+					<label for="login">
+						<input class="bg_inputo" type="text" onclick="Myselect_txtarea()" name="username" placeholder="输入用户名/手机号" value="{$userName}" onblur='usernames()' id="login_x" placeholder="输入用户名/手机号/邮箱" />
+						<p id='spuser_name_x'></p>
+					</label>
+					<label for="reg">
+						<input class="bg_inputt" type="password"  name="" value="<php>echo $_COOKIE['pwdaa']</php>" id="reg_x" onblur='pwd()' placeholder="输入密码" />
+						<p id='sp_pwd_x'></p>
+					</label>
+					<input type="hidden" value="{$param}" id="param" />
+					<p class="auto denglu_p">
+						<span class="auto_login">
+							<input type="checkbox" name="jizhu_x" value="1" />
+							<span>记住用户名</span>
+						</span>
+						<a class="wangjimima color_jiu color_jiu float_r lost" href="/member/common/sjyz" style="width: 60px; padding-right: 0;">忘记密码</a>
+					</p>
+					<a href="javascript:;" class="denglua" onclick="login()">登录</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 <include file="Public:footer" />
+<script type="text/javascript">
+	flags = 1;
+	a_user_name = 1;
+
+	function usernames() {
+		var login = $("#login_x").val();
+		if(login == "") {
+			$("#spuser_name_x").html("<font>用户名不能为空</font>");
+			$("#login_x").css("border", "1px solid rgb(210, 163, 107)");
+			$("#login_x").css("box-shadow", "rgb(210, 163, 107) 0px 0px 3px");
+			a_user_name = 0;
+			flags = 1;
+			$(".denglua").html('登录').css('background', '#d3b381');
+			return false;
+		} else {
+			$("#spuser_name_x").html("");
+			$("#login_x").css("border", "");
+			$("#login_x").css("color", "#424242");
+			a_user_name = 1;
+		}
+	}
+	a_pwd = 1;
+
+	function pwd() {
+		var reg = $("#reg_x").val();
+		if(reg == "") {
+			$("#sp_pwd_x").html("<font>密码不能为空</font>");
+			$("#reg_x").css("border", "1px solid rgb(210, 163, 107)");
+			$("#reg_x").css("box-shadow", "rgb(210, 163, 107) 0px 0px 3px");
+			a_pwd = 0;
+			flags = 1;
+			$(".denglua").html('登录').css('background', '#d3b381');
+		} else {
+			$("#sp_pwd_x").html("");
+			$("#reg_x").css("border", "");
+			$("#reg_x").css("color", "#424242");
+			a_pwd = 1;
+		}
+	}
+	//lzn add enter 确认键提交表单
+	$(function() {
+		document.onkeydown = function(event) {
+			// alert(111)
+			var e = event || window.event || arguments.callee.caller.arguments[0];
+			if(e && e.keyCode == 13) {
+				login();
+			}
+		};
+	});
+
+	function login() {
+		// alert(111)
+		usernames();
+		pwd();
+		if(flags == 2) {
+			alert('登录中请稍候!');
+			return false;
+		} else {
+			flags += 1;
+		}
+		var luntan = $("#luntan").val();
+		var user_name = $("#login_x").val();
+		var user_pass = $("#reg_x").val();
+		var yzm = $("#yzm").val();
+		var obj = document.getElementsByName('jizhu_x');
+		if(obj[0].checked) {
+			var jizhu = obj[0].value;
+		} else {
+			var jizhu = 0;
+		}
+		if(a_user_name == 0 || a_pwd == 0) {
+			return false;
+		}
+		$(".denglua").attr('html', '登录中...').attr('style', 'background:#cdcdcd');
+		$.ajax({
+			url: "__URL__/login_do/",
+			type: "post",
+			dataType: "json",
+			data: {
+				"user_name": user_name,
+				"user_pass": user_pass,
+				"yzm": yzm,
+				"jizhu": jizhu
+			},
+			success: function(d) {
+				if(luntan) {
+					location.href = "/luntan/member/sign.html";
+				} else if(d.status == 1 && param != "") {
+					location.href = param;
+				} else if(d.status == 1) {
+					if($("#statud").val() == 1) {
+						location.href = "/invitation";
+					} else {
+						location.href = "/member/Overview.html?type=1";
+					}
+				} else {
+					flags = 1;
+					$("#sp_pwd_x").html("<font>" + d.message + "</font>");
+					//alert(d.message);
+					$(".denglua").html('登录').css('background', '#d3b381');
+				}
+			},
+			error: function() {
+				window.location.href = "/member/Overview.html";
+			}
+		});
+	}
+	//lzn add over
+	/*$(".denglua").click(function() {
+		// alert(111);
+		usernames();
+		pwd();
+		if(flags == 2) {
+			alert('登录中请稍候!');
+			return false;
+		} else {
+			flags += 1;
+		}
+		var luntan = $("#luntan").val();
+		var user_name = $("#login_x").val();
+		var user_pass = $("#reg_x").val();
+		var yzm = $("#yzm").val();
+		// alert(luntan)
+		// alert(user_name)
+		// alert(user_pass)
+		// alert(yzm)
+		var obj = document.getElementsByName('jizhu_x');
+		if(obj[0].checked) {
+			var jizhu = obj[0].value;
+		} else {
+			var jizhu = 0;
+		}
+		if(a_user_name == 0 || a_pwd == 0) {
+			return false;
+		}
+		$(".denglua").attr('html', '登录中...').attr('style', 'background:#cdcdcd');
+		$.ajax({
+			url: "__URL__/login_do/",
+			type: "post",
+			dataType: "json",
+			data: {
+				"user_name": user_name,
+				"user_pass": user_pass,
+				"yzm": yzm,
+				"jizhu": jizhu
+			},
+			success: function(d) {
+				if(luntan) {
+					location.href = "/luntan/member/sign.html";
+				}
+				if(d.status == 1 && param != "") {
+					location.href = param;
+				} else if(d.status == 1) {
+					location.href = "/member/Overview.html?type=1";
+				} else {
+					flags = 1;
+					$("#sp_pwd_x").html("<font>" + d.message + "</font>");
+					//alert(d.message);
+					$(".denglua").html('登录').css('background', '#d3b381');
+				}
+			},
+			error: function() {
+				window.location.href = "/member/Overview.html";
+			}
+		});
+	});*/
+	//$(".login").click(function(enent))
+	/*function jfun_dogetpass() {
+		var ux = $("#emailname").val();
+		if(ux == "") {
+			alert("请输入用户名或者邮箱");
+			return;
+		}
+		qikoo.dialog.alert("邮件发送中......");
+		$.ajax({
+			url: "__APP__/member/common/dogetpass/",
+			data: {
+				"u": ux
+			},
+			//timeout: 5000,
+			cache: false,
+			type: "post",
+			dataType: "json",
+			success: function(d, s, r) {
+				if(d) {
+					if(d.status == 1) {
+						qikoo.dialog.alert("发送成功，请去邮箱查收");
+						//$.jBox.close(true);
+					} else {
+						qikoo.dialog.alert("发送失败");
+					}
+					setTimeout('location.reload();', 1000);
+				}
+			}
+		});
+	}*/
+	//lzn add 隐藏提示
+	/*function ts_yc() {
+		$("#bg,.box").css("display", "none");
+	}
+	$(".color_true").click(function() {
+		$("#bg,.box").css("display", "none");
+	});*/
+
+	function nameaa() {
+		var nameaa = $("#nameaa").val();
+		//alert(nameaa);
+		$("#login").val(nameaa);
+	}
+	nameaa();
+
+	function Myselect_txtarea() {
+		//onfocus="if(this.value=='输入用户名/手机号'){this.value=''};"
+		if(document.form.username.focus) {
+			document.form.username.select();
+		}
+	}
+</script>
+<script type="text/javascript">
+	$(function() {
+		// 如果不支持placeholder，用jQuery来完成
+		if(!isSupportPlaceholder()) {
+			// 遍历所有input对象, 除了密码框
+			$('input').not("input[type='password']").each(function() {
+				var self = $(this);
+				var val = self.attr("placeholder");
+				input(self, val);
+			});
+			/**/
+			/* 对password框的特殊处理
+			 * 1.创建一个text框
+			 * 2.获取焦点和失去焦点的时候切换
+			 */
+			$('input[type="password"]').each(function() {
+				var pwdField = $(this);
+				var pwdVal = pwdField.attr('placeholder');
+				var pwdId = pwdField.attr('id');
+				// 重命名该input的id为原id后跟1
+				pwdField.after('<input id="' + pwdId + '1" type="text"  style="padding-left:10px " + value=' + pwdVal + ' autocomplete="off" />');
+				var pwdPlaceholder = $('#' + pwdId + '1');
+				pwdPlaceholder.show();
+				pwdField.hide();
+				pwdPlaceholder.focus(function() {
+					pwdPlaceholder.hide();
+					pwdField.show();
+					pwdField.focus();
+				});
+				pwdField.blur(function() {
+					if(pwdField.val() == '') {
+						pwdPlaceholder.show();
+						pwdField.hide();
+					}
+				});
+			});
+		}
+	});
+	// 判断浏览器是否支持placeholder属性
+	function isSupportPlaceholder() {
+		var input = document.createElement('input');
+		return 'placeholder' in input;
+	}
+	// jQuery替换placeholder的处理
+	function input(obj, val) {
+		var $input = obj;
+		var val = val;
+		$input.attr({
+			value: val
+		});
+		$input.focus(function() {
+			if($input.val() == val) {
+				$(this).attr({
+					value: ""
+				});
+			}
+		}).blur(function() {
+			if($input.val() == "") {
+				$(this).attr({
+					value: val
+				});
+			}
+		});
+	}
+</script>
