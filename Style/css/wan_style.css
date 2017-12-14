@@ -1,5 +1,5 @@
 /*.....wan_style_start.....*/
-/*资产总览样式*/
+/*资产总览样式-start*/
 .wan_box{
 	width: 998px;
 	margin: 0 auto;
@@ -41,7 +41,6 @@
     color: #3E3E3E;
     font-size: 14px;
 }
-
 .wan_tab .sp4{
 	color: #D2A36B;
 	border-bottom: 1px solid #d2a36c;
@@ -89,7 +88,7 @@
     font-size: 14px;
     font-family: "微软雅黑";
 }
-/*财行优选表格*/
+/*财行优选表格--start*/
 .wan_content{
 	width: 100%;
     height: auto;
@@ -118,7 +117,8 @@
 	padding: 18px 7px;
 	font-weight: normal;
 }
-/*网贷产品*/
+/*财行优选表格--end*/
+/*网贷产品 --start*/
 .wan_r{
 	width: 100%;
     margin: 0 auto;
@@ -134,6 +134,7 @@
 .wan_r1 span{
 	color: #D2A36B;
 }
+/*网贷产品 --end*/
 /*资金管理——财行优选*/
 .wan_balance {
 	width: 100%;
@@ -202,8 +203,130 @@
     margin-left: 38px;
     font-size: 14px;
 }
+/*资金管理——财行优选 --end*/
+/*我的奖励——积分 -我的积分-start*/
+.me_zichan_h {
+    height: 25px;
+    border-left: 3px solid #D3A36A;
+    background: #ffffff;
+}
+.me_zichan_h h2 {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: normal;
+    padding-left: 20px;
+    color: #424242;
+}
+.wan_invest_tab{
+	background: #ffffff;
+    padding: 20px !important;
+}
+.wan_invest_tab .hd { 
+    background-color: #f9f9f9;
+    margin: 20px 0px 0px 0px !important;
+}
+.wan_jfcon{
+	width: 958px;
+	height: auto!important;
+	padding-top: 35px;
+}
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right;
+}
+.wan_jfcon .myjifen{
+	width: 387px!important;
+    height: 160px;
+    padding: 0;
+    margin-left: 50px;
+    line-height: 160px;
+    text-align: center;
+    border: none;
+    background: #F6F6F6;
+}
+.wan_jfcon .myjifen span {
+    font-size: 18px;
+    color: #292929;
+}
+.wan_jfcon .myjifen i {
+    font-size: 30px;
+    color: #d3a36a;
+}
+.wan_jfcon .myjifen em {
+    font-size: 18px;
+    color: #d3a36a;
+    font-style: normal;
+}
+.wan_jfcon .myjfen02 {
+ height: 80px;
+    background: #f3f3f3;
+    line-height: 80px;
+    margin-top: 11px;
+    padding-left: 20px;
+    padding-right: 80px;
+    width: 740px;
+    margin-left: 50px;
+}
+.wan_jfcon .qusc {
+    width: 191px;
+    height: 37px;
+    background: url(/Style/images/btn_sc1.jpg) no-repeat;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.wan_jfcon .myjfp {
+    padding-top: 45px;
+    padding-left: 55px;
+}
+.myjfp p {
+    line-height: 30px;
+    font-size: 14px;
+}
+/*我的奖励——积分 -我的积分-end*/
+
+/*我的奖励——积分 -积分记录-start*/
+.wan_jfcon .biaopage {
+    width: 840px;
+    height: 35px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid #ccc;
+    margin-top: 50px;
+    text-align: center;
+}
+.wan_jfcon .wan_content1{
+	padding: 0 !important;
+}
+/*我的奖励——积分记录 --end*/
+
+/*我的奖励——积分订单管理 --start*/
 
 
+/*我的奖励——积分订单管理 --start*/
+.wan_jfcon .yello_h {
+    height: 55px;
+    line-height: 55px;
+    background-color: #f6f6f6;
+}
+.wan_jfcon .yello_h ul li {
+    float: left;
+    font-size: 14px;
+    text-align: center;
+}
+.wan_jfcon .yello_h_list_dingdan ul li {
+    border-bottom: 1px solid #ccc;
+    height: 130px;
+    overflow: hidden;
+}
+.wan_jfcon .shiwupage p {
+    line-height: 35px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+/*我的奖励——积分订单管理 --end*/
 
 
 /*.....wan_style-end.....*/
