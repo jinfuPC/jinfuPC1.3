@@ -104,7 +104,7 @@
 }
 .wan_content .ssh_customers td,
 .wan_content .ssh_customers th {
-	padding: 20px;
+	padding: 18px;
 	color: #555555;
 	font-size: 14px;
 	text-align: center;
@@ -131,7 +131,8 @@
 	color: #666666;
 	font-size: 14px;
 }
-.wan_r1 span{
+.wan_r1 a{
+	
 	color: #D2A36B;
 }
 /*网贷产品 --end*/
