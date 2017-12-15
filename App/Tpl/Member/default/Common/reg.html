@@ -1,4 +1,5 @@
 <include file="Public:header" />
+<script src="/Style/js/Validform_v5.3.2_ncr_min.js" type="text/javascript" charset="utf-8"></script>
 <script src="/Style/js/reg.js" type="text/javascript" charset="utf-8"></script>
 <div id="shiming" class="clearfix">
 	<div class="shi_in clearfix">
@@ -6,97 +7,69 @@
 			<h4 class="fl">欢迎注册信广金服</h4>
 			<div class="w_left fr">
 				<p class="yydl fr">我已注册 立即
-					<a href="/member/common/login" style="color: #ff751b;font-size:16px">登录</a>
+					<a href="/member/common/login" style="color: #d2a36b;font-size:16px">登录</a>
 				</p>
 			</div>
 		</div>
 		<div id="reg">
 			<div class="main_in">
 				<div class="main_content">
-					<form name="form1">
+					<form name="form1" id="form1">
 						<div class="form_top">
 							<div class="mc_bd">
-								<div id="input01" style="clear: both">
+								<div class="label inputBox" id="input01" style="clear: both">
 									<p class="inp_p">手机号</p>
-									<input placeholder="请输入手机号" class="sjj" type="text" name="mobile" id="login" onblur="P_phone()" onkeyup="P_phoneon()" />
-									<p id="spphone"></p>
+									<input class="sjj Validform_error" id="login" datatype="m" nullmsg="输入用户名/手机号" errormsg="请输入11位正确的手机号码" type="text" name="mobile" maxlength="11" />
+									<em>请输入手机号</em>
+									<p class="Validform_checktip"></p>
+									<!--<p id="spphone"></p>-->
 								</div>
-								<div for="reg" id="input02" style="clear: both">
+								<div class="label inputBox" for="reg" id="input02" style="clear: both">
 									<div class="pos">
 										<div id="box">
 											<p class="inp_p">登录密码</p>
 											<!--onkeyup="fpwdon()"-->
-											<input placeholder="请输入密码" class="mima" onkeyup="fpwd()" id="pw_one" type="password" name="pwd">
-											<p id="sppw_one"></p>
+											<input class="mima Validform_error"  id="pw_one" datatype="*6-20" nullmsg="密码不能为空" errormsg="密码长度为6-20个字符" onkeyup="fpwd()" type="text" name="pwd" onfocus="this.type='password'" maxlength="20">
+											<em>请输入密码</em>
+											<p class="Validform_checktip"></p>
+											<!--<p id="sppw_one"></p>-->
 										</div>
 									</div>
 								</div>
-								<script>
-									$("#pw_one").keyup(function(e) {
-										var theEvent = e || window.event;
-										var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
-										if(code == 13) {
-											fpwd();
-											//fpwdon();
-										}
-									});
-								</script>
 								<!--验证码 图文-->
-								<div id="twyz">
+								<div id="twyz" class="label inputBox">
 									<p class="inp_p">图形验证码</p>
-									<p class="yz_ia" style="display:block;height:50px;">
-										<input placeholder="请输入验证码" style="width: 398px!important;" type="text" name="verify" id="verify" class="test_yzm" onkeyup="verify2()">
-										<img onclick="this.src=this.src+'?t='+Math.random()" id="imVcode" alt="点击换一个校验码" style="width:120px;margin:0; height:48px;float:left" src="/Member/common/verify"> </p>
-									<p id="verifyTop" class="verifyTop" style="display:block;line-height:24px;"></p>
+									<p class="yz_ia">
+										<input type="text" datatype="*" nullmsg="图形验证码不能为空" name="verify" id="verify" class="test_yzm" onkeyup="verify2()">
+										<em>请输入图形验证码</em>
+										<img class="yzm_img" src="/Style/images/ermjf.png" onclick="this.src=this.src+'?t='+Math.random()" id="imVcode" alt="点击换一个校验码" src="/Member/common/verify"> 
+										<p class="Validform_checktip"></p>
+										<!--<p id="verifyTop" class="verifyTop" style="display:block;line-height:24px;"></p>-->
+									</p>
 								</div>
-								<script>
-									//document.onkeydown = function(e) {  
-									$("#verify").keyup(function(e) {
-										var theEvent = e || window.event;
-										var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
-										if(code == 13) {
-											verify2();
-											$('#yfdxinput').focus();
-										}
-										if(code == 9) {
-											verify2();
-											$('#yfdxinput').focus();
-										}
-									});
-								</script>
 								<!---->
-								<div id="duanxininput" class="dijihou" style="height: 45px;">
+								<div id="duanxininput" class="dijihou label inputBox">
 									<p class="inp_p">短信验证码</p>
-									<p class="yz_ia" style="display:block;height:45px;">
+									<p class="yz_ia">
 										<!--短息-->
-										<input style="width:398px!important;" type="text" name="yzm" id="yfdxinput" class="test_yzm" placeholder="请输入验证码" disabled="disabled">
+										<input type="text" datatype="n" nullmsg="验证码不能为空" name="yzm" id="yfdxinput" class="test_yzm" maxlength="6">
+										<em>请输入验证码</em>
 										<a id="fsz" style="display:none;background:#999;" class="dxyfs" disabled="disabled">短信已发送（ 60s ）</a>
 										<a id="hyzm" class="dxyfs">发送短信验证码</a>
 										<a style="display:none" id="cfdx" href="javascript:hqyzm(60)" class="dxyfs">发送短信验证码</a>
 										<!--div class="yyyzs" style="font-size: 12px;color:#fff;text-align:left;display:none">如果没有收到短信验证码，&nbsp;<a style="color:#ff751b;margin-top:-20px;font-size: 12px;" disabled="disabled" id="yuyina" href="javascript:yuyin(60)">请获取语音验证码</a><a style="color: #ccc;display:none;margin-top:-20px;font-size: 12px;" disabled="disabled" id="yuyinb" href="javascript:;">请获取语音验证码</a>
                                         </div-->
+										<p class="Validform_checktip"></p>
 									</p>
 									<p class="verifyTop2" style="display:block;line-height:24px;margin-top:-5px;"></p>
 								</div>
-								<script>
-									//document.onkeydown = function(e) {  
-									$("#yfdxinput").keyup(function(e) {
-										var theEvent = e || window.event;
-										var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
-										if(code == 13) {
-											$('.tui').focus();
-										}
-										if(code == 9) {
-											$('.tui').focus();
-										}
-									});
-								</script>
 								<input type="hidden" id="otc" value="{$statu}">
 								<p style="color:#d2a36b;font-size: 14px;">推荐人手机号码（选填）</p>
 								<if condition="cookie('rid') eq null and  $_GET['rid'] eq 0">
-									<div class="tj_h" style="clear: both;">
+									<div class="tj_h inputBox tjr" style="clear: both;">
 										<p class="inp_p">推荐人手机</p>
-										<input class="tui" onblur="tuijianren()" placeholder="请输入推荐人手机号"/>
+										<input class="tui" onblur="tuijianren()" />
+										<em>请输入推荐人手机号</em>
 										<p id="sptjr"></p>
 									</div>
 								</if>
@@ -106,7 +79,8 @@
 										<a href="/Xieyi/index" class="lcd">《信广金服网站服务协议》</a>
 									</span>
 								</span>
-								<a href="javascript:void(0);" onclick="newreg()" class="denglureg">立即注册</a>
+								<input type="submit" class="denglureg" value="立即注册" />
+								<!--<a href="javascript:void(0);" onclick="newreg()" class="denglureg">立即注册</a>-->
 							</div>
 						</div>
 					</form>
@@ -130,6 +104,73 @@
 	<p>5、如以上方案仍未能解决您的问题，请联系信广金服客服。客服电话：400-151-3456.</p>
 	<span class="l_yes">确定</span>
 </div>
+<script type="text/javascript">
+	$(function(){
+		var nameVal = $("#login").val();
+		var pwdVal = $("#pw_one").val();
+		var ymzVal = $("#verify").val();
+		if(!nameVal){
+			$("#login").siblings("em").show();
+		}else{
+			$("#login").siblings("em").hide();
+		}
+		if(!pwdVal){
+			$("#pw_one").siblings("em").show();
+		}else{
+			$("#pw_one").siblings("em").hide();
+		}
+		if(!ymzVal){
+			$("#verify").siblings("em").show();
+		}else{
+			$("#verify").siblings("em").hide();
+		}
+	})
+	var demo=$("#form1").Validform({
+		tiptype:3,
+		label:".label",
+		showAllError:true
+	});
+</script>
+
+
+<script>
+	//document.onkeydown = function(e) {  
+	$("#yfdxinput").keyup(function(e) {
+		var theEvent = e || window.event;
+		var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+		if(code == 13) {
+			$('.tui').focus();
+		}
+		if(code == 9) {
+			$('.tui').focus();
+		}
+	});
+</script>
+<script>
+	$("#pw_one").keyup(function(e) {
+		var theEvent = e || window.event;
+		var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+		if(code == 13) {
+			fpwd();
+			//fpwdon();
+		}
+	});
+</script>
+<script>
+	//document.onkeydown = function(e) {  
+	$("#verify").keyup(function(e) {
+		var theEvent = e || window.event;
+		var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+		if(code == 13) {
+			verify2();
+			$('#yfdxinput').focus();
+		}
+		if(code == 9) {
+			verify2();
+			$('#yfdxinput').focus();
+		}
+	});
+</script>
 <!--<script>
 	$(function() {
 		$('.l_yes').click(function() {

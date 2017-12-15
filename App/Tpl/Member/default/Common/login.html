@@ -1,4 +1,5 @@
 <include file="Public:header" />
+<script src="/Style/js/Validform_v5.3.2_ncr_min.js" type="text/javascript" charset="utf-8"></script>
 <div id="main" class="">
 	<!-- <p class="pos_p">
             <volist name="total" id="v">
@@ -9,7 +10,7 @@
 		<div class="main_content login">
 			<img src="/Style/images/posi2.png" alt="" class="login_posi">
 			<p class="reg_tip_new">[广告]市场有风险，出借需谨慎！</p>
-			<form id="" name="form">
+			<form id="loginForm" name="form">
 				<h3>
 					<a href="javascript:;" class="login">登录</a>
 					<span class="float_r" style="padding-top:10px;">
@@ -19,13 +20,17 @@
 				</h3>
 				<div class="mc_bd">
 					<input type="hidden" id="nameaa" value="<php>echo cookie('nameaa')</php>" name="">
-					<label for="login">
-						<input class="bg_inputo" type="text" onclick="Myselect_txtarea()" name="username" placeholder="输入用户名/手机号" value="{$userName}" onblur='usernames()' id="login_x" placeholder="输入用户名/手机号/邮箱" />
-						<p id='spuser_name_x'></p>
+					<label class="inputBox label" for="login">
+						<input class="bg_inputo Validform_error" datatype="m" nullmsg="输入用户名/手机号" errormsg="请输入11位正确的手机号码" type="text" name="username" value="{$userName}" id="login_x" maxlength="11" />
+						<em>输入用户名/手机号</em>
+						<p class="Validform_checktip"></p>
+						<!--<p id='spuser_name_x' class=""></p>-->
 					</label>
-					<label for="reg">
-						<input class="bg_inputt" type="password"  name="" value="<php>echo $_COOKIE['pwdaa']</php>" id="reg_x" onblur='pwd()' placeholder="输入密码" />
-						<p id='sp_pwd_x'></p>
+					<label class="inputBox label" for="reg">
+						<input class="bg_inputt" datatype="*6-20" nullmsg="密码不能为空" errormsg="密码长度为6-20个字符" type="text" value="<php>echo $_COOKIE['pwdaa']</php>" id="reg_x" onfocus="this.type='password'" maxlength="20" />
+						<em>输入密码</em>
+						<p class="Validform_checktip" id="sp_pwd_x"></p>
+						<!--<p id='sp_pwd_x'></p>-->
 					</label>
 					<input type="hidden" value="{$param}" id="param" />
 					<p class="auto denglu_p">
@@ -35,7 +40,8 @@
 						</span>
 						<a class="wangjimima color_jiu color_jiu float_r lost" href="/member/common/sjyz" style="width: 60px; padding-right: 0;">忘记密码</a>
 					</p>
-					<a href="javascript:;" class="denglua" onclick="login()">登录</a>
+					<input class="denglua action" onclick="login()" type="submit" value="登录" />
+					<!--<a href="javascript:;" class="denglua" onclick="login()">登录</a>-->
 				</div>
 			</form>
 		</div>
@@ -43,13 +49,35 @@
 </div>
 <include file="Public:footer" />
 <script type="text/javascript">
-	flags = 1;
+	$(function(){
+		var nameVal = $("#login_x").val();
+		var pwdVal = $("#reg_x").val();
+		if(!nameVal){
+			$("#login_x").siblings("em").show();
+		}else{
+			$("#login_x").siblings("em").hide();
+		}
+		if(!pwdVal){
+			$("#reg_x").siblings("em").show();
+		}else{
+			$("#reg_x").siblings("em").hide();
+		}
+	})
+	var demo=$("#loginForm").Validform({
+		tiptype:3,
+		label:".label",
+		showAllError:true
+	});
+	
+	
+	
+	/*flags = 1;
 	a_user_name = 1;
 
 	function usernames() {
 		var login = $("#login_x").val();
 		if(login == "") {
-			$("#spuser_name_x").html("<font>用户名不能为空</font>");
+			//$("#spuser_name_x").html("<font>用户名不能为空</font>");
 			$("#login_x").css("border", "1px solid rgb(210, 163, 107)");
 			$("#login_x").css("box-shadow", "rgb(210, 163, 107) 0px 0px 3px");
 			a_user_name = 0;
@@ -57,31 +85,31 @@
 			$(".denglua").html('登录').css('background', '#d3b381');
 			return false;
 		} else {
-			$("#spuser_name_x").html("");
+			//$("#spuser_name_x").html("");
 			$("#login_x").css("border", "");
 			$("#login_x").css("color", "#424242");
 			a_user_name = 1;
 		}
 	}
-	a_pwd = 1;
+	a_pwd = 1;*/
 
-	function pwd() {
+	/*function pwd() {
 		var reg = $("#reg_x").val();
 		if(reg == "") {
-			$("#sp_pwd_x").html("<font>密码不能为空</font>");
+			//$("#sp_pwd_x").html("<font>密码不能为空</font>");
 			$("#reg_x").css("border", "1px solid rgb(210, 163, 107)");
 			$("#reg_x").css("box-shadow", "rgb(210, 163, 107) 0px 0px 3px");
 			a_pwd = 0;
 			flags = 1;
 			$(".denglua").html('登录').css('background', '#d3b381');
 		} else {
-			$("#sp_pwd_x").html("");
+			//$("#sp_pwd_x").html("");
 			$("#reg_x").css("border", "");
 			$("#reg_x").css("color", "#424242");
 			a_pwd = 1;
 		}
-	}
-	//lzn add enter 确认键提交表单
+	}*/
+//	//lzn add enter 确认键提交表单
 	$(function() {
 		document.onkeydown = function(event) {
 			// alert(111)
@@ -91,13 +119,25 @@
 			}
 		};
 	});
-
+	flags = 1;
+	a_user_name = 1;
+	a_pwd = 1;
 	function login() {
+		var login = $("#login_x").val();
+		var reg = $("#reg_x").val();
+		if(!login || !reg){
+			a_user_name = 0;
+			a_pwd = 0;
+			flags = 1;
+		}else if(login && reg){
+			a_user_name = 1;
+			a_pwd = 1;
+		}
 		// alert(111)
-		usernames();
-		pwd();
+		//usernames();
+		//pwd();
 		if(flags == 2) {
-			alert('登录中请稍候!');
+			layer.msg('登录中请稍候!');
 			return false;
 		} else {
 			flags += 1;
@@ -139,8 +179,8 @@
 					}
 				} else {
 					flags = 1;
-					$("#sp_pwd_x").html("<font>" + d.message + "</font>");
-					//alert(d.message);
+					$("#sp_pwd_x").html(d.message);
+					layer.msg(d.message);
 					$(".denglua").html('登录').css('background', '#d3b381');
 				}
 			},
@@ -246,21 +286,21 @@
 		$("#bg,.box").css("display", "none");
 	});*/
 
-	function nameaa() {
-		var nameaa = $("#nameaa").val();
-		//alert(nameaa);
-		$("#login").val(nameaa);
-	}
-	nameaa();
-
-	function Myselect_txtarea() {
-		//onfocus="if(this.value=='输入用户名/手机号'){this.value=''};"
-		if(document.form.username.focus) {
-			document.form.username.select();
-		}
-	}
+//	function nameaa() {
+//		var nameaa = $("#nameaa").val();
+//		//alert(nameaa);
+//		$("#login").val(nameaa);
+//	}
+//	nameaa();
+//
+//	function Myselect_txtarea() {
+//		//onfocus="if(this.value=='输入用户名/手机号'){this.value=''};"
+//		if(document.form.username.focus) {
+//			document.form.username.select();
+//		}
+//	}
 </script>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$(function() {
 		// 如果不支持placeholder，用jQuery来完成
 		if(!isSupportPlaceholder()) {
@@ -324,4 +364,4 @@
 			}
 		});
 	}
-</script>
+</script>-->
