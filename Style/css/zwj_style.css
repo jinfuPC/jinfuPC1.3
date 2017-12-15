@@ -100,64 +100,64 @@ body {
 }
 /*默认图标*/
 .nav_lists li .p_nav .ie1{
-	background-position-y: -80px;
+	background-position:0 -80px;
 }
 .nav_lists li .p_nav .ie2{
-	background-position-y: -100px;
+	background-position:0 -100px;
 }
 .nav_lists li .p_nav .ie3{
-	background-position-y: -120px;
+	background-position: 0 -120px;
 }
 .nav_lists li .p_nav .ie4{
-	background-position-y: -140px;
+	background-position:0 -140px;
 }
 .nav_lists li>div i.iri{
-	background-position-y: -270px;
+	background-position: 0 -270px;
 }
 .nav_lists li>div.act i.iri{/*打开*/
-	background-position-y: -260px;
+	background-position: 0 -260px;
 }
 /*鼠标划入图标*/
 .nav_lists li div.p_tle:hover .ie1{
-	background-position-y: -160px;
+	background-position:0 -160px;
 }
 .nav_lists li div.p_tle:hover .ie2{
-	background-position-y: -180px;
+	background-position:0 -180px;
 }
 .nav_lists li div.p_tle:hover .ie3{
-	background-position-y: -200px;
+	background-position:0 -200px;
 }
 .nav_lists li div.p_tle:hover .ie4{
-	background-position-y: -220px;
+	background-position:0 -220px;
 }
 .nav_lists li>div:hover i.iri{
-	background-position-y: -290px;
+	background-position:0 -290px;
 }
 .nav_lists li>div.act:hover i.iri{/*打开*/
-	background-position-y: -280px;
+	background-position:0 -280px;
 }
 /*选中图标*/
 .nav_lists li>div.active .ie1,.nav_lists li:hover>div.active .ie1{
-	background-position-y: 0px;
+	background-position: 0 0;
 	color:#fff
 }
 .nav_lists li>div.active .ie2,.nav_lists li:hover>div.active .ie2{
-	background-position-y: -20px;
+	background-position:0 -20px;
 	color:#fff
 }
 .nav_lists li>div.active .ie3,.nav_lists li:hover>div.active .ie3{
-	background-position-y: -40px;
+	background-position:0 -40px;
 	color:#fff
 }
 .nav_lists li>div.active .ie4,.nav_lists li:hover>div.active .ie4{
-	background-position-y: -60px;
+	background-position: 0 -60px;
 	color:#fff
 }
 .nav_lists li>div.active i.iri{
-	background-position-y: -250px;
+	background-position:0 -250px;
 }
 .nav_lists li>div.active.act i.iri{/*打开*/
-	background-position-y: -240px;
+	background-position:0 -240px;
 }
 /*右侧三角，只在有active属性的时候出现*/
 .nav_lists li>div.active:after{    
