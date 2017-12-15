@@ -377,14 +377,25 @@ body {
 }
 #main .main_in .main_content form .mc_bd label {
     display: block;
-    height: 65px;
-    line-height: 65px;
+    height: 44px;
+    /*line-height: 65px;*/
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 41px;
     position: relative;
 }
+#main .main_in .main_content form .mc_bd label em{
+	position: absolute;
+    color: #999;
+    font-size: 14px;
+    font-style: normal;
+    top: 13px;
+    left: 10px;
+    cursor: auto;
+    /*height: 42px;*/
+    /*line-height: 0;*/
+}
 #main .main_in .main_content form .mc_bd label input {
-	padding: 8px 0 8px 10px;
+	padding: 10px 0 10px 10px;
 	text-align: left;
     width: 528px;
     border: 1px solid #cccccc;
@@ -403,7 +414,10 @@ body {
     height: 23px;
     line-height: 23px;
     font-size: 14px;
-    color: #cbcbcb;
+    color: #999;
+}
+#main .main_in .main_content form .mc_bd p.Validform_checktip{
+	color: #EC7173;
 }
 #main .main_in .main_content form .mc_bd a.lost {
     margin-left: auto;
@@ -417,8 +431,8 @@ body {
 	float: right;
     margin-right: 10px;
 }
-#main .main_in .main_content form .mc_bd a.denglua {
-    width: 100%;
+#main .main_in .main_content form .mc_bd .denglua {
+    width: 99%;
     height: 45px;
     line-height: 45px;
     display: block;
@@ -428,6 +442,8 @@ body {
     background-color: #d2a36b;
     margin-top: 45px;
     border-radius: 3px;
+    border: none;
+    cursor: pointer;
 }
 #spuser_name_x font,#sp_pwd_x font {
     text-align: left;
@@ -450,7 +466,7 @@ body {
 }
 #shiming .shi_in {
     width: 1200px;
-    margin: 50px auto 0;
+    margin: 50px auto 20px;
     background: #fff;
     border-bottom: 1px solid #ccc;
     position: relative;
@@ -531,6 +547,30 @@ body {
     box-sizing: border-box;
     border-radius: 0;
 }
+#reg .main_in .main_content form .mc_bd .label em,
+#reg .main_in .main_content form .mc_bd .tjr em{
+	position: absolute;
+    color: #999;
+    font-size: 14px;
+    font-style: normal;
+    top: 13px;
+    left: 10px;
+    cursor: auto;
+}
+
+#reg .main_in .main_content form .mc_bd .yz_ia{
+	display:block;
+	height:50px;
+}
+#reg .main_in .main_content form .mc_bd .yz_ia .yzm_img{
+	width:120px;
+	margin:0; 
+	height:48px;
+	float:left;
+}
+#reg .main_in .main_content form .mc_bd .yz_ia input{
+	width: 398px!important;
+}
 #spphone, #sppw_one, #verifyTop, #idcardErr, #realnameErr {
     width: 528px;
     position: absolute;
@@ -547,11 +587,11 @@ body {
     right: 0;
 }
 .auto_login {
+	display: block;
     padding-bottom: 25px;
-    display: block;
 }
 .auto_login span {
-    font-size: 16px;
+    font-size: 14px;
 }
 .auto_login span a {
     color: #d2a36b;
@@ -569,6 +609,7 @@ body {
     border: 1px solid #d2a36b;
     width: 100%;
     border-radius: 5px;
+    cursor: pointer;
 }
 .reg_right {
     width: 313px;
