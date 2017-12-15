@@ -586,7 +586,10 @@ body {
     position: absolute;
     right: 0;
 }
-.auto_login {
+#main .auto_login {
+    padding-bottom: 25px;
+}
+#reg .auto_login {
 	display: block;
     padding-bottom: 25px;
 }
