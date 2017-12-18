@@ -1,0 +1,502 @@
+/*.....ycw_style_start.....*/
+/*----账户总览_start----*/
+body{
+  background-color: #f3f3f3;
+}
+.ycw_clearFix:after{
+  display: block;
+  content: ",";
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.ycw_clearFix{
+  zoom: 1;
+}
+.ycw_ov_wrapper{
+  width: 1200px;
+  margin: 40px auto;
+}
+.ycw_ov_index{
+  width: 998px;
+  height: auto;
+  min-height: 587px;
+  float: right;
+  background-color: #fff;
+}
+.ycw_ov_index .ov_index_head{
+  width: 100%;
+  padding: 30px;
+  height: auto;
+}
+.ov_index_head .index_portrait{
+  padding: 4px;
+  display: inline-block;
+  float: left;
+}
+.index_portrait img{
+  width: 56px;
+  height: 56px;
+}
+.ov_index_head .index_username{
+  float:right;
+  width: 860px;
+}
+.username_wrapper .username{
+  line-height: 36px;
+  font-size: 16px;
+  color: #3e3e3e;
+  float: left;
+  padding-right: 8px;
+}
+.username_wrapper .username_icon{
+  width: 56px;
+  height: 36px;
+  float: left;
+  line-height: 36px;
+  background: url(../images/overview/grade_icon.png) center center no-repeat;
+  background-size: contain;
+  text-align: right;
+  font-size: 12px;
+  color: #fff;
+  padding-right: 6px;
+}
+.index_username .un_time{
+  font-size: 12px;
+  color: #898989;
+}
+/*资产配置*/
+.ycw_ov_index .index_asset{
+  width: 938px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fbfbfb;
+  padding: 30px 0;
+}
+.index_asset .asset_wrapper{
+  width: 312px;
+  float: left;
+  text-align: center;
+}
+.asset_wrapper .asset_style{
+  font-size: 14px;
+  color: #898989;
+}
+.asset_wrapper .asset_amount{
+  font-size: 34px;
+  padding-top: 20px;
+  color: #3e3e3e;
+}
+.asset_wrapper .total_amount{
+  color: #d2a36b;
+}
+/*----账户总览_end----*/
+/*----投资管理_start----*/
+.ycw_ov_index .invest_tab{
+  margin: 30px 0 0;
+}
+.invest_tab .hd{
+	margin: 0 20px;
+  background-color: #f9f9f9;
+}
+.invest_tab .tab_item{
+  width: 180px;
+  height: 48px;
+  float: left;
+  font-size: 18px;
+  color: #555;
+  line-height: 48px;
+  text-align: center;
+  border-top: 2px solid #f9f9f9;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.invest_tab .tab_item.on{
+  color: #d2a36b;
+  background-color: #fff;
+  border-top: 2px solid #d2a36b;
+}
+.ycw_ov_index .bd{
+  background-color: #fff;
+}
+.ycw_ov_index .item_status{
+  padding: 20px 0 0 20px;
+}
+.ycw_ov_index .item_type{
+  padding-left: 20px;
+}
+.ycw_ov_index .status_title{
+  width: 132px;
+  height: 50px;
+  font-size: 14px;
+  color: #555;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+}
+.ycw_ov_index .cls_item{
+  width: 90px;
+  height: 50px;
+  float: left;
+}
+.cls_item a{
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #898989;
+  text-align: center;
+  text-decoration: none;
+}
+.ycw_ov_index .cls_item.on a{
+  color: #d2a36b;
+}
+/*----投资管理_end----*/
+/*----错误页面_start----*/
+.ycw_jfError{
+  background-color: #fff;
+  padding: 100px 0 100px;
+  margin-top: -90px;
+  position: relative;
+  z-index: 996;
+}
+.ycw_jfError .jferror_img{
+  display: block;
+  margin: 0 auto ;
+}.ycw_jfError .jferror_img_2{
+   display: block;
+   margin: 100px auto 0;
+ }
+.ycw_jfError .jferr_text{
+  margin: 60px 0 50px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #484848;
+}
+.ycw_jfError .jferr_btn{
+  display: block;
+  margin: 0 auto;
+  width: 139px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  background: #d3a36a;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+}
+.ycw_jfError .jferr_btn:hover{
+  background: #b3874a;
+}
+/*----错误页面_end----*/
+/*----平台实力_start----*/
+.ycw_plat{
+  width: 100%;
+  margin: 0 auto;
+}
+.ycw_plat .plat_con{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.ycw_plat .plat_wrap{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.ycw_plat .plat_con{
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+.ycw_plat .plat_itr{
+  padding-top: 120px;
+  background: url(/Style/images/platform/plat_itr.png) center no-repeat;
+  background-size: cover;
+}
+.ycw_plat .plat_group{
+  width: 100%;
+  text-align: center;
+  color: #e2b175;
+  font-size: 36px;
+  font-weight: 100;
+}
+.ycw_plat .plat_line{
+  width: 100%;
+  height: 12px;
+}
+.ycw_plat .line_grey{
+  margin: 26px 0 64px;
+  background: url(/Style/images/platform/plat_line.png) top center no-repeat;
+  background-size: 288px 12px;
+}
+
+.ycw_plat .plat_text{
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+}
+.ycw_plat .text_layout{
+  padding: 50px 0 120px;
+}
+.ycw_plat .plat_map{
+  width: 100%;
+  height: 656px;
+  background-color: #fff;
+  position: relative;
+}
+.ycw_plat .plat_sub{
+  padding: 76px 50px 0;
+  height: 115px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #0e0e0e;
+  position: relative;
+  z-index: 6;
+}
+.ycw_plat .sub_text{
+  width: 930px;
+  height: 18px;
+  line-height: 18px;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #3e3e3e;
+}
+.sub_text span{
+  float: left;
+}
+.ycw_plat .sub_icon{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(/Style/images/platform/sub_icon.png) center center no-repeat;
+  background-size: 18px 18px;
+}
+.ycw_plat .sub_str{
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  padding-left: 4px;
+}
+.plat_sub .filiale_map{
+  width: 212px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  padding-top: 42px;
+}
+.plat_sub .filiale_text{
+  width: 100%;
+  text-align: right;
+  border-top: 1px solid #3e3e3e;
+  padding-top: 26px;
+}
+.ycw_plat .map_con{
+  width: 1200px;
+  padding: 40px 50px 50px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 30px 0 #dfdfdf;
+  -moz-box-shadow: 0 2px 30px 0 #dfdfdf;
+  box-shadow: 0 2px 30px 0 #dfdfdf;
+}
+.plat_map .map_text{
+  width: 224px;
+  float: left;
+  font-size: 14px;
+  color: #797979;
+  line-height: 28px;
+  text-align: justify;
+}
+.plat_map .map_bou{
+  width: 120px;
+  height: 66px;
+  margin: 37px 0 0 22px;
+  float: left;
+  background: url(/Style/images/platform/bou_arr.png) left center no-repeat;
+  background-size: 27px 14px;
+  border-right: 3px solid #d3a36a;
+}
+.plat_map .map_at{
+  width: 712px;
+  height: 404px;
+  float: right;
+  background: url(/Style/images/platform/map_at.png) center center no-repeat;
+  background-size: 712px 404px;
+}
+.plat_jf .jf_group{
+  text-align: center;
+  color: #3e3e3e;
+  font-size: 36px;
+  font-weight: 100;
+  padding: 60px 0 10px;
+}
+.plat_jf .line_gold{
+  background: url(/Style/images/platform/plat_line_gold.png) top center no-repeat;
+  background-size: 288px 12px;
+}
+.ycw_plat .plat_intr{
+  height: 560px;
+  background: url(/Style/images/platform/intr_bj.png) top center no-repeat;
+  background-size: cover;
+}
+.ycw_plat .intr_con{
+  float: left;
+  width: 544px;
+  padding-top: 80px;
+}
+.intr_con .intr_h5{
+  font-weight: bold;
+  color: #d2a36b;
+  font-size: 22px;
+}
+.ycw_plat .intr_line{
+  width: 53px;
+  height: 3px;
+  background-color: #d2a36b;
+  margin: 12px 0 26px;
+}
+.intr_con .intr_text{
+  font-size: 14px;
+  color: #fff;
+  line-height: 28px;
+  padding-bottom: 40px;
+  text-align: justify;
+}
+.ycw_plat .plat_team{
+  width: 100%;
+  height: 582px;
+  background-color: #fff;
+  padding-top: 80px;
+}
+.ycw_plat .team_con{
+  position: relative;
+}
+.plat_team .team_h5{
+  font-size: 22px;
+  font-weight: bold;
+}
+.plat_team .intr_line{
+  margin-bottom: 40px;
+}
+.plat_team .team_text{
+  width: 604px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #484848;
+  padding: 30px 0 0;
+  text-align: justify;
+  line-height: 24px;
+}
+.plat_team .team_bor_left{
+  width: 375px;
+  height: 264px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  border-left: 1px solid #898989;
+  border-bottom: 1px solid #898989;
+}
+.team_bor_left .left_text{
+  width: 174px;
+  height: 40px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border-radius:20px;
+  background-color: #d2a36b;
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+.plat_team .team_bor_right{
+  width: 666px;
+  height: 333px;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  border-top: 1px solid #898989;
+  border-right: 1px solid #898989;
+  border-bottom: 1px solid #898989;
+}
+.plat_team .team_h5_divide{
+  padding-top: 150px;
+}
+.ycw_plat .plat_innovate{
+  padding: 86px 0 20px;
+}
+.plat_innovate .inn_item{
+  float: left;
+  width: 380px;
+  height: 308px;
+  background-color: #fff;
+  margin-right: 30px;
+  position: relative;
+  padding: 64px 30px 0;
+}
+.ycw_plat .plat_innovate .inn_item_last{
+  margin-right: 0;
+}
+.plat_innovate .item_icon{
+  display: inline-block;
+  width: 78px;
+  height: 50px;
+  position: absolute;
+  top: -21px;
+  left: 30px;
+}
+.plat_innovate .sys_icon{
+  background: url(/Style/images/platform/inn_sys.png) top center no-repeat;
+  background-size: 78px 50px;
+}
+.plat_innovate .exp_icon{
+  background: url(/Style/images/platform/exp_icon.png) top center no-repeat;
+  background-size: 78px 50px;
+}
+.plat_innovate .app_icon{
+  background: url(/Style/images/platform/app_icon.png) top center no-repeat;
+  background-size: 78px 50px;
+}
+.plat_innovate .item_h6{
+  font-size: 18px;
+  color: #0e0e0e;
+}
+.plat_innovate .item_text{
+  font-size: 14px;
+  color: #484848;
+  padding-top: 20px;
+  line-height: 20px;
+}
+.plat_innovate .item_bot{
+  width: 380px;
+  height: 50px;
+  background-color: #f9f9f9;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.plat_innovate .item_bot span{
+  float: left;
+}
+.plat_innovate .bot_fin{
+  display: inline-block;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*----平台实力_end----*/
+/*.....ycw_style-end.....*/
