@@ -1,4 +1,5 @@
 <include file="Public:header" />
+<script src="/Style/js/Validform_v5.3.2_ncr_min.js" type="text/javascript" charset="utf-8"></script>
 <div class="zcz_all">
     <div class="zcz_all_title">
         找回密码
@@ -10,17 +11,16 @@
             <li class="step"><span>完 成</span></li>
         </ol>
     </div>
-
     <div class="zcz_all_center">
         <ul >
             <li class="text"><em>*</em>输入密码：</li>
-            <li  class="inputBox" ><input type="password" class="input" value="" onfocus="this.value='';" onblur="if(this.value.length < 1) this.value=';" id="pass">
+            <li  class="inputBox" ><input type="password" class="input"  id="pass">
                 <em>6-16个字符，建议使用字母加数字或符号的组合密码</em>
             </li>
         </ul>
         <ul>
             <li class="text"><em>*</em>确认密码：</li>
-            <li  class="inputBox" ><input type="password" class="input" value="" onfocus="this.value='';" onblur="if(this.value.length < 1) this.value=';" id="repass">
+            <li  class="inputBox" ><input type="password" class="input"  id="repass">
                 <em>请再次输入密码</em>
             </li>
         </ul>
@@ -28,8 +28,35 @@
     </div>
 
 </div>
-
-
+<script type="text/javascript">
+    function jfun_setpass(){
+        var pass1 = $('#pass').val();
+        var pass2 = $('#repass').val();
+        if ($.trim(pass1) == '' || pass1.length<6) {
+            //$.jBox.tip('请输入新密码,且新密码的长度不要小于6位');
+            $("#sppwd").html("<font color='red'>请输入新密码,且新密码的长度不要小于6位</font>");
+            return;
+        }
+        if ($.trim(pass2) != $.trim(pass1)) {
+            $("#sprepwd").html("<font color='red'>新密码与重复密码必须相同</font>");
+            return;
+        }
+        $.ajax({
+            url: "__URL__/dosetnewpass/",
+            type: "post",
+            dataType: "json",
+            data: {"pass":pass1},
+            success: function(result) {
+                if (result.status == 0) {
+                    //$.jBox.tip("修改失败，请重试",'fail');
+                    alert("修改失败，请重试");
+                }else{
+                    window.location.href="/member/common/wc";
+                }
+            }
+        });
+    }
+</script>
 
 
 <include file="Public:footer" />
