@@ -55,7 +55,7 @@ body {
 }
 .nav_lists li>.p_nav i{
 	float:left;
-	background: url(/NewStyle/Style/images/nav_icon.png) no-repeat center;
+	background: url(/Newstyle/Style/images/nav_icon.png) no-repeat center;
 	position: relative;
 }
 .nav_lists li>.p_nav i.iel{
@@ -163,7 +163,7 @@ body {
 .nav_lists li>div.active:after{    
 	position: absolute;
     content: "";
-    background: url(/NewStyle/Style/images/rig_tri.png) no-repeat 0;
+    background: url(/Newstyle/Style/images/rig_tri.png) no-repeat 0;
     width: 8px;
     height: 12px;
     right: -11px;
@@ -531,7 +531,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    background: url(/NewStyle/Style/images/reg/bian.png) right center no-repeat;
+    background: url(/Newstyle/Style/images/reg/bian.png) right center no-repeat;
     display: none;
 }
 #reg .main_in .main_content form .mc_bd div input {
@@ -673,7 +673,7 @@ body {
 /*#xieyi {
     width: 100%;
     height: 100%;
-    background: url(/NewStyle/Style/images/sm_bg.png) repeat;
+    background: url(/Newstyle/Style/images/sm_bg.png) repeat;
     position: fixed;
     top: 0;
     left: 0;
@@ -695,7 +695,7 @@ body {
 #xieyi .xieyi_in em.close {
     width: 38px;
     height: 40px;
-    background: url(/NewStyle/Style/images/public/cha.png) no-repeat right top;
+    background: url(/Newstyle/Style/images/public/cha.png) no-repeat right top;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -759,7 +759,7 @@ body {
 .ins_box1{
 	width: 100%;
 	height: 464px;
-	background: url(/NewStyle/Style/images/ins_banner1.png) no-repeat center;
+	background: url(/Newstyle/Style/images/ins_banner1.png) no-repeat center;
 }
 .ins_m1{
 	margin: 0 auto;
@@ -784,7 +784,7 @@ body {
 	margin: 23px 0 0 28px;
 	width: 55px;
 	height: 55px;
-	background: url(/NewStyle/Style/images/ins_icon.png) no-repeat center top;
+	background: url(/Newstyle/Style/images/ins_icon.png) no-repeat center top;
 }
 .m_lists .ins_txt1{
 	color: #5d5d5d;
@@ -847,7 +847,7 @@ body {
 	content: "";
 	width: 186px;
 	height: 9px;
-	background: url(/NewStyle/Style/images/ins_sq.png) no-repeat center -11px;
+	background: url(/Newstyle/Style/images/ins_sq.png) no-repeat center -11px;
 }
 .m_h1:before{
 	position: absolute;
@@ -856,7 +856,7 @@ body {
 	content: "";
 	width: 186px;
 	height: 9px;
-	background: url(/NewStyle/Style/images/ins_sq.png) no-repeat center top;
+	background: url(/Newstyle/Style/images/ins_sq.png) no-repeat center top;
 }
 .m_info p{
 	text-align: center;
@@ -866,7 +866,7 @@ body {
 .ins_box2{
 	width: 100%;
 	height: 780px;
-	background: url(/NewStyle/Style/images/ins_banner2.png) no-repeat center;
+	background: url(/Newstyle/Style/images/ins_banner2.png) no-repeat center;
 }
 .ins_m2{
 	margin: 0 auto;
@@ -890,7 +890,7 @@ body {
 	content: "";
 	width: 186px;
 	height: 9px;
-	background: url(/NewStyle/Style/images/ins_sq.png) no-repeat center -21px;
+	background: url(/Newstyle/Style/images/ins_sq.png) no-repeat center -21px;
 }
 .m_h2:after{
 	position: absolute;
@@ -899,12 +899,12 @@ body {
 	content: "";
 	width: 186px;
 	height: 9px;
-	background: url(/NewStyle/Style/images/ins_sq.png) no-repeat center bottom;
+	background: url(/Newstyle/Style/images/ins_sq.png) no-repeat center bottom;
 }
 .ins_box3{
 	width: 100%;
 	height: 501px;
-	background: url(/NewStyle/Style/images/ins_banner3.png) no-repeat center;
+	background: url(/Newstyle/Style/images/ins_banner3.png) no-repeat center;
 }
 .ins_m3{
 	margin: 0 auto;
@@ -944,18 +944,18 @@ body {
 	color: #666566;
 }
 .m3_lists .list_1{
-	background: url(/NewStyle/Style/images/ins3_01.jpg) no-repeat center;
+	background: url(/Newmember/Style/images/ins3_01.jpg) no-repeat center;
 }
 .m3_lists .list_2{
 	background: #fff;
 }
 .m3_lists .list_3{
-	background: url(/NewStyle/Style/images/ins3_03.jpg) no-repeat center;
+	background: url(/Newmember/Style/images/ins3_03.jpg) no-repeat center;
 }
 .ins_box4{
 	width: 100%;
 	height: 635px;
-	background:#fff url(/NewStyle/Style/images/ins_banner4.png) no-repeat center;
+	background:#fff url(/Newmember/Style/images/ins_banner4.png) no-repeat center;
 }
 .ins_m4{
 	margin: 0 auto;
@@ -978,7 +978,7 @@ body {
 	margin-top: 10px;
 	width: 70px;
 	height: 70px;
-	background: url(/NewStyle/Style/images/m4_icon.png) no-repeat center top;
+	background: url(/Newmember/Style/images/m4_icon.png) no-repeat center top;
 }
 .m4_lists h2{
 	color: #3e3e3e;
