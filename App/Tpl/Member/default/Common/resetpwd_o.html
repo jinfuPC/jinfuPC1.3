@@ -1,4 +1,5 @@
 <include file="Public:header" />
+<script src="/Style/js/Validform_v5.3.2_ncr_min.js" type="text/javascript" charset="utf-8"></script>
 <div class="zcz_all">
     <div class="zcz_all_title">
         找回密码
@@ -11,10 +12,11 @@
         </ol>
     </div>
     <div class="zcz_all_center">
+        <form class="resetpwd" >
         <ul>
             <li class="text"><em>*</em>手机号：</li>
             <li  class="inputBox" >
-                <input type="text" class="input" id="tel"   onblur="user_phone()">
+                <input type="text" class="input"  id="tel"   onblur="user_phone()">
                 <em>请输入手机号码</em>
                 <span id="fal"></span>
             </li>
@@ -22,8 +24,8 @@
         <ul>
             <li class="text02"><em>*</em>图形验证码：</li>
             <li class="inputBox">
-                <input type="text" class="sjyz_yzm"   onclick="txyzm()" name="verify" id="verify" onkeyup="ver()">
-                <em>请输入图形验证码</em>
+                <input type="text"  class="sjyz_yzm"   onclick="txyzm()" name="verify" id="verify" onkeyup="ver()">
+                <em style="width: 19%">请输入图形验证码</em>
                 <img onclick="this.src=this.src+'?t='+Math.random()" id="imVcode" alt="点击换一个校验码" style="width:100px;margin:-8px 0 0 15px; height:42px;float:left" src="/Member/common/verifyzh">
                 <span id="false"></span>
             </li>
@@ -32,26 +34,194 @@
             <li class="text02"><em>*</em>验证码：</li>
             <li>
                 <input type="text" class="sjyz_yzm"  placeholder="请输入验证码"  onblur="setMobile()" id="emaiyzm">
-                <font id="yzma">
+                <div id="yzma">
                     <i id="yzmq">
                         <a href="javascript:void(0);" style="background-color:#8E8E8E" class="hqyzm">获取验证码（60s）</a>
                     </i>
                     <i id="yzmw" style="display:none">
                         <a href="javascript:void(0);" onclick="gaina(60,3)" class="hqyzm">获取验证码（60s）</a>
                     </i>
-                </font>
-                <font id="yzmb">
-                    <a href="javascript:gainb();" class="hqyzm">获取验证码（<i id="min">60</i>s）</a>
-                </font>
+                </div>
                 <span id="false"></span>
             </li>
         </ul>
         <div class="zcz_button_a"><a href="javascript:void(0);" onclick="csm()">重设密码</a></div>
         <div class="zcz_annotation">请输入注册时填写的手机号码，我们会向您的手机号发送验证码，请您查看手机短信。</div>
+        </form>
     </div>
 </div>
+<script>
+    //倒计时的判断，一分钟之内不能操作多次----还有发送验证码
+    function gaina(ia,qa){
+        if(qa==3){
+            var aa=sendtwo();
+            if(aa==1001){
+                return false;
+            }
+        }
+        user_phone();
+//			var yz=setMobile();
+//			if(yz==1){
+//				return false;
+//			}
+//$("#false").html("");
+        $("#min").html(ia--);
+        $(".hqyzm").css("background-color","#999999");
+        if(ia>=0){
+            $("#yzma").css("display","none");
+            $("#yzmb").css("display","inline-block");
+            setTimeout('gaina('+ia+',1)',1000)
+        }else{
+            $(".hqyzm").css("background-color","#E5D1AF");
+            $("#yzma").css("display","inline-block");
+            $("#yzmb").css("display","none");
+            $("#min").html(60);
+        }
+    }
+    function gainb(){
+        $("#false").html("操作频繁！");
+    }
+    function user_phone(){
+        var mobile = $("#tel").val();
+        var reg=/^1[3|4|5|7|8][0-9]\d{4,8}$/;
+        if(mobile==null || mobile=="" || !reg.exec(mobile)){
+            $("#fal").html('请输入正确手机号码');
+            return false;
+        }
+        $("#fal").html('');
+    }
 
+    function panduan(){
+        var mobile = $("#tel").val();
+        if(mobile=="请输入手机号码"){
+            $("#tel").val("");
+        }
+    }
+    function yyy(){
+        var mobile = $("#emaiyzm").val();
+        if(mobile=="请输入验证码"){
+            $("#emaiyzm").val("");
+        }
+    }
 
+    //找回密码的手机验证码的发送
+    function sendtwo(){
+        var result=0;
+        var mobile = $("#tel").val();
+        if (mobile == "请输入手机号码") {
+            $("#fal").html("请输入你的手机号！");
+            return 1001;
+        }
+        var partten = /(^(13|15|18|14|17)(\d){9}$)|(^189\d{8}$)/;
+        if (partten.test(mobile)){
+            $.ajax({
+                url: "/Member/Common/sendphonezh/",
+                type: "post",
+                dataType:'json',
+                cache : false,
+                async : false,
+                data: {"cellphone":mobile},
+                success: function(d){
+                    if (d.status == 1){
+                        $("#fal").html("发送成功！");
+                        result=1000;
+                    }else if(d.status==4){
+                        $("#fal").html("短信发送次数超限！");
+                        result=1001;
+                    }else if (d.status == 2){
+                        $("#fal").html("没有此用户！");
+                        result=1001;
+                    }else{
+                        $("#fal").html("验证发送失败！");
+                        result=1001;
+                    }
+                }
+            });
+        }else{
+            $("#fal").html("手机号码格式错误");
+            result=1001;
+        }
+        return result;
+    }
+    //找回密码的手机验证码的判断
+    function setMobile(){
+        //alert('shiyanchenggong');
+        var code = $('#emaiyzm').val();
+        if(code == ""){
+            return false;
+        }else{
+            //alert(code);
+            $.ajax({
+                url: "/Member/Common/validatephonezh",
+                type: "post",
+                dataType: "json",
+                data: {"code":code},
+                success: function(d){
+                    if (d.status==1){
+                        //location.href="/member/common/getpasswordverify?codezh="+code;
+                        $("#false").html("验证成功");
+                        location.href="/member/common/csmm?code="+code;
+                        return true;
+                    }else {
+                        //$("#false").html("444");
+                        $("#false").html(d.message);
+                        return false;
+                    }
+                }
+            });
+        }
+    }
+    function csm(){
+        var code = $('#emaiyzm').val();
+        if(setMobile() && ver()){
+            location.href="/member/common/csmm?code="+code;
+        }else{
+            return false;
+        }
 
+    }
+    //图形验证码
+    function ver(){
+        var str = $('input[name=verify]').val();
+        if(str.length>0){
+            verify2();
+        }else{
+            return false;
+        }
+    }
+    function verify2() {
+        var str = $('input[name=verify]').val();
+        if (str == "") {
+            //verify = 0;
+            $("#spyzm").html("验证码不能为空");
+            return false;
+        } else {
+            $.ajax({
+                url: "/Member/common/ckcode/",
+                type: "post",
+                dataType: "text",
+                data: {"sVerCode":str} ,
+                success: function(d){
+                    var resD = parseInt(d);
+                    if (resD == 2) {
+                        //verify = 1;
+                        $("#yzmq").css("display","none");
+                        $("#yzmw").css("display","block");
+                        return true;
+                    } else {
+                        $("#yzmq").css("display","block");
+                        $("#yzmw").css("display","none");
+                        return false;
+                    }
+                }
+            });
 
+        }
+    }
+    function txyzm(){
+        if($("#verify").val()=="请输入图形验证码"){
+            $("#verify").val("");
+        }
+    }
+</script>
 <include file="Public:footer" />
