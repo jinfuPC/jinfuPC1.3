@@ -110,3 +110,28 @@ body,html{height:100%;min-height:100%}
 #Validform_msg a.Validform_close:hover{color:#cc0;}
 #Validform_msg .Validform_info{padding:8px;border:1px solid #000; border-top:none; text-align:left;}
 /*----zwj表单验证 end----*/
+/*----zwj二级导航 start----*/
+.ab_nav .i_act{
+	color: #D2A36B;
+}
+.nav_box{
+	width: 100%;
+	background: #fff;
+}
+.ab_nav{
+	margin: 0 auto;
+	width: 1200px;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+}
+.ab_nav li{
+	float: left;
+	margin-right: 40px;	
+}
+.ab_nav li a{
+	padding-left: 6px;
+	font-size: 14px;
+	color: #3e3e3e;
+}
+/*----zwj二级导航 end----*/

@@ -756,27 +756,5 @@ body {
 /*注册协议：zwj-end*/
 
 /*安全保障：zwj-start*/
-.ab_nav .i_act{
-	color: #D2A36B;
-}
-.nav_box{
-	width: 100%;
-	background: #fff;
-}
-.ab_nav{
-	margin: 0 auto;
-	width: 1200px;
-	height: 40px;
-	line-height: 40px;
-	overflow: hidden;
-}
-.ab_nav li{
-	float: left;
-	margin-right: 40px;	
-}
-.ab_nav li a{
-	padding-left: 6px;
-	font-size: 14px;
-	color: #3e3e3e;
-}
+
 /*安全保障：zwj-end*/
