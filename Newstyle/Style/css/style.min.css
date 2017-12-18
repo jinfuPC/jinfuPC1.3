@@ -30,7 +30,7 @@ body,html{height:100%;min-height:100%}
 /*----ycw_add_公共头_end----*/
 /*----zcz我的奖励红包----*/
 .zcz_postal_ol{padding:50px 75px 0}
-.zcz_postal_ol li{background:url(/NewStyle/Style/images/redpackets_bg.jpg) no-repeat center;float:left;margin-left:70px;margin-bottom:40px;padding:0;width:302px;height:269px;position:relative;border:none}
+.zcz_postal_ol li{background:url(/Newstyle/Style/images/redpackets_bg.jpg) no-repeat center;float:left;margin-left:70px;margin-bottom:40px;padding:0;width:302px;height:269px;position:relative;border:none}
 .zcz_postal_ol li .postal_txt{position:absolute;width:230px;top:30px;left:35px}
 .zcz_postal_ol li p{color:#fff;font-size:12px;line-height:22px}
 .zcz_postal_ol li .postal_money{position:absolute;top:145px;left:50%;margin-left:-20px;width:40px;font-size:0;text-align:center;display:table;height:40px}
@@ -38,7 +38,7 @@ body,html{height:100%;min-height:100%}
 .zcz_postal_ol li .postal_btn{position:absolute;left:83px;bottom:23px}
 .zcz_postal_ol li .postal_btn a{display:inline-block;width:136px;height:31px;border-radius:3px;background:#f66;color:#efce99;font-size:16px;text-align:center;line-height:30px}
 .zcz_postal_ol li .postal_btn a:hover{background:#ff5757}
-.zcz_postal_ul li{background:url(/NewStyle/Style/images/redpackets_did.jpg) no-repeat center}
+.zcz_postal_ul li{background:url(/Newstyle/Style/images/redpackets_did.jpg) no-repeat center}
 .zcz_postal_ul li .postal_money .num,.zcz_postal_ul li .postal_money .text{color:#a5a5a5}
 .zcz_postal_ul li .postal_btn a{color:#fff;background:#ccc;cursor:default}
 /*----zcz我的奖励红包 end----*/
@@ -46,9 +46,9 @@ body,html{height:100%;min-height:100%}
 .zcz_all{background-color:#fff!important;width:1200px;height:593px;border:1px solid #d1d1d1;border-radius:5px;margin:30px auto}
 .zcz_all_title{height:60px;line-height:60px;color:#333;padding-left:20px;font-size:20px;font-weight:700;border-bottom:1px #cda06a solid}
 .zcz_all_center_title{width:755px;margin:auto;margin-top:15px;overflow:hidden}
-.zcz_all_center_title .step_all{width:100%;height:100px;background:url(/NewStyle/Style/images/qunbude.jpg) no-repeat center;list-style:none}
-.zcz_t_title .step_all{width:100%;height:100px;background:url(/NewStyle/Style/images/csmmtutu.jpg) no-repeat center;list-style:none}
-.zcz_w_title .step_all{width:100%;height:100px;background:url(/NewStyle/Style/images/wcmima.jpg) no-repeat center;list-style:none}
+.zcz_all_center_title .step_all{width:100%;height:100px;background:url(/Newstyle/Style/images/qunbude.jpg) no-repeat center;list-style:none}
+.zcz_t_title .step_all{width:100%;height:100px;background:url(/Newstyle/Style/images/csmmtutu.jpg) no-repeat center;list-style:none}
+.zcz_w_title .step_all{width:100%;height:100px;background:url(/Newstyle/Style/images/wcmima.jpg) no-repeat center;list-style:none}
 .zcz_all_center_title ol li{width:251px;height:57px;line-height:59px;float:left}
 .zcz_all_center_title .step_all span{color:#cda06a;padding-top:60px;font-size:16px;text-align:center;display:block}
 .zcz_all_center_title .step_all .step span{color:#646464}
@@ -76,6 +76,25 @@ body,html{height:100%;min-height:100%}
 .zcz_all_w dl dd{display:block;float:left;font-size:20px;padding-left:41px;padding-top:10px}
 .zcz_all_w a{font-weight:400;background-color:#d2a36b;color:#F3F3F3;font-size:20px;width:341px;height:45px;line-height:45px;text-align:center;display:block;margin-left:123px}
 /*----zcz忘记密码 end----*/
+/*----zcz联系我们----*/
+#zcz_allmap{width:100%;height:400px;overflow:hidden;margin:0}
+#l-map{height:100%;width:78%;float:left;border-right:2px solid #bcbcbc}
+#r-result{height:100%;width:20%;float:left}
+.myclass{height:50px;width:150px;font-size:12px;line-height:22px}
+.zcz_bigdiv{width:100%;height:100%;margin:0 auto}
+.zcz_content{width:1200px;height:660px;margin:0 auto;display:block}
+.zcz_content_lr{width:600px;height:660px;float:left}
+.zcz_content_lr dl{display:block;height:240px;padding-top:40px}
+.zcz_content_lr dl dt{font-size:24px;display:block;height:55px;color:#3e3e3e;overflow:hidden}
+.zcz_content_lr dl dd{color:#666566;line-height:35px;display:block;height:40px}
+.zcz_content_lr dl dd span{font-size:16px;color:#666566;float:left}
+.zcz_content_lr dl dd p{color:#d2a36b;float:left}
+.zcz_content_lr dl dd .zcz_pcor{color:#666566}
+.zcz_content_lr .zcz_dlheght{height:160px;padding-top:0}
+.zcz_content_lr .zcz_conter_ewm dd{display:block;height:200px;width:200px;float:left}
+.zcz_content_lr .zcz_conter_ewm img{height:130px;text-align:center;display:block;width:130px;margin:0 auto}
+.zcz_content_lr .zcz_conter_ewm strong{text-align:center;width:100%;height:80px;display:block;font-size:18px;line-height:80px}
+/*----zcz联系我们 end----*/
 /*----zwj表单验证 start----*/
 .Validform_checktip{
 	margin-left:8px;

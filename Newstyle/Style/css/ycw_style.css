@@ -214,7 +214,7 @@ body{
 }
 .ycw_plat .plat_itr{
   padding-top: 120px;
-  background: url(/NewStyle/Style/images/platform/plat_itr.png) center no-repeat;
+  background: url(/Newstyle/Style/images/platform/plat_itr.png) center no-repeat;
   background-size: cover;
 }
 .ycw_plat .plat_group{
@@ -230,7 +230,7 @@ body{
 }
 .ycw_plat .line_grey{
   margin: 26px 0 64px;
-  background: url(/NewStyle/Style/images/platform/plat_line.png) top center no-repeat;
+  background: url(/Newstyle/Style/images/platform/plat_line.png) top center no-repeat;
   background-size: 288px 12px;
 }
 
@@ -272,7 +272,7 @@ body{
   display: inline-block;
   width: 18px;
   height: 18px;
-  background: url(/NewStyle/Style/images/platform/sub_icon.png) center center no-repeat;
+  background: url(/Newstyle/Style/images/platform/sub_icon.png) center center no-repeat;
   background-size: 18px 18px;
 }
 .ycw_plat .sub_str{
@@ -316,7 +316,7 @@ body{
   height: 66px;
   margin: 37px 0 0 22px;
   float: left;
-  background: url(/NewStyle/Style/images/platform/bou_arr.png) left center no-repeat;
+  background: url(/Newstyle/Style/images/platform/bou_arr.png) left center no-repeat;
   background-size: 27px 14px;
   border-right: 3px solid #d3a36a;
 }
@@ -324,7 +324,7 @@ body{
   width: 712px;
   height: 404px;
   float: right;
-  background: url(/NewStyle/Style/images/platform/map_at.png) center center no-repeat;
+  background: url(/Newstyle/Style/images/platform/map_at.png) center center no-repeat;
   background-size: 712px 404px;
 }
 .plat_jf .jf_group{
@@ -335,12 +335,12 @@ body{
   padding: 60px 0 10px;
 }
 .plat_jf .line_gold{
-  background: url(/NewStyle/Style/images/platform/plat_line_gold.png) top center no-repeat;
+  background: url(/Newstyle/Style/images/platform/plat_line_gold.png) top center no-repeat;
   background-size: 288px 12px;
 }
 .ycw_plat .plat_intr{
   height: 560px;
-  background: url(/NewStyle/Style/images/platform/intr_bj.png) top center no-repeat;
+  background: url(/Newstyle/Style/images/platform/intr_bj.png) top center no-repeat;
   background-size: cover;
 }
 .ycw_plat .intr_con{
@@ -428,7 +428,7 @@ body{
   padding-top: 150px;
 }
 .ycw_plat .plat_innovate{
-  padding: 86px 0 20px;
+  padding: 86px 0 60px;
 }
 .plat_innovate .inn_item{
   float: left;
@@ -451,15 +451,15 @@ body{
   left: 30px;
 }
 .plat_innovate .sys_icon{
-  background: url(/NewStyle/Style/images/platform/inn_sys.png) top center no-repeat;
+  background: url(/Newstyle/Style/images/platform/inn_sys.png) top center no-repeat;
   background-size: 78px 50px;
 }
 .plat_innovate .exp_icon{
-  background: url(/NewStyle/Style/images/platform/exp_icon.png) top center no-repeat;
+  background: url(/Newstyle/Style/images/platform/exp_icon.png) top center no-repeat;
   background-size: 78px 50px;
 }
 .plat_innovate .app_icon{
-  background: url(/NewStyle/Style/images/platform/app_icon.png) top center no-repeat;
+  background: url(/Newstyle/Style/images/platform/app_icon.png) top center no-repeat;
   background-size: 78px 50px;
 }
 .plat_innovate .item_h6{
@@ -483,13 +483,63 @@ body{
 }
 .plat_innovate .item_bot span{
   float: left;
+  height: 50px;
+  margin-left: 20px;
 }
 .plat_innovate .bot_fin{
   display: inline-block;
-
+  width: 14px;
+  height: 13px;
+  background: url(/Newstyle/Style/images/platform/bot_fin.png) center center no-repeat;
+  background-size: 14px 13px;
 }
-
-
+.plat_innovate .item_bot .bot_line{
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  background-color: #d7d7d7;
+  position: absolute;
+  top: 26px;
+  left: 20px;
+}
+.ycw_plat .plat_partner{
+  width: 100%;
+  background-color: #fff;
+}
+.ycw_plat .par_con{
+  margin-top: 30px;
+}
+.plat_partner .par_item{
+  width: 560px;
+  float: left;
+  padding-bottom: 20px;
+}
+.plat_partner .par_item_2{
+  min-height: 240px;
+  margin-left: 80px;
+}
+.plat_partner .item_logo{
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.plat_partner .item_logo a{
+  display: block;
+}
+.plat_partner .item_1 img{
+  display: block;
+  width: 149px;
+  height: 43px;
+}
+.plat_partner .par_text{
+  font-size: 14px;
+  color: #626262;
+  padding-bottom: 20px;
+}
+.plat_partner .item_3 img{
+  width: 535px;
+  height: 42px;
+}
 
 
 
