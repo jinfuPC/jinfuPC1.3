@@ -30,7 +30,7 @@ body,html{height:100%;min-height:100%}
 /*----ycw_add_公共头_end----*/
 /*----zcz我的奖励红包----*/
 .zcz_postal_ol{padding:50px 75px 0}
-.zcz_postal_ol li{background:url(/Newmember/Style/images/redpackets_bg.jpg) no-repeat center;float:left;margin-left:70px;margin-bottom:40px;padding:0;width:302px;height:269px;position:relative;border:none}
+.zcz_postal_ol li{background:url(/NewStyle/Style/images/redpackets_bg.jpg) no-repeat center;float:left;margin-left:70px;margin-bottom:40px;padding:0;width:302px;height:269px;position:relative;border:none}
 .zcz_postal_ol li .postal_txt{position:absolute;width:230px;top:30px;left:35px}
 .zcz_postal_ol li p{color:#fff;font-size:12px;line-height:22px}
 .zcz_postal_ol li .postal_money{position:absolute;top:145px;left:50%;margin-left:-20px;width:40px;font-size:0;text-align:center;display:table;height:40px}
@@ -38,7 +38,7 @@ body,html{height:100%;min-height:100%}
 .zcz_postal_ol li .postal_btn{position:absolute;left:83px;bottom:23px}
 .zcz_postal_ol li .postal_btn a{display:inline-block;width:136px;height:31px;border-radius:3px;background:#f66;color:#efce99;font-size:16px;text-align:center;line-height:30px}
 .zcz_postal_ol li .postal_btn a:hover{background:#ff5757}
-.zcz_postal_ul li{background:url(/Newmember/Style/images/redpackets_did.jpg) no-repeat center}
+.zcz_postal_ul li{background:url(/NewStyle/Style/images/redpackets_did.jpg) no-repeat center}
 .zcz_postal_ul li .postal_money .num,.zcz_postal_ul li .postal_money .text{color:#a5a5a5}
 .zcz_postal_ul li .postal_btn a{color:#fff;background:#ccc;cursor:default}
 /*----zcz我的奖励红包 end----*/
@@ -46,9 +46,9 @@ body,html{height:100%;min-height:100%}
 .zcz_all{background-color:#fff!important;width:1200px;height:593px;border:1px solid #d1d1d1;border-radius:5px;margin:30px auto}
 .zcz_all_title{height:60px;line-height:60px;color:#333;padding-left:20px;font-size:20px;font-weight:700;border-bottom:1px #cda06a solid}
 .zcz_all_center_title{width:755px;margin:auto;margin-top:15px;overflow:hidden}
-.zcz_all_center_title .step_all{width:100%;height:100px;background:url(/Newmember/Style/images/qunbude.jpg) no-repeat center;list-style:none}
-.zcz_t_title .step_all{width:100%;height:100px;background:url(/Newmember/Style/images/csmmtutu.jpg) no-repeat center;list-style:none}
-.zcz_w_title .step_all{width:100%;height:100px;background:url(/Newmember/Style/images/wcmima.jpg) no-repeat center;list-style:none}
+.zcz_all_center_title .step_all{width:100%;height:100px;background:url(/NewStyle/Style/images/qunbude.jpg) no-repeat center;list-style:none}
+.zcz_t_title .step_all{width:100%;height:100px;background:url(/NewStyle/Style/images/csmmtutu.jpg) no-repeat center;list-style:none}
+.zcz_w_title .step_all{width:100%;height:100px;background:url(/NewStyle/Style/images/wcmima.jpg) no-repeat center;list-style:none}
 .zcz_all_center_title ol li{width:251px;height:57px;line-height:59px;float:left}
 .zcz_all_center_title .step_all span{color:#cda06a;padding-top:60px;font-size:16px;text-align:center;display:block}
 .zcz_all_center_title .step_all .step span{color:#646464}

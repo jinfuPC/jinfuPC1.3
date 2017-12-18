@@ -71,7 +71,7 @@ html{_background-image:url(about:blank); _background-attachment:fixed;}
 .laydate_body .laydate_bottom .laydate_btn{position:absolute; right:5px; top:5px;border-right:1px solid #C6C6C6;}
 .laydate_body .laydate_bottom .laydate_btn a{float:left; height:20px; padding:0 6px; _padding:0 5px;}
 .laydate_body .laydate_bottom .laydate_v{position:absolute; left:10px; top:6px; font-family:Courier; z-index:0;color:#999;}
-.laydate-icon{border:1px solid #C6C6C6; background:url(/Newmember/Style/images/icon.png) no-repeat right center;}
+.laydate-icon{border:1px solid #C6C6C6; background:url(/NewStyle/Style/images/icon.png) no-repeat right center;}
 .laydate_body .laydate_box,
 .laydate_body .laydate_ym,
 .laydate_body .laydate_ym .laydate_yms,
