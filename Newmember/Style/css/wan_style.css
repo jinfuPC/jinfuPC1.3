@@ -184,7 +184,7 @@
     margin-right: 15px;
     margin-left: 15px;
 }
-.laydate-icon{border:1px solid #C6C6C6;background:url(/Style/images/icon.png) no-repeat right center;}
+.laydate-icon{border:1px solid #C6C6C6;background:url(/Newmember/Style/images/icon.png) no-repeat right center;}
 .wan_zjgl_time .colink{
 	display: inline-block;
     width: 206;
@@ -273,7 +273,7 @@
 .wan_jfcon .qusc {
     width: 191px;
     height: 37px;
-    background: url(/Style/images/btn_sc1.jpg) no-repeat;
+    background: url(/Newmember/Style/images/btn_sc1.jpg) no-repeat;
     cursor: pointer;
     margin-top: 25px;
 }
@@ -332,7 +332,7 @@
 	margin: 0 auto;
 	min-width: 1200px;
 	height:330px;
-	background: url(/Style/images/join.jpg) top center no-repeat;
+	background: url(/Newmember/Style/images/join.jpg) top center no-repeat;
 }
 .wan_join_con{
 	width: 100%;
@@ -365,25 +365,25 @@
     padding-top: 40px;
 }
 .wan_join_cont .wan_ul1 .li1{
-	background: url(/Style/images/join_w1.png)no-repeat 45px 0px;
+	background: url(/Newmember/Style/images/join_w1.png)no-repeat 45px 0px;
 }
 .wan_join_cont .wan_ul1 .li2{
-	background: url(/Style/images/join_w2.png)no-repeat 45px 0px;
+	background: url(/Newmember/Style/images/join_w2.png)no-repeat 45px 0px;
 }
 .wan_join_cont .wan_ul1 .li3{
-	background: url(/Style/images/join_w3.png)no-repeat 45px 0px;
+	background: url(/Newmember/Style/images/join_w3.png)no-repeat 45px 0px;
 }
 .wan_join_cont .wan_ul1 .li4{
-	background: url(/Style/images/join_w4.png)no-repeat 45px 0px;
+	background: url(/Newmember/Style/images/join_w4.png)no-repeat 45px 0px;
 }
 .wan_join_cont .wan_ul1 .li5{
-	background: url(/Style/images/join_w5.png)no-repeat 45px 0px;
+	background: url(/Newmember/Style/images/join_w5.png)no-repeat 45px 0px;
 }
 .wan_join_cont .wan_ul1 .li6{
-	background: url(/Style/images/join_w6.png)no-repeat 45px 0px;
+	background: url(/Newmember/Style/images/join_w6.png)no-repeat 45px 0px;
 }
 .wan_join_cont .wan_ul1 .li7{
-	background: url(/Style/images/join_w7.png)no-repeat 45px 0px;
+	background: url(/Newmember/Style/images/join_w7.png)no-repeat 45px 0px;
 }
 .wan_join_cont .p1{
 	width: 100%;
@@ -442,14 +442,14 @@
     margin-bottom: 15px;
 }
 .wan_join_cont1 .question_list .zhankai {
-    background: url(/Style/images/shouqi.jpg) no-repeat;
+    background: url(/Newmember/Style/images/shouqi.jpg) no-repeat;
     width: 48px;
     height: 14px;
     float: right;
     margin-top: -10px;
 }
 .wan_join_cont1 .question_list .shouqi {
-    background: url(/Style/images/zhangkai.jpg) no-repeat;
+    background: url(/Newmember/Style/images/zhangkai.jpg) no-repeat;
     width: 48px;
     height: 14px;
     float: right;
