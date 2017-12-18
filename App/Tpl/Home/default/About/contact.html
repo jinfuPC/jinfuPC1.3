@@ -1,0 +1,102 @@
+<include file="./App/Tpl/Member/default/Public/header.html" />
+<style type="text/css">
+body{
+    height: auto;
+    background: #fff;
+}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=aT8aq0V7409ZrewXDp0aFINsaWDr5eaP "></script>
+<div class="zcz_bigdiv">
+    <div id="zcz_allmap"></div>
+</div>
+<div class="zcz_content">
+    <div class="zcz_content_lr fl">
+        <dl>
+            <dt>联系我们</dt>
+            <dd>
+                <span>邮政编码：</span>
+                <p class="zcz_pcor">100020</p>
+            </dd>
+            <dd>
+                <span>官网地址：</span>
+                <p>www.xinguangjf.com</p>
+            </dd>
+            <dd>
+                <span>公司地址：</span>
+                <p  class="zcz_pcor">北京市朝阳区亮马桥二十一世纪大厦A座16层</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>客服服务</dt>
+            <dd>
+                <span>服务时间：</span>
+                <p class="zcz_pcor">9:00-18:00</p>
+            </dd>
+            <dd>
+                <span>客服电话：</span>
+                <p>400-151-3456</p>
+            </dd>
+            <dd>
+                <span>客服邮箱：</span>
+                <p >kf@xinguangjf.com</p>
+            </dd>
+        </dl>
+        <dl class="zcz_dlheght">
+            <dt>温馨提示</dt>
+            <dd>
+                <p class="zcz_pcor">扫描右侧二维码可下载信广金服APP，实现财富增值！</p>
+                <p class="zcz_pcor">关注信广金服、信广集团微信公众号，可获得更多新闻动态及理财资讯。</p>
+            </dd>
+
+        </dl>
+    </div>
+    <div class="zcz_content_lr fr">
+        <dl>
+            <dt>商务合作</dt>
+            <dd>
+                <span>商务电话：</span>
+                <p>17710353709</p>
+            </dd>
+            <dd>
+                <span>商务邮箱：</span>
+                <p>market@xinguangjf.com</p>
+            </dd>
+        </dl>
+        <dl class="zcz_conter_ewm">
+            <dt>关注我们</dt>
+            <dd>
+                <img src="/Newstyle/Style/images/ermjf.png">
+                <strong>下载金服APP</strong>
+            </dd>
+            <dd>
+                <img src="/Newstyle/Style/images/erwei2.jpg">
+                <strong>金服微信公众号</strong>
+            </dd>
+            <dd>
+                <img src="/Newstyle/Style/images/erwei3.png">
+                <strong>集团官方微信号</strong>
+            </dd>
+        </dl>
+    </div>
+</div>
+<script type="text/javascript">
+    var map = new BMap.Map("zcz_allmap");
+    var point = new BMap.Point(116.480569,39.956925);
+    map.enableScrollWheelZoom(true);
+    map.enableScrollWheelZoom(false);    //启用滚轮放大缩小，默认禁用
+    map.enableContinuousZoom(false);    //启用地图惯性拖拽，默认禁用
+    map.centerAndZoom(point, 18);
+    var marker = new BMap.Marker(point);  // 创建标注
+    map.addOverlay(marker);              // 将标注添加到地图中
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    //创建信息窗口
+    map.centerAndZoom(point, 18);
+    map.addOverlay(marker);
+    marker.addEventListener("click", function(){
+        this.openInfoWindow(infoWindow);
+        document.getElementById('imgDemo').onload = function (){
+            infoWindow.redraw();
+        }
+    });
+</script>
+<include file="./App/Tpl/Member/default/Public/footer.html" />
