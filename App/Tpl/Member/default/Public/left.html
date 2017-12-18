@@ -34,7 +34,7 @@
 			</div>
 			<div class="s_nav">
 				<a href="/Member/Redpackets">奖励</a>
-				<a href="javascript:;">积分</a>
+				<a href="/Member/Integral">积分</a>
 				<a href="javascript:;">VIP专区</a>
 			</div>
 		</li>
@@ -83,6 +83,10 @@
 				case '/Member/Redpackets':
 					$_index_1 = 3; //我的奖励
 					$_index_2 = 1; //奖励
+					break;
+				case '/Member/Integral':
+					$_index_1 = 3; //我的积分
+					$_index_2 = 2; //积分
 					break;
 			}
 			$('.nav_lists>li').eq($_index_1).children('.p_tle').addClass('active');
