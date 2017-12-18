@@ -756,5 +756,246 @@ body {
 /*注册协议：zwj-end*/
 
 /*安全保障：zwj-start*/
-
+.ins_box1{
+	width: 100%;
+	height: 464px;
+	background: url(/Style/images/ins_banner1.png) no-repeat center;
+}
+.ins_m1{
+	margin: 0 auto;
+	width: 1200px;
+	height: 464px;
+}
+.m_lists{
+	padding-top: 60px;
+	margin-right: -13px;
+	overflow: hidden;
+}
+.m_lists li{
+	margin-right: 13px;
+	float: left;
+	width: 290px;
+	height: 100px;
+	background: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.m_bg{
+	margin: 23px 0 0 28px;
+	width: 55px;
+	height: 55px;
+	background: url(/Style/images/ins_icon.png) no-repeat center top;
+}
+.m_lists .ins_txt1{
+	color: #5d5d5d;
+	font-size: 18px;
+}
+.m_lists .ins_txt2{
+	color: #5D5D5D;
+	font-size: 14px;
+}
+.m_lists .ins_txt3{
+	width: 168px;
+	color: #d2a36b;
+	font-size: 14px;
+	display: none;
+}
+.m_img,.m_text{
+	float: left;
+}
+.m_text{
+	margin-top: 30px;
+	margin-left: 17px;
+}
+.ins_wind{
+	background-position: center -60px;
+}
+.ins_privacy{
+	background-position: center -120px;
+}
+.ins_legal{
+	background-position: center -180px;
+}
+.m_lists li:hover .ins_fund{
+	background-position: center -240px;
+}
+.m_lists li:hover .ins_wind{
+	background-position: center -300px;
+}
+.m_lists li:hover .ins_privacy{
+	background-position: center -360px;
+}
+.m_lists li:hover .ins_legal{
+	background-position: center -420px;
+}
+.m_info{
+	margin-top: 75px;
+}
+.m_h1{
+	position: relative;
+	margin-bottom: 30px;
+	color: #d3a36a;
+	font-size: 38px;
+	font-weight: normal;
+	clear: both;
+	text-align: center;
+}
+.m_h1:after{
+	position: absolute;
+	top: 20px;
+    right: 286px;
+	content: "";
+	width: 186px;
+	height: 9px;
+	background: url(/Style/images/ins_sq.png) no-repeat center -11px;
+}
+.m_h1:before{
+	position: absolute;
+	top: 20px;
+    left: 286px;
+	content: "";
+	width: 186px;
+	height: 9px;
+	background: url(/Style/images/ins_sq.png) no-repeat center top;
+}
+.m_info p{
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+}
+.ins_box2{
+	width: 100%;
+	height: 780px;
+	background: url(/Style/images/ins_banner2.png) no-repeat center;
+}
+.ins_m2{
+	margin: 0 auto;
+	padding-top: 60px;
+	width: 1200px;
+	height: 780px;
+}
+.m_h2{
+	position: relative;
+	margin-bottom: 30px;
+	color: #2e2e2e;
+	font-size: 38px;
+	font-weight: normal;
+	clear: both;
+	text-align: center;
+}
+.m_h2:before{
+	position: absolute;
+	top: 20px;
+    left: 286px;
+	content: "";
+	width: 186px;
+	height: 9px;
+	background: url(/Style/images/ins_sq.png) no-repeat center -21px;
+}
+.m_h2:after{
+	position: absolute;
+	top: 20px;
+    right: 286px;
+	content: "";
+	width: 186px;
+	height: 9px;
+	background: url(/Style/images/ins_sq.png) no-repeat center bottom;
+}
+.ins_box3{
+	width: 100%;
+	height: 501px;
+	background: url(/Style/images/ins_banner3.png) no-repeat center;
+}
+.ins_m3{
+	margin: 0 auto;
+	padding-top: 55px;
+	width: 1200px;
+	height: 501px;
+}
+.ins_m3 .m_h1{
+	margin-bottom: 70px;
+}
+.m3_lists{
+	margin-right: -20px;
+	padding: 0 10px;
+	overflow: hidden;
+}
+.m3_lists li{
+	padding: 25px 30px 0 30px;
+	float: left;
+	margin-right: 20px;
+	width: 380px;
+	height: 228px;
+}
+.m3_lists li h2{
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+.m3_lists li p{
+	margin-top: 15px;
+	color: #fff;
+	font-size: 14px;
+}
+.m3_lists .list_2 h2{
+	color: #3e3e3e;
+}
+.m3_lists .list_2 p{
+	color: #666566;
+}
+.m3_lists .list_1{
+	background: url(/Style/images/ins3_01.jpg) no-repeat center;
+}
+.m3_lists .list_2{
+	background: #fff;
+}
+.m3_lists .list_3{
+	background: url(/Style/images/ins3_03.jpg) no-repeat center;
+}
+.ins_box4{
+	width: 100%;
+	height: 635px;
+	background:#fff url(/Style/images/ins_banner4.png) no-repeat center;
+}
+.ins_m4{
+	margin: 0 auto;
+	padding-top: 60px;
+	width: 1200px;
+	height: 635px;
+}
+.m4_lists{
+	overflow: hidden;
+}
+.m4_lists li{
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 80px;
+	width: 570px;
+}
+.m4_icon{
+	float: left;
+	margin-right: 15px;
+	margin-top: 10px;
+	width: 70px;
+	height: 70px;
+	background: url(/Style/images/m4_icon.png) no-repeat center top;
+}
+.m4_lists h2{
+	color: #3e3e3e;
+	font-size: 30px;
+	font-weight: normal;
+}
+.m4_lists .m4_info{
+	float: left;
+	width: 470px;
+}
+.m4_lists p{
+	margin-top: 10px;
+    line-height: 24px;
+	color: #666566;
+	font-size: 14px;
+}
+.ins_m4 .m_h2{
+	margin-bottom: 60px;
+}
 /*安全保障：zwj-end*/
