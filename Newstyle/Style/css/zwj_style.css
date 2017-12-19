@@ -972,6 +972,19 @@ body {
 #m_w_md area,.w_h_img img{
 	cursor: pointer;
 }
+/*#m_w_md{
+	width: 361px;
+    height: 367px;
+    display: block;
+    margin-top: 90px;
+    margin-left: 90px;
+}*/
+/*.are1{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	background: #000;
+}*/
 .are1:after{
 	position: absolute;
     content: "";
@@ -998,7 +1011,7 @@ body {
     right: 144px;
     width: 30px;
     height: 30px;
-    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center 0;
+    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center -31px;
     z-index: 9;
 }
 .are2:before{
@@ -1015,9 +1028,9 @@ body {
     content: "";
     bottom: 155px;
     right: 256px;
-    width: 28px;
-    height: 28px;
-    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center 0;
+    width: 29px;
+    height: 17px;
+    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center -62px;
     z-index: 9;
 }
 .are3:before{
@@ -1034,9 +1047,9 @@ body {
     content: "";
     top: 270px;
     left: 144px;
-    width: 28px;
-    height: 28px;
-    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center 0;
+    width: 30px;
+    height: 31px;
+    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center -93px;
     z-index: 9;
 }
 .are4:before{
@@ -1053,9 +1066,9 @@ body {
     content: "";
     top: 133px;
     left: 182px;
-    width: 28px;
-    height: 28px;
-    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center 0;
+    width: 31px;
+    height: 30px;
+    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center -124px;
     z-index: 9;
 }
 .are5:before{

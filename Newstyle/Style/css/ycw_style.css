@@ -161,7 +161,35 @@ html,body{
 .ycw_ov_index .cls_item.on a{
   color: #d2a36b;
 }
+/*----投资管理修改_start----*/
+.ycw_wan_r .ycw_wan_r{
+  padding: 0 30px;
+}
+.ycw_ov_index .ycw_wan_r{
+  width: 95%;
+  margin: 0 auto;
+}
+.ycw_wan_r .wan_r1{
+  background-color: #fbfbfb;
+  margin-top: 40px;
+  padding: 40px 30px 50px;
+}
+.wan_r .ycw_wan_icon{
+  display: inline-block;
+  width: 36px;
+  height: 47px;
+  background: url(/Newstyle/Style/images/ycw_wan_icon.png) center no-repeat;
+  background-size: cover;
+}
+.ycw_wan_r .gra_record{
+  color: #666666;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/*----投资管理修改_end----*/
 /*----投资管理_end----*/
+
 /*----错误页面_start----*/
 .ycw_jfError{
   background-color: #fff;
@@ -738,13 +766,5 @@ html,body{
   width: 535px;
   height: 42px;
 }
-
-
-
-
-
-
-
-
 /*----平台实力_end----*/
 /*.....ycw_style-end.....*/
