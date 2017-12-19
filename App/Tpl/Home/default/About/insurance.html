@@ -73,12 +73,19 @@
 				<img class="w_center" src="/Newstyle/Style/images/w_center.png" alt="" />
 				<img name="w_md" src="/Newstyle/Style/images/w_md.png" width="361" height="367" border="0" id="w_md" usemap="#m_w_md" alt="">
 				<map name="m_w_md" id="m_w_md">
-					<area class="are1" shape="poly" coords="348,121,291,39,187,1,184,105,225,120,249,156" href="javascript:;" alt="">
-					<area class="are2" shape="poly" coords="291,322,349,246,353,132,251,161,250,200,224,237" href="javascript:;" alt="">
-					<area class="are3" shape="poly" coords="82,333,180,365,279,333,221,239,178,254,142,242" href="javascript:;" alt="">
-					<area class="are4" shape="poly" coords="8,137,12,243,72,326,137,240,108,203,108,162" href="javascript:;" alt="">
-					<area class="are5" shape="poly" coords="11,121,63,44,172,0,177,105,131,123,109,156" href="javascript:;" alt="">
+					<area shape="poly" coords="348,121,291,39,187,1,184,105,225,120,249,156" href="javascript:;" alt="">
+					<area shape="poly" coords="291,322,349,246,353,132,251,161,250,200,224,237" href="javascript:;" alt="">
+					<area shape="poly" coords="82,333,180,365,279,333,221,239,178,254,142,242" href="javascript:;" alt="">
+					<area shape="poly" coords="8,137,12,243,72,326,137,240,108,203,108,162" href="javascript:;" alt="">
+					<area shape="poly" coords="11,121,63,44,172,0,177,105,131,123,109,156" href="javascript:;" alt="">
 				</map>
+				<div class="w_m_icon">
+					<a class="are1" href="javascript:;"></a>
+					<a class="are2" href="javascript:;"></a>
+					<a class="are3" href="javascript:;"></a>
+					<a class="are4" href="javascript:;"></a>
+					<a class="are5" href="javascript:;"></a>
+				</div>
 				<div class="w_h_img">
 					<img class="w_h1" src="/Newstyle/Style/images/w_h1.png" alt="" />
 					<img class="w_h2" src="/Newstyle/Style/images/w_h2.png" alt="" />
@@ -176,7 +183,7 @@
 		$(this).find(".ins_txt3").hide();
 	});
 	
-	$("#m_w_md area,.w_h_img img").hover(function(){
+	$("#m_w_md area,.w_h_img img,.w_m_icon a").hover(function(){
 		var index = $(this).index();
 		$(".w_h_img img:eq("+index+")").show();
 		$(".w_h_img img:eq("+index+")").siblings().hide();
