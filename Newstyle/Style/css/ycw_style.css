@@ -1,6 +1,13 @@
 /*.....ycw_style_start.....*/
 /*----账户总览_start----*/
-body{
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,body{
   background-color: #f3f3f3;
 }
 .ycw_clearFix:after{
@@ -216,6 +223,7 @@ body{
   padding-top: 120px;
   background: url(/Newstyle/Style/images/platform/plat_itr.png) center no-repeat;
   background-size: cover;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Newstyle/Style/images/platform/plat_itr.png',sizingMethod='scale');
 }
 .ycw_plat .plat_group{
   width: 100%;
@@ -471,6 +479,7 @@ body{
   color: #484848;
   padding-top: 20px;
   line-height: 20px;
+  text-align: justify;
 }
 .plat_innovate .item_bot{
   width: 380px;
@@ -519,12 +528,13 @@ body{
   margin-left: 80px;
 }
 .plat_partner .item_logo{
+  height: 64px;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 .plat_partner .item_logo a{
-  display: block;
+  display: inline-block;
 }
 .plat_partner .item_1 img{
   display: block;
