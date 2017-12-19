@@ -901,6 +901,185 @@ body {
 	height: 9px;
 	background: url(/Newstyle/Style/images/ins_sq.png) no-repeat center bottom;
 }
+.wind_box{
+	margin: 0 auto;
+	width: 860px;
+}
+.wind_pie{
+	position: relative;
+	float: left;
+	margin: 0 auto;
+	width: 540px;
+	height: 540px;
+	background: url(/Newstyle/Style/images/wind_bg.png) no-repeat center;
+}
+.w_le{
+	margin-right: 30px;
+}
+.wind_item{
+	margin-top: 30px;
+	width: 130px;
+}
+.w_ri{
+	text-align: right;
+}
+.wind_item li span{
+	display: block;
+	color: #e4c7a6;
+	font-size: 14px;
+	line-height: 32px;
+}
+.wind_item .act_item span{
+	color: #c48e50;
+}
+.wind_pie img{
+	position: absolute;
+}
+.wind_pie img[name='w_md']{
+	top: 90px;
+	left: 90px;
+}
+.wind_pie .w_h1{
+	top: 80px;
+    right: 90px;
+}
+.wind_pie .w_h2{
+	top: 216px;
+    right: 80px;
+}
+.wind_pie .w_h3{
+	bottom: 78px;
+    left: 160px;
+}
+.wind_pie .w_h4{
+	top: 216px;
+    left: 80px;
+}
+.wind_pie .w_h5{
+	top: 80px;
+    left: 90px;
+}
+.wind_pie .w_center{
+	top: 196px;
+	left: 196px;
+	width: 153px;
+	height: 153px;
+	z-index: 1;
+}
+.w_h_img img{
+	display: none;
+}
+#m_w_md area,.w_h_img img{
+	cursor: pointer;
+}
+/*#m_w_md{
+	width: 361px;
+    height: 367px;
+    display: block;
+    margin-top: 90px;
+    margin-left: 90px;
+}*/
+/*.are1{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	background: #000;
+}*/
+.are1:after{
+	position: absolute;
+    content: "";
+    top: 133px;
+    right: 182px;
+    width: 28px;
+    height: 28px;
+    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center 0;
+    z-index: 9;
+}
+.are1:before{
+	position: absolute;
+	top: 170px;
+	right: 140px;
+	content: "1 合作机构准入";
+	color: #fff;
+	font-size: 14px;	
+	z-index: 9;
+}
+.are2:after{
+	position: absolute;
+    content: "";
+    top: 270px;
+    right: 144px;
+    width: 30px;
+    height: 30px;
+    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center -31px;
+    z-index: 9;
+}
+.are2:before{
+	position: absolute;
+	bottom: 207px;
+	right: 110px;
+	content: "2 业务政策培训";
+	color: #fff;
+	font-size: 14px;	
+	z-index: 9;
+}
+.are3:after{
+	position: absolute;
+    content: "";
+    bottom: 155px;
+    right: 256px;
+    width: 29px;
+    height: 17px;
+    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center -62px;
+    z-index: 9;
+}
+.are3:before{
+	position: absolute;
+	bottom: 125px;
+	right: 223px;
+	content: "3 审核风控流程";
+	color: #fff;
+	font-size: 14px;	
+	z-index: 9;
+}
+.are4:after{
+	position: absolute;
+    content: "";
+    top: 270px;
+    left: 144px;
+    width: 30px;
+    height: 31px;
+    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center -93px;
+    z-index: 9;
+}
+.are4:before{
+	position: absolute;
+	bottom: 207px;
+	left: 110px;
+	content: "4 项目资金筹集";
+	color: #fff;
+	font-size: 14px;	
+	z-index: 9;
+}
+.are5:after{
+	position: absolute;
+    content: "";
+    top: 133px;
+    left: 182px;
+    width: 31px;
+    height: 30px;
+    background: url(/Newstyle/Style/images/w_icon.png) no-repeat center -124px;
+    z-index: 9;
+}
+.are5:before{
+	position: absolute;
+	top: 170px;
+	left: 166px;
+	content: "5 贷后管理 ";
+	color: #fff;
+	font-size: 14px;	
+	z-index: 9;
+}
 .ins_box3{
 	width: 100%;
 	height: 501px;

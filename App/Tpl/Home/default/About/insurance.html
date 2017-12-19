@@ -1,5 +1,4 @@
 <include file="./App/Tpl/Member/default/Public/header.html" />
-<include file="./App/Tpl/Member/default/Public/s_header.html" />
 <div class="ins_box1">
 	<div class="ins_m1">
 		<ul class="m_lists">
@@ -47,7 +46,77 @@
 	<div class="ins_m2">
 		<h1 class="m_h2">风控保障</h1>
 		<div class="wind_box">
-			
+			<ul class="wind_item fl w_le">				
+				<li class="w_ite5">
+					<span>交易资料归档</span>
+					<span>机构代偿</span>
+					<span>逾期预警</span>
+					<span>还款提醒</span>
+					<span>风险部飞行审计</span>
+					<span>非现场审计</span>
+					<span>风控中心电话抽查</span>
+					<span>合作机构实地临检</span>
+				</li>
+				<li class="w_ite4">
+					<span>放款</span>
+					<span>放款前审核</span>
+					<span>项目筹集满标</span>
+					<span>平台发布项目</span>
+				</li>
+				<li class="w_ite3">
+					<span>机构签署担保函</span>
+					<span>平台终审意见</span>
+					<span>综合偿贷能力评判</span>
+				</li>
+			</ul>
+			<div class="wind_pie">
+				<img class="w_center" src="/Newstyle/Style/images/w_center.png" alt="" />
+				<img name="w_md" src="/Newstyle/Style/images/w_md.png" width="361" height="367" border="0" id="w_md" usemap="#m_w_md" alt="">
+				<map name="m_w_md" id="m_w_md">
+					<area shape="poly" coords="348,121,291,39,187,1,184,105,225,120,249,156" href="javascript:;" alt="">
+					<area shape="poly" coords="291,322,349,246,353,132,251,161,250,200,224,237" href="javascript:;" alt="">
+					<area shape="poly" coords="82,333,180,365,279,333,221,239,178,254,142,242" href="javascript:;" alt="">
+					<area shape="poly" coords="8,137,12,243,72,326,137,240,108,203,108,162" href="javascript:;" alt="">
+					<area shape="poly" coords="11,121,63,44,172,0,177,105,131,123,109,156" href="javascript:;" alt="">
+				</map>
+				<div class="w_m_icon">
+					<a class="are1" href="javascript:;"></a>
+					<a class="are2" href="javascript:;"></a>
+					<a class="are3" href="javascript:;"></a>
+					<a class="are4" href="javascript:;"></a>
+					<a class="are5" href="javascript:;"></a>
+				</div>
+				<div class="w_h_img">
+					<img class="w_h1" src="/Newstyle/Style/images/w_h1.png" alt="" />
+					<img class="w_h2" src="/Newstyle/Style/images/w_h2.png" alt="" />
+					<img class="w_h3" src="/Newstyle/Style/images/w_h3.png" alt="" />
+					<img class="w_h4" src="/Newstyle/Style/images/w_h4.png" alt="" />
+					<img class="w_h5" src="/Newstyle/Style/images/w_h5.png" alt="" />
+				</div>
+			</div>
+			<ul class="wind_item fr w_ri">
+				<li class="w_ite1 act_item">
+					<span>机构审核</span>
+					<span>背景调查</span>
+					<span>初审会</span>
+					<span>机构面谈</span>
+					<span>实地考察</span>
+					<span>终审会</span>
+					<span>签订合作协议</span>
+				</li>
+				<li class="w_ite2">
+					<span>制定业务标准</span>
+					<span>机构业务培训</span>
+					<span>业务辅导</span>
+				</li>
+				<li class="w_ite3">
+					<span>转让项目申请</span>
+					<span>项目资料递送</span>
+					<span>项目风险评分</span>
+					<span>反欺诈系统审核</span>
+					<span>风控电话核实</span>
+				</li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -114,8 +183,14 @@
 		$(this).find(".ins_txt3").hide();
 	});
 	
-	$(".a1").click(function(){
-		alert(111);
+	$("#m_w_md area,.w_h_img img,.w_m_icon a").hover(function(){
+		var index = $(this).index();
+		$(".w_h_img img:eq("+index+")").show();
+		$(".w_h_img img:eq("+index+")").siblings().hide();
+	},function(){
+		var index = $(this).index();
+		$(".w_h_img img:eq("+index+")").hide();
+		$(".w_h_img img").hide();
 	})
 </script>
 <include file="./App/Tpl/Member/default/Public/footer.html" />
