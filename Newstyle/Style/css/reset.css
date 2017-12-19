@@ -224,6 +224,12 @@ svg {
 */
   overflow: hidden;
 }
+.fl{
+	float: right;
+}
+.fr{
+	float: right;
+}
 i{
   display: inline-block;
   font-style: normal;
