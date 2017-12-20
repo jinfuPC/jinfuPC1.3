@@ -82,18 +82,18 @@ body,html{height:100%;min-height:100%}
 #r-result{height:100%;width:20%;float:left}
 .myclass{height:50px;width:150px;font-size:12px;line-height:22px}
 .zcz_bigdiv{width:100%;height:100%;margin:0 auto}
-.zcz_content{width:1200px;height:660px;margin:0 auto;display:block}
-.zcz_content_lr{width:600px;height:660px;float:left}
-.zcz_content_lr dl{display:block;height:240px;padding-top:40px}
+.zcz_content{width:1200px;height:580px;margin:0 auto;display:block}
+.zcz_content_lr{width:600px;height:580px;float:left}
+.zcz_content_lr dl{display:block;height:203px;padding-top:40px}
 .zcz_content_lr dl dt{font-size:24px;display:block;height:55px;color:#3e3e3e;overflow:hidden}
-.zcz_content_lr dl dd{color:#666566;line-height:35px;display:block;height:40px}
+.zcz_content_lr dl dd{color:#666566;line-height:20px;display:block;height:30px}
 .zcz_content_lr dl dd span{font-size:16px;color:#666566;float:left}
 .zcz_content_lr dl dd p{color:#d2a36b;float:left}
 .zcz_content_lr dl dd .zcz_pcor{color:#666566}
 .zcz_content_lr .zcz_dlheght{height:160px;padding-top:0}
 .zcz_content_lr .zcz_conter_ewm dd{display:block;height:200px;width:200px;float:left}
-.zcz_content_lr .zcz_conter_ewm img{height:130px;text-align:center;display:block;width:130px;margin:0 auto}
-.zcz_content_lr .zcz_conter_ewm strong{text-align:center;width:100%;height:80px;display:block;font-size:18px;line-height:80px}
+.zcz_content_lr .zcz_conter_ewm img{height:140px;text-align:center;display:block;width:140px;margin:0 auto}
+.zcz_content_lr .zcz_conter_ewm strong{text-align:center;width:100%;height:100px;display:block;font-size:18px;line-height:100px}
 /*----zcz联系我们 end----*/
 /*----zwj表单验证 start----*/
 .Validform_checktip{
