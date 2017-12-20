@@ -607,6 +607,13 @@
 	color: #d2a36b;
 	font-size: 16px;
 }
+#sp_w{
+		    display: inline-block;
+		    width: 25px;
+		    height: 25px;
+		    position: absolute;
+		    left: 446px;
+		}
 
 
 /*我的奖励——tab切换新增样式-end*/
