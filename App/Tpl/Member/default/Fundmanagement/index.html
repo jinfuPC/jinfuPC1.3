@@ -1,161 +1,180 @@
 <include file="Public:header" />
-  <div class="ycw_ov_wrapper ycw_clearFix">
-		<include file="Public:left" />
-    <div class="ycw_ov_index">
-      <div class="invest_tab">
-        <div class="hd">
-          <ul class="ycw_clearFix">
-            <li class="tab_item tab_item_1 on">财行优选</li>
-            <li class="tab_item tli_item_2">网贷产品</li>
-          </ul>
-        </div>
-        <div class="bd">
-          <!--财行优选-->
-          <div>
-          	<!--账户余额-->
-          	<div class="wan_balance">
-          			<p>
-          				<span>8888.00</span><br />
-          				账户余额
-          			</p>
-          	</div>
-          	<!--日历-->
-          	<div class="wan_zjgl_time">
-								<select id="type">
-									<option value="">请选择事件类型</option>
+<div class="ycw_ov_wrapper ycw_clearFix">
+	<include file="Public:left" />
+	<div class="ycw_ov_index">
+		<div class="invest_tab">
+			<div class="hd">
+				<ul class="ycw_clearFix">
+					<li class="tab_item tab_item_1 on">财行优选</li>
+					<li class="tab_item tli_item_2">网贷产品</li>
+				</ul>
+			</div>
+			<div class="bd">
+				<!--财行优选-->
+				<div>
+					<!--账户余额-->
+					<div class="wan_balance">
+						<p>
+							<span>8888.00</span><br /> 账户余额
+						</p>
+					</div>
+					<!--日历-->
+					<div class="zjgl_time" style="position: relative;padding: 40px 20px 20px 20px;">
+						<h3 class="wdzh_cz_title">
+							<select id="type" style="width: 280px;height: 36px; padding-left: 11px;color: #cccccc;font-size: 14px;">
+										<option value="">请选择事件类型</option>
 										<option value="3">充值</option>
 										<option value="6">出借冻结</option>
 										<option value="7">管理员操作</option>
 										<option value="9">回款</option>
-										<option value="11">还款</option>																	
-								</select>
+										<option value="11">还款</option>
+										<option value="12">提现失败</option>
+										<option value="15">出借解冻</option>
+										<option value="17">放款</option>
+										<option value="18">借款管理费</option>
+										<option value="20">投标奖励</option>
+										<option value="28">出借成功</option>
+										<option value="29">提现成功</option>
+										<option value="30">逾期补偿</option>
+										<option value="46">购买债权</option>
+										<option value="47">转让债权</option>
+										<option value="48">转让债权手续费</option>
+										<option value="65">管理员转账撤消</option>															
+							</select>
+								<span id="sp_w" style="display: inline-block;width: 25px;height: 28px;position: absolute;left: 483px;"></span>
 								<span class="inline" id="demo">
-									<input id="start" class="laydate-icon" value="起始时间" placeholder="">
-									至 <input id="end" class="laydate-icon" value="结束时间" placeholder="">
-								</span>
-	              <a class="colink" href="">查看</a>
-	              <a href="#" class="download">下载</a>
+								 <input id='start' class="laydate-icon" value="起始时间" placeholder="" style="width: 130px;height: 36px;padding-left: 15px;margin-left: 30px;margin-right: 15px;font-size: 14px;color: #CCCCCC;">
+								至  <input id="end" class="laydate-icon"  value="结束时间" placeholder="" style="width: 130px;height: 36px;padding-left: 15px;margin-left: 15px;font-size: 14px;color: #CCCCCC;">
+							</span>
+					        <a class="colink"  href="javascript:;" onClick="chakan()" style="margin-left: 30px;font-weight:normal;width: 107px;height: 36px;display: inline-block;background: #d2a36b;color: white;font-size: 14px;text-align: center;line-height: 36px;">查看</a>
+					        <a href="__URL__/export_Lcd?" class="download" style="color: #d2a36b;font-size: 14px;margin-left: 30px;">下载</a>
+						</h3>
+					</div>
+					<!--表格-->
+					<div class="wan_content">
+						<table class="ssh_customers">
+							<tbody>
+								<tr>
+									<th>发生日期</th>
+									<th>类型</th>
+									<th>影响金额</th>
+									<th>可用余额</th>
+									<th>冻结金额</th>
+									<th>待收金额</th>
+									<th>说明</th>
+								</tr>
+								<tr>
+									<td>2017-12-02</td>
+									<td>56563</td>
+									<td>8888888.00</td>
+									<td>888880.0</td>
+									<td>1545233.29</td>
+									<td>1547400.29</td>
+									<td>8392标地复审通过，目标利息转为待收利息</td>
+								</tr>
+								<tr>
+									<td>2017-12-02</td>
+									<td>56563</td>
+									<td>8888888.00</td>
+									<td>888880.0</td>
+									<td>1545233.29</td>
+									<td>1547400.29</td>
+									<td>8392标地复审通过，目标利息转为待收利息</td>
+								</tr>
+								<tr>
+									<td>2017-12-02</td>
+									<td>56563</td>
+									<td>8888888.00</td>
+									<td>888880.0</td>
+									<td>1545233.29</td>
+									<td>1547400.29</td>
+									<td>8392标地复审通过，目标利息转为待收利息</td>
+								</tr>
+								<tr>
+									<td>2017-12-02</td>
+									<td>56563</td>
+									<td>8888888.00</td>
+									<td>888880.0</td>
+									<td>1545233.29</td>
+									<td>1547400.29</td>
+									<td>8392标地复审通过，目标利息转为待收利息</td>
+								</tr>
+								<tr>
+									<td>2017-12-02</td>
+									<td>56563</td>
+									<td>8888888.00</td>
+									<td>888880.0</td>
+									<td>1545233.29</td>
+									<td>1547400.29</td>
+									<td>8392标地复审通过，目标利息转为待收利息</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!--网贷产品-->
+				<div>
+					<!--账户余额-->
+					<div class="wan_balance">
+						<p>
+							<span>88888888.00</span><br /> 账户余额
+						</p>
+					</div>
+					<div class="wan_r ycw_wan_r">
+						<div class="wan_r1">
+							<span class="ycw_wan_icon"></span>
+							<p class="gra_record">没有搜到记录，
+								<a href="#">赶快去认购吧！</a>
+							</p>
 						</div>
-          	<!--表格-->
-          	<div class="wan_content">
-								<table class="ssh_customers">
-									<tbody>
-										<tr>
-											<th>发生日期</th>
-											<th>类型</th>
-											<th>影响金额</th>
-											<th>可用余额</th>
-											<th>冻结金额</th>
-											<th>待收金额</th>
-											<th>说明</th>
-										</tr>
-										<tr>
-											<td>2017-12-02</td>
-											<td>56563</td>
-											<td>8888888.00</td>
-											<td>888880.0</td>
-											<td>1545233.29</td>
-											<td>1547400.29</td>
-											<td>8392标地复审通过，目标利息转为待收利息</td>
-										</tr>
-										<tr>
-											<td>2017-12-02</td>
-											<td>56563</td>
-											<td>8888888.00</td>
-											<td>888880.0</td>
-											<td>1545233.29</td>
-											<td>1547400.29</td>
-											<td>8392标地复审通过，目标利息转为待收利息</td>
-										</tr>
-										<tr>
-											<td>2017-12-02</td>
-											<td>56563</td>
-											<td>8888888.00</td>
-											<td>888880.0</td>
-											<td>1545233.29</td>
-											<td>1547400.29</td>
-											<td>8392标地复审通过，目标利息转为待收利息</td>
-										</tr>
-										<tr>
-											<td>2017-12-02</td>
-											<td>56563</td>
-											<td>8888888.00</td>
-											<td>888880.0</td>
-											<td>1545233.29</td>
-											<td>1547400.29</td>
-											<td>8392标地复审通过，目标利息转为待收利息</td>
-										</tr>
-										<tr>
-											<td>2017-12-02</td>
-											<td>56563</td>
-											<td>8888888.00</td>
-											<td>888880.0</td>
-											<td>1545233.29</td>
-											<td>1547400.29</td>
-											<td>8392标地复审通过，目标利息转为待收利息</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-          </div>
-          <!--网贷产品-->
-          <div>
-          	<!--账户余额-->
-          	 <div class="wan_balance">
-          			<p>
-          				<span>88888888.00</span><br />
-          				账户余额
-          			</p>
-          	</div>
-          	 <div class="wan_r ycw_wan_r">
-								<div class="wan_r1">
-									<span class="ycw_wan_icon"></span>
-									<p class="gra_record">没有搜到记录，<a href="#">赶快去认购吧！</a></p>
-								</div>
-							</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript">
-    $('.invest_tab').slide({
-      effect: 'fade',
-      autoPlay: false,
-      trigger: 'click',
-      delayTime: 500
-    });
-  </script>
-  <script type="text/javascript">
-		!function(){
-			/*laydate.skin('molv')*/;//切换皮肤，请查看skins下面皮肤库
-				laydate({elem: '#demo'});//绑定元素
-			}();
-			//日期范围限制
-				var start = {
-					elem: '#start',
-					format: 'YYYY-MM-DD',
-					//min: laydate.now(), //设定最小日期为当前日期
-					//max: laydate.now(), //最大日期
-					istime: true,
-					istoday: false,
-					choose: function(datas){
-					//end.min = datas; //开始日选好后，重置结束日的最小日期
-					end.start = datas //将结束日的初始值设定为开始日
-					}
-				};
-				var end = {
-					elem: '#end',
-					format: 'YYYY-MM-DD',
-					min: laydate.now(),
-					//max: laydate.now(),
-					istime: true,
-					istoday: false,
-					choose: function(datas){
-					start.max = datas; //结束日选好后，充值开始日的最大日期
-					}
-				};
-					laydate(start);
-					laydate(end);												
-	</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('.invest_tab').slide({
+		effect: 'fade',
+		autoPlay: false,
+		trigger: 'click',
+		delayTime: 500
+	});
+</script>
+<script type="text/javascript">
+	! function() {
+		laydate.skin('molv'); //切换皮肤，请查看skins下面皮肤库
+		laydate({
+			elem: '#demo'
+		}); //绑定元素
+	}();
+
+	//日期范围限制
+	var start = {
+		elem: '#start',
+		format: 'YYYY-MM-DD',
+		//min: laydate.now(), //设定最小日期为当前日期
+		//max: laydate.now(), //最大日期
+		istime: true,
+		istoday: false,
+		choose: function(datas) {
+			//end.min = datas; //开始日选好后，重置结束日的最小日期
+			end.start = datas //将结束日的初始值设定为开始日
+		}
+	};
+
+	var end = {
+		elem: '#end',
+		format: 'YYYY-MM-DD',
+		min: laydate.now(),
+		//max: laydate.now(),
+		istime: true,
+		istoday: false,
+		choose: function(datas) {
+			start.max = datas; //结束日选好后，充值开始日的最大日期
+		}
+	};
+	laydate(start);
+	laydate(end);
+</script>
 <include file="Public:footer" />
