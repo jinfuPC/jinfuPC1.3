@@ -104,7 +104,7 @@ xmp {
 a{
 	text-decoration: none;
 }
-input{
+input,select,a{
 	outline: 0;	
 }
 

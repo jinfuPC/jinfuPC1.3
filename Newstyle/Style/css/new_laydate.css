@@ -47,12 +47,12 @@ html{_background-image:url(about:blank); _background-attachment:fixed;}
 .laydate_body .laydate_chprev{border-left:none; border-right:1px solid #C6C6C6;}
 .laydate_body .laydate_chprev cite{margin:-5px 0 0 -7px;border-right-style:solid; border-right-color:#666;}
 .laydate_body .laydate_chnext cite{margin:-5px 0 0 -2px;border-left-style:solid; border-left-color:#666;}
-.laydate_body .laydate_ym label{right:28px;}
+.laydate_body .laydate_ym label{right:22px;}
 .laydate_body .laydate_table{ width:230px; margin:0 5px; border-collapse:collapse; border-spacing:0px; }
 .laydate_body .laydate_table td{width:31px; height:19px; line-height:19px; text-align: center; cursor:pointer; font-size: 12px;border:1px solid #C6C6C6; color:#333;}
 .laydate_body .laydate_table thead{height:22px; line-height:22px;background-color:#E3E3E3; color:#000;}
 .laydate_body .laydate_table thead th{font-weight:400; font-size:12px; text-align:center;}
-.laydate_body .laydate_bottom{position:relative; height:22px; line-height:20px; padding:5px; font-size:12px;border-bottom:1px solid #C6C6C6;}
+.laydate_body .laydate_bottom{position:relative; height:32px; line-height:20px; padding:5px; font-size:12px;border-bottom:1px solid #C6C6C6;}
 .laydate_body .laydate_bottom #laydate_hms{position: relative; z-index: 1; float:left;background-color:#fff; }
 .laydate_body .laydate_time{ position:absolute; left:5px; bottom: 26px; width:129px; height:125px; *overflow:hidden;background-color:#fff;}
 .laydate_body .laydate_time .laydate_hmsno{ padding:5px 0 0 5px;}
